@@ -1,0 +1,261 @@
+{
+  "users" : [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "password1",
+      "phone": "123-456-7890",
+      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "id_role": 1
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "password": "password2",
+      "phone": "987-654-3210",
+      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2
+  
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "password": "password3",
+      "phone": "555-123-4567",
+      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2
+    },
+    {
+      "id": 4,
+      "name": "Bob Brown",
+      "email": "bob.brown@example.com",
+      "password": "password4",
+      "phone": "777-888-9999",
+      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2
+    },
+    {
+      "id": 5,
+      "name": "Eve Davis",
+      "email": "eve.davis@example.com",
+      "password": "password5",
+      "phone": "111-222-3333",
+      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2
+    }
+  ],
+
+
+  "roles": [
+    {
+      "id": 1,
+      "name": "admin",
+      "description": "Administrator role with full access"
+    },
+    {
+      "id": 2,
+      "name": "user",
+      "description": "Standard user role with limited access"
+    }
+  ],
+
+  "locations": [
+    {
+      "id": 1,
+      "name": "Paris",
+      "country": "France",
+      "description": "Paris, thành phố ánh sáng, nổi tiếng với tháp Eiffel và nhiều bảo tàng nghệ thuật.",
+      "img": ["../Assets/images/locations/france/paris/licensed-image.jpg"]
+
+    },
+    {
+      "id": 2,
+      "name": "Kyoto",
+      "country": "Japan",
+      "description": "Kyoto, nơi giữ gìn nhiều di sản văn hóa và nghệ thuật truyền thống của Nhật Bản.",
+      "img": ["../Assets/images/locations/japan/kyoto/licensed-image.jpg"]
+
+    },
+    {
+      "id": 3,
+      "name": "Machu Picchu",
+      "country": "Peru",
+      "description": "Machu Picchu, thành phố cổ của người Inca nằm giữa các ngọn núi ở Peru.",
+      "img": ["../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"]
+
+    },
+    {
+      "id": 4,
+      "name": "Santorini",
+      "country": "Greece",
+      "description": "Santorini, hòn đảo nổi tiếng với kiến trúc trắng và đồng quê trên biển Aegean.",
+      "img": ["../Assets/images/locations/greece/santorini/santorini.jpg"]
+
+    },
+    {
+      "id": 5,
+      "name": "Rome",
+      "country": "Italy",
+      "description": "Rome, thủ đô của Ý, với các di tích lịch sử nổi tiếng như La Mã cổ đại và Vatican.",
+      "img": ["../Assets/images/locations/italy/rome/licensed-image.jpg"]
+
+    }
+  ],
+
+  "tours": [
+    {
+      "id": 1,
+      "name": "Hành trình đến Paris",
+      "description": "Khám phá vẻ đẹp của Paris với tháp Eiffel và các bảo tàng nghệ thuật.",
+      "price": 33000000,
+      "departure_day": "2023-07-15",
+      "duration": 7,
+      "destination": "Paris, France",
+      "departure_location": "Sân bay quốc tế JFK, New York",
+      "img": ["../Assets/images/locations/france/paris/licensed-image.jpg"],
+      "categories": [1]
+    },
+    {
+      "id": 2,
+      "name": "Kỳ nghỉ ở Bali",
+      "description": "Thư giãn tại các bãi biển tuyệt đẹp và tham quan các đền Hindu ở Bali.",
+      "price": 26400000,
+      "departure_day": "2023-08-20",
+      "duration": 10,
+      "destination": "Bali, Indonesia",
+      "departure_location": "Sân bay quốc tế LAX, Los Angeles",
+      "img": ["../Assets/images/locations/indonesia/bali/bali.jpg"],
+      "categories": [2]
+
+    },
+    {
+      "id": 3,
+      "name": "Khám phá Machu Picchu",
+      "description": "Hành trình đến thành phố cổ của người Inca, Machu Picchu.",
+      "price": 39600000,
+      "departure_day": "2023-09-10",
+      "duration": 8,
+      "destination": "Machu Picchu, Peru",
+      "departure_location": "Sân bay quốc tế MIA, Miami",
+      "img": ["../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"],
+      "categories": [3]
+
+
+    },
+    {
+      "id": 4,
+      "name": "Dạo chơi ở Santorini",
+      "description": "Thư giãn tại hòn đảo Santorini nổi tiếng với kiến trúc trắng và biển xanh.",
+      "price": 35200000,
+      "departure_day": "2023-10-05",
+      "duration": 9,
+      "destination": "Santorini, Greece",
+      "departure_location": "Sân bay quốc tế ORD, Chicago",
+      "img": ["../Assets/images/locations/greece/santorini/santorini.jpg"],
+      "categories": [2]
+
+    },
+    {
+      "id": 5,
+      "name": "Du lịch qua Roma",
+      "description": "Khám phá di tích lịch sử của La Mã cổ đại và thăm Vatican.",
+      "price": 37400000,
+      "departure_day": "2023-11-15",
+      "duration": 6,
+      "destination": "Rome, Italy",
+      "departure_location": "Sân bay quốc tế SFO, San Francisco",
+      "img": ["../Assets/images/locations/italy/rome/licensed-image.jpg"],
+      "categories": [1]
+    }
+  ],
+  "categories" : [
+    {
+      "id": 1,
+      "name": "Biển và Bãi biển"
+    },
+    {
+      "id": 2,
+      "name": "Văn hóa và Lịch sử"
+    },
+    {
+      "id": 3,
+      "name": "Nhiệt đới và Đảo quốc"
+    }
+  ],
+  "bookings" : [
+    {
+      "id": 1,
+      "booking_date": "2023-10-4",
+      "num_of_participants": 4,
+      "total": 132000000,
+      "status": 2,
+      "user_id": 2,
+      "tour_id": 1
+
+    },
+    {
+      "id": 2,
+      "booking_date": "2023-10-2",
+      "num_of_participants": 4,
+      "total": 132000000,
+      "status": 2,
+      "user_id": 3,
+      "tour_id": 1
+
+    },
+    {
+      "id": 3,
+      "booking_date": "2023-10-1",
+      "num_of_participants": 4,
+      "total": 132000000,
+      "status": 1,
+      "user_id": 4,
+      "tour_id": 1
+
+    },
+    {
+      "id": 3,
+      "booking_date": "2023-10-1",
+      "num_of_participants": 4,
+      "total": 132000000,
+      "status": 1,
+      "user_id": 5,
+      "tour_id": 1
+    }
+  ],
+  "status_bookings" : [
+    {
+      "id": 1,
+      "name": "pending"
+    },
+    {
+      "id": 2,
+      "name": "confirmed"
+    },
+    {
+      "id": 3,
+      "name": "cancelled"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "greeting toi yeu chuyen di nay",  
+      "rating": 3,
+      "review_date": "2023-4-5",
+      "user_id": 2,
+      "tour_id": 1
+    },
+    {
+      "id": 2,
+      "comment": "greeting toi vo cung hao huc voi chuyen di nay",  
+      "rating": 3,
+      "review_date": "2023-4-5",
+      "user_id": 3,
+      "tour_id": 1
+    }
+  ]
+}
