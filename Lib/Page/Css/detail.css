@@ -1,0 +1,187 @@
+body{
+    width: 1440px;
+    height: auto;
+}
+.header{
+    background: var(--Color-2, #FFF);
+}
+
+.detail-name{
+    font-size: 34px;
+    font-weight:400;
+    line-height: normal;
+    padding-top:41px;
+    padding-left: 33px;
+
+}
+.filter{
+    padding-top: 40px;
+    padding-left: 33px;
+    display:flex;
+    gap:30px;
+}
+.filter-button{
+    width:20%;
+    height:45px;
+    background:#D9D9D9;
+    border:1px solid #D9D9D9;
+    border-radius:30px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.rating{
+    padding-top: 30px;
+    padding-left: 33px;
+    display:flex;
+    gap:40px
+}
+.rating-ip{
+    display:flex;
+    gap:10px;
+}
+.img-left{
+    width:69%;
+    height: 444px;
+    margin-right: 2%; 
+    
+}
+.img-left img{
+    width:100%;
+    height:100%;}
+.img-right{
+    width:29%;
+    Height:444px;
+}
+.img-right img{
+    width:100%;
+    height:215px;
+    margin-bottom: 13px;
+    }
+
+
+
+.container-img {
+    display: flex; /* Sắp xếp hình ảnh theo hàng ngang */
+    
+  }
+.left-button{
+    margin-top:40px ;
+    width: 305px;
+    height: 51px;
+    background: #FEE2CE;
+    border: 1px solid #FEE2CE;
+    color: rgba(206, 105, 12, 0.96);
+    display: flex;
+    align-items: center;
+
+   
+}
+.right{
+    margin-top: 45px;
+}
+.button{
+    display: flex; 
+    align-items: center;
+    gap:450px;
+    color:rgba(206, 105, 12, 0.96); ;
+    
+}
+.content{
+    border: 1px solid #FEE2CE;
+    background-color: #F2E8E1;
+    width: 69%;
+    margin-top: 30px;
+    padding-left: 30px;
+   
+    
+}
+.first-line{
+    margin: 2px;
+}
+.line-container {
+    margin-bottom: 10px; /* Khoảng cách giữa hai dòng */
+}
+.content a{
+    margin-top: 100px;
+}
+.goi P{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size:30px;
+}
+.goi {
+    display: flex;
+}
+.goi a{
+    margin-top: 25px;
+    margin-left:450px;
+}
+.chonngay{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.dulich-button{
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background: #FC6E08;
+    border:1px solid #FC6E08;
+}
+.GoiDV{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.ve-button{
+    margin-top: 25px;
+    margin-left:20px;
+}
+
+.ve2-button{
+    margin-top: 15px;
+    margin-left:20px;
+}
+.tieude{
+    margin-top: 25px;
+    margin-left:20px;
+}
+.dtt-button{
+    margin-top: 15px;
+    margin-left:20px;
+    
+}
+.dtt-button button {
+    margin-right: 20px;
+}
+.content1{
+    width: 69%;
+    background-color: #D9D9D9;
+    margin-top: 30px;
+}
+.danhgia{
+    display: flex;
+}
+.danhgia p{
+    padding:30px;
+}
+.nguoidung1 .daidien{
+    display:flex;
+    margin-top:25px;
+    margin-left:20px;
+
+}
+.bi.bi-person-circle {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.nguoidung img{
+    width: 30%;
+    margin-left: 20px;
+}
+.nguoidung{
+    display: flex;
+    gap:60px;
+}
