@@ -1,0 +1,41 @@
+body{
+    background-image: url(/Assets/Images/imgHa/du\ lịch\ 1.png);
+}
+.form_register {
+    background: var(--Color-2, #FFF);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width:55vh;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10vh auto;
+    border-radius: 20px;
+}
+.form_register h4{
+    color:#CE690C;
+}
+.input {
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.input i {
+position: absolute;
+top: 50%;
+left: 10px;
+transform: translateY(-50%);
+}
+
+.input input {
+padding-left: 30px; /* Khoảng cách từ biểu tượng */
+border-radius: 20px;
+}
+.btn{
+    background-color: #CE690C;
+    margin-left: 12vh;
+    border-radius: 15px;
+}
