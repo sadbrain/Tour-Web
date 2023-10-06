@@ -1,33 +1,66 @@
-// const email = document.querySelector("#email");
-// const password = document.querySelector("#password");
-// const sumbit = document.querySelector("#sumbit");
-// document.write(sumbit)
-// document.write(email)
-// document.write(password)
-
+// import {hashPassword} from "./hashPassword.js";
 const usersAPi = "http://localhost:3000/users";
-// function login(){
-//     alert("start login");
-//     handleLogin();
-// }
-// function handleLogin(){
-//     const users = getUsers()
-//     console.log(users);
-//     users.forEach(element => {
-//         if(element.email == email.value){
-//             if(element.password == password.value){
-//                 alert("đăng nhập thành công");
-//             }
-//         }
-//     });
+const email = document.querySelector("#email");
+const password = document.querySelector("#password");
+// const encodedPassword = hashPassword(password.value, process.env.PASSWORD_SALT);
+// console.log(encodedPassword);
+async function login() {
+  try {
+    var response = await fetch(usersAPi);
 
-//     alert("email hoặc password của bạn sai, vùi lòng nhập lại!")
+    if (response.ok) {
+      response.json().then((data) => {
+        if (_checkUserValid(data)) {
+          alert("đăng nhập thành công");
 
-// }
-function getUsers(){
-      fetch(usersAPi)
-        .then(response => response.json())
-        .then(function (response) {})
+          _setCurrentUser(data);
+          _navigateToHome();
+        } else {
+          alert("email hoặc password của bạn sai, vùi lòng nhập lại!");
+        }
+      });
+
+
+
+
+    } else {
+    }
+  } catch (err) {
+    alert(err.message);
+  }
 }
-var a = getUsers();
-console.log(a);
+
+function _checkUserValid(data) {
+
+  return data.some((element) => {
+    return element.email == email.value && element.password == password.value;
+  });
+}
+
+function _setCurrentUser(data) {
+  const element = data.find((element) => {
+    console.log(email.value);
+    console.log(password.value);
+    return element.email == email.value && element.password == password.value;
+  });
+  if (element != undefined) {
+    const arr = [{
+      id: element.id,
+      role: element.role
+    }]
+    localStorage.setItem("user_token", arr);
+  }
+}
+
+function _navigateToHome() {
+  if (localStorage.getItem("user_token")) {
+    if(localStorage.getItem("user_token").role == 2) {
+      window.location.href = "./home.html";
+    }else{
+      window.location.href = "../Admin/home.html";
+     
+    }
+  }
+}
+
+
