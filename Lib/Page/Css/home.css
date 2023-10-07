@@ -146,6 +146,7 @@ header{
 }
 .navsecond__gift p{
     margin-right: 10px;
+    margin-top: 18px;
     
 } 
 .header__img {
@@ -215,6 +216,9 @@ header{
     display: inline-grid;
 
 }
+.grid p i{
+    color:#FC6E08;
+}
 .active {
     display: flex;
 }
@@ -255,6 +259,9 @@ margin:4px 4px;
     font-weight: 700;
     line-height: normal;
 }
+.place__img p{
+    margin-top: 10px;
+}
 .see-more{
     margin-top: 5%;
 }
@@ -284,6 +291,9 @@ margin:4px 4px;
     padding-bottom: 28px;
     padding-left:10px;
     border-radius: 15px;
+}
+.place__img{
+    color:#FC6E08;
 }
 .card__product{
     border: none !important;

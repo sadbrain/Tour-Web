@@ -1,99 +1,43 @@
 
-// import { createHmac } from "crypto"
-// export { hashPassword, salt };
-// function hashPassword(password, salt) {
-//   const hash = createHmac('sha256', salt).update(password).digest('hex');
-//   return hash;
-// }
-// const salt= "8b65b9403b9427421db5921a2b182eae";
 import { createHmac } from "crypto"
-
-const salt= "8b65b9403b9427421db5921a2b182eae";
-const usersAPi = "http://localhost:3000/users";
-const email = document.querySelector("#email");
-const password = document.querySelector("#password");
-const sumbit = document.querySelector("#sumbit");
-const encodedPassword = hashPassword(password.value, salt);
-console.log(encodedPassword); 
-console.log(hashPassword("asa"),salt);
-
+export { hashPassword, salt };
 function hashPassword(password, salt) {
   const hash = createHmac('sha256', salt).update(password).digest('hex');
   return hash;
 }
-async function fetchDataFromAPI() {
-  try {
-    const response = await fetch(usersAPi, {
-      method: "GET", 
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+const salt= "8b65b9403b9427421db5921a2b182eae";
+console.log(salt);
+// import { genSalt, hash as _hash, compare } from 'bcryptjs';
 
-    if (response.ok) {
-      const data = await response.json();
-      return data;
-    } else {
-      throw new Error("Failed to fetch data from the API");
-    }
-  } catch (err) {
-    throw new Error(err.message);
-  }
-}
-sumbit.onclick = async function login() {
-  try {
-    // Fetch data from the API
-    const data = await fetchDataFromAPI();
+// // Mật khẩu gốc cần được băm
+// const plaintextPassword = 'mySecurePassword';
 
-    if (_checkUserValid(data)) {
-      alert("Đăng nhập thành công");
-      _setCurrentUser(data); // Define this function
-      _navigateToHome(); // Define this function for navigation
-    } else {
-      alert("Email hoặc mật khẩu của bạn sai, vui lòng nhập lại!");
-    }
-  } catch (err) {
-    alert(err.message);
-  }
-}
+// // Sử dụng bcrypt để tạo một salt (muối)
+// const saltRounds = 10; // Số vòng lặp tạo muối, thường dùng giá trị từ 10 trở lên
+// genSalt(saltRounds, function(err, salt) {
+//   if (err) {
+//     throw err;
+//   }
 
+//   // Sử dụng muối để băm mật khẩu
+//   _hash(plaintextPassword, salt, function(err, hash) {
+//     if (err) {
+//       throw err;
+//     }
 
-function _checkUserValid(data) {
+//     // Lưu giữ mật khẩu đã băm (hash) vào cơ sở dữ liệu hoặc nơi khác
+//     console.log('Mật khẩu đã băm:', hash);
 
-  return data.some((element) => {
-    return element.email == email.value && element.password == password.value;
-  });
-}
-
-function _setCurrentUser(data) {
-  const element = data.find((element) => {
-    return element.email == email.value && element.password == password.value;
-  });
-  if (element != undefined) {
-    const obj = {
-      id: element.id,
-      role: element.id_role
-    }
-
-    localStorage.setItem("user_token", JSON.stringify(obj));
-    
-
-
-  }
-}
-
-function _navigateToHome() {
-  const user_token = JSON.parse(localStorage.getItem("user_token"));
-
-  if (user_token) {
-    if(user_token.role == 2) {
-      window.location.href = "./home.html";
-    }else{  
-
-      window.location.href = "../Page/Admin/home.html";
-     
-    }
-  }
-}
-
-
+//     // Kiểm tra mật khẩu đã băm
+//     compare(plaintextPassword, hash, function(err, result) {
+//       if (err) {
+//         throw err;
+//       }
+//       if (result) {
+//         console.log('Mật khẩu chính xác.');
+//       } else {
+//         console.log('Mật khẩu không chính xác.');
+//       }
+//     });
+//   });
+// });

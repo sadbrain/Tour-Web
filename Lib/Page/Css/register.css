@@ -1,4 +1,6 @@
 body{
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(/Assets/Images/imgHa/du\ lịch\ 1.png);
 }
 .form_register {
@@ -20,7 +22,6 @@ body{
 .input {
     position: relative;
     margin-bottom: 20px;
-    
 }
 
 .input i {
@@ -36,6 +37,6 @@ border-radius: 20px;
 }
 .btn{
     background-color: #CE690C;
-    margin-left: 12vh;
+    margin-left: 9vh;
     border-radius: 15px;
 }
