@@ -6,3 +6,53 @@
 /* header */
 
 
+/* footer */
+#footer{
+
+    margin-top: 2px;
+
+}
+.information_web{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 0 20px;
+}
+.information_web_content{
+    width: 24%;
+    margin-right: 1%;
+}
+.information_web_content h4{
+    font-weight: bold;
+    margin: 20px 0;
+}
+.information_web_list {
+    padding-left: 0;
+}
+.information_web_item{
+    margin-bottom: 2px;
+}
+.informatio_web_link{
+    color: black;
+    text-decoration: none;
+}
+.information_web_item_pay{
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;   
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
+.information_license{
+    margin-top: 10px;
+    margin-left: 20px;
+}   
+.information_license p{
+    margin: 0px auto;
+}
