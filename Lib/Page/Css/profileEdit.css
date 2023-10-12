@@ -1,0 +1,94 @@
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  ul {
+    list-style: none;
+  }
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .wrapper {
+    display: flex;
+    padding: 0 20px;
+  }
+  .left-content {
+    width: 25%;
+  }
+  .right-content {
+    width: 75%;
+    padding: 15px;
+  }
+  .profile,
+  .gift-blocker,
+  .feature {
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .profile img {
+    width: 50%;
+  }
+  
+  .profile p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .profile a {
+    text-decoration: none;
+  }
+  
+  .gift-blocker ul li,
+  .feature ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .gift-blocker ul li ion-icon,
+  .feature ul li ion-icon {
+    margin-right: 5px;
+  }
+  
+  .gift-blocker ul li:hover,
+  .feature ul li:hover {
+      background-color: aquamarine;
+  }
+  .title-section {
+      margin-bottom: 30px;
+  }
+  .title-section .title {
+      border-left: 5px solid orange;
+      padding-left: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 16px;
+  }
+  .field {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+  }
+  .field .label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+  }
+  .field .label .name {
+      font-weight: bold;
+  }
+  .field .label .button {
+      color: blue;
+      cursor: pointer;
+  }
