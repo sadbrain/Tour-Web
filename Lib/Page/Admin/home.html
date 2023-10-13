@@ -1,11 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+
+
+
+  <link rel="stylesheet" href="./Css/reset.css">
+  <link rel="stylesheet" href="../Css/home.admin.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="">
+
+  <title>Admin</title>
 </head>
-<body>
-    welcom to admin
+
+<body class="bg-theme" id="theme1">
+
+  <div id="wrapper">
+    
+    <div id="slide-wrrapper" data-simplebar="init" data-simplebar-auto-hide="true">
+      <div class="simplebar-track vertical" style="visibility: visible;">
+        <div class="simplebar-scrollbar" style="visibility: visible; top: 0px; height: 486px;"></div>
+      </div>
+      
+      <div class="simplebar-track horizontal" style="visibility: hidden;">
+        <div class="simplebar-scrollbar"></div>
+      </div>
+  
+      <div class="simplebar-scroll-content" style="padding-right: 20px; margin-bottom: -20px;">
+        <div class="simplebar-content" style="padding-bottom: 20px;">
+          <div class="brand-logo">
+            <a href="home.html">
+              <img src="../../../Assets/Figma/yellow and black minimalist agency logo.png" class="logo-icon" alt="logo icon">
+              <h5 class="logo-text">MAMA ADMIN</h5>
+            </a>  
+          </div>
+          <ul class="sidebar-menu do-nicescrol in">
+            <li class="sidebar-header">MAIN NAVIGATION</li>
+            <li class="active">
+              <a href="home.html">
+                <i class="bi bi-dash-square-fill"></i> <span>Dashboard</span>
+              </a>
+            </li>
+            <li >
+              <a href="home.html">
+                <i class="bi bi-person-square"></i><span>Quản lý user</span>
+              </a>
+            </li>
+            <li >
+              <a href="home.html">
+                <i class="bi bi-bag"></i><span>Quản lý các tour</span>
+              </a>
+            </li>
+            <li class="sidebar-header">LABELS</li>
+            <li><a href="#"><i class="bi bi-calendar-heart text-danger"></i></i><span>Important</span></a></li>
+            <li><a href="#"><i class="bi bi-arrow-clockwise text-success"></i><span>Warning</span></a></li>
+            <li><a href="#"><i class="bi bi-share-fill text-info"></i><span>Information</span></a></li> 
+      
+            
+            <!-- <li>
+              <a href="icons.html">
+                <i class="zmdi zmdi-invert-colors"></i> <span>UI Icons</span>
+              </a>
+            </li>
+      
+            <li>
+              <a href="forms.html">
+                <i class="zmdi zmdi-format-list-bulleted"></i> <span>Forms</span>
+              </a>
+            </li>
+      
+            <li>
+              <a href="tables.html">
+                <i class="zmdi zmdi-grid"></i> <span>Tables</span>
+              </a>
+            </li>
+      
+            <li>
+              <a href="calendar.html">
+                <i class="zmdi zmdi-calendar-check"></i> <span>Calendar</span>
+                <small class="badge float-right badge-light">New</small>
+              </a>
+            </li>
+      
+            <li>
+              <a href="profile.html">
+                <i class="zmdi zmdi-face"></i> <span>Profile</span>
+              </a>
+            </li>
+      
+            <li>
+              <a href="login.html" target="_blank">
+                <i class="zmdi zmdi-lock"></i> <span>Login</span>
+              </a>
+            </li>
+      
+              <li>
+              <a href="register.html" target="_blank">
+                <i class="zmdi zmdi-account-circle"></i> <span>Registration</span>
+              </a>
+            </li>
+      
+            <li class="sidebar-header">LABELS</li>
+            <li><a href="javaScript:void();"><i class="zmdi zmdi-coffee text-danger"></i> <span>Important</span></a></li>
+            <li><a href="javaScript:void();"><i class="zmdi zmdi-chart-donut text-success"></i> <span>Warning</span></a></li>
+            <li><a href="javaScript:void();"><i class="zmdi zmdi-share text-info"></i> <span>Information</span></a></li> -->
+      
+          </ul>
+        
+        </div>
+      </div>
+    </div>
+    
+    <!-- end slidebar-wrapper  -->
+    <!-- start top nav  -->
+    <header class="topbar-nav">
+      <nav class="navbar navbar-expand fixed-top">
+        <ul class="navbar-nav me-auto align-items-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link toggle-menu">
+              <i class="bi bi-list"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <form  class="search-bar">
+              <input type="text" class="form-control" placeholder="Nhập từ khóa">
+              <a href="#" class="nav-link ">
+
+                <i class="bi bi-search"></i>
+              </a>
+            </form>
+
+          </li>
+        </ul>
+
+        <ul class="navbar-nav align-items-center right-nav-link">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-envelope-open"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-bell"></i></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+              <span class="user-profile"><img src="../../../Assets/Images/users/default_profile_picture.jpg" class="img-circle" alt="user avatar"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+             <li class="dropdown-item user-details">
+              <a href="#">
+                 <div class="media">
+                   <div class="avatar"><img class="align-self-start me-3" src="../../../Assets/Images/users/default_profile_picture.jpg" alt="user avatar"></div>
+                  <div class="media-body">
+                  <h6 class="mt-2 user-title">Suy vai o</h6>
+                  <p class="user-subtitle">mccoy@example.com</p>
+                  </div>
+                 </div>
+                </a>
+              </li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item"><i class="bi bi-inbox"></i> Inbox</li>
+              <!-- <li class="dropdown-  divider"></li>
+              <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li> -->
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item"><i class="bi bi-gear"></i>Setting</li>
+              <li class="dropdown-divider"></li>
+              <li class="dropdown-item"><i class="bi bi-box-arrow-left"></i> Logout</li>
+            </ul>
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+
+
+    <div class="content-wrapper">
+      <div class="container-fluid">
+          I DON'T HAVE ANYIDEA TO CREATE CONTENT THIS PAGE
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+          <div>hello</div>
+      </div>
+
+    </div>
+
+    <a href="#" class="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
+
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright © 2018 Dashtreme Admin
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../../Services/Admin/home.admin.js"></script>
+<!-- <div class="text">hello a</div> -->
 </body>
+
 </html>

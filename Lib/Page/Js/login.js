@@ -1,5 +1,5 @@
-import hashPassword from './hashPassword.js';
-const hashPassword = require('./hashPassword.js');
+
+// const hashPassword = require('./hashPassword.js');
 
 const usersAPi = "http://localhost:3000/users";
 const email = document.querySelector("#email");
@@ -58,7 +58,7 @@ function _setCurrentUser(data) {
   if (element != undefined) {
     const obj = {
       id: element.id,
-      role: element.id_role
+      role: element.id_role,
     }
 
     localStorage.setItem("user_token", JSON.stringify(obj));
@@ -79,5 +79,3 @@ function _navigateToHome() {
     }
   }
 }
-
-

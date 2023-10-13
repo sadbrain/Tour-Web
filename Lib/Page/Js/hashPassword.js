@@ -1,10 +1,12 @@
+import { createHmac } from "crypto";
+export {hashPassword};
 
-import { createHmac } from "crypto"
-export { hashPassword, salt };
-function hashPassword(password, salt) {
-  const hash = createHmac('sha256', salt).update(password).digest('hex');
+function hashPassword(password) {
+  const hash = createHmac('sha256', "8` b65b9403b9427421db5921a2b182eae").update(password).digest('hex');
   return hash;
 }
+
+
 const salt= "8b65b9403b9427421db5921a2b182eae";
 console.log(salt);
 // import { genSalt, hash as _hash, compare } from 'bcryptjs';
