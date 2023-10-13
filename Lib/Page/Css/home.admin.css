@@ -1,0 +1,229 @@
+
+body {
+    /* background-color: #000; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: rgba(255,255,255,.85);
+    letter-spacing: 0.5px;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+#wrapper{
+    width: 100%;
+    position: relative;
+}
+#wrapper.toggled #sidebar-wrapper {
+    position: fixed;
+    left: -250px;
+    
+}
+#wrapper.toggled .content-wrapper {
+    margin-left: 0;
+}
+#theme1 {
+    background-image: url(../../../Assets/Images/theme/1.png);
+    background-size: 100% 100%;
+    background-position: center;
+    transition: background .3s;
+}
+.bg-theme{
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background .3s;
+}
+
+.text{
+    color: red
+}
+/* slide bar - wraper  */
+
+[data-simplebar="init"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+[data-simplebar] {
+    position: relative;
+    z-index: 0;
+    overflow: hidden!important;
+    max-height: inherit;
+    -webkit-overflow-scrolling: touch;
+}
+#slide-wrrapper{
+    background-color: rgba(0,0,0,.2);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    overflow: hidden;
+    width: 250px;
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    /* -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease; */
+    /* transition: all 0.3s ease; */
+}
+.simplebar-track{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 11px;
+}
+.simplebar-track.vertical {
+    top: 0;
+}
+.simplebar-track.horizontal {
+    left: 0;
+    width: auto;
+    height: 11px;
+}
+
+.simplebar-scrollbar {
+    position: absolute;
+    right: 2px;
+    width: 7px;
+    min-height: 10px;
+}
+.simplebar-scrollbar:before {
+    position: absolute;
+    content: "";
+    background: black;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.horizontal.simplebar-track .simplebar-scrollbar {
+    right: auto;
+    top: 2px;
+    height: 7px;
+    min-height: 0;
+    min-width: 10px;
+    width: auto;
+}
+
+
+.simplebar-scroll-content {
+    overflow-x: hidden!important;
+    overflow-y: scroll;
+    min-width: 100%!important;
+    max-height: inherit!important;
+    -webkit-box-sizing: content-box!important;
+    box-sizing: content-box!important;
+}
+.simplebar-content {
+    overflow-y: hidden!important;
+    overflow-x: scroll;
+    -webkit-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    min-height: 100%!important;
+}
+
+.brand-logo {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+.brand-logo a{
+    text-decoration: none;
+}
+.logo-icon {
+    width: 35px;
+    margin-right: 5px;
+}
+.logo-text {
+    color: #ffffff;
+    font-size: 15px;
+    display: inline-block;
+    /* position: relative;
+    top: 3px; */    
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+}
+.sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.sidebar-menu li.sidebar-header {
+    padding: 10px 25px 10px 15px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+.sidebar-menu li a i:first-child {
+    margin-right: 10px;
+    font-size: 18px;
+    opacity: 1;
+}
+.sidebar-menu li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    opacity: 0.4;
+    padding: 10px 15px;
+    font-size: 18px;
+}
+li.active a{
+    font-weight: bold ;
+    opacity: 1;
+}
+
+
+/* top nav  */
+.topbar-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+.search-bar {
+    margin-left: 20px;
+    position: relative;
+}
+
+.toggle-menu i {
+    margin-left: 250px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    /* -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; */
+}
+.search-bar input {
+    border: 1px solid #f1f1f1;
+    font-size: 15px;
+    width: 530px;
+    border-radius: 0.25rem;
+    height: 34px;
+    padding: 0.375rem 2rem 0.375rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.search-bar a i {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    color: #fff;
+    font-size: 16px;
+}
