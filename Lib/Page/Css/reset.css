@@ -49,4 +49,5 @@ table {
 *{
     font-family: 'Roboto';
     font-size: 22px;
+	box-sizing: border-box;
 }
