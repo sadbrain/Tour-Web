@@ -44,6 +44,15 @@
       "phone": "111-222-3333",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
+    },
+    {
+      "name": "dhnynit",
+      "email": "riotgheptrannhulol@gmail.com",
+      "password": "tinh",
+      "phone": "0353537180",
+      "img": "/Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2,
+      "id": 6
     }
   ],
   "roles": [
@@ -135,7 +144,6 @@
         "/Assets/images/locations/indonesia/bali/bali.jpg",
         "/Assets/images/locations/indonesia/bali/bali.jpg",
         "/Assets/images/locations/indonesia/bali/bali.jpg",
-
         "/Assets/images/locations/indonesia/bali/bali.jpg"
       ],
       "categories": [

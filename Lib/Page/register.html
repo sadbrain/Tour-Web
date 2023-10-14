@@ -13,35 +13,36 @@
 </head>
 <body>
     <form class="form_register">
-        <h4>Rigister</h4><br>
+        <h4>Register</h4><br>
         <div class="input">
             <i class="bi bi-person-fill"></i>
             <input type="text" name="name" placeholder="Enter your name">
         </div>   
         <div class="input">
             <i class="bi bi-envelope-fill"></i>
-            <input type="text" name="name" placeholder="Enter your email">
+            <input type="text" name="email" placeholder="Enter your email">
         </div>  
         <div class="input">
             <i class="bi bi-lock-fill"></i>
-            <input type="text" name="name" placeholder="Create password ">
+            <input type="password" name="password" placeholder="Create password ">
         </div>  
         <div class="input">
             <i class="bi bi-lock-fill"></i>
-            <input type="text" name="name" placeholder="Confirm password ">
+            <input type="password" name="confirm_password" placeholder="Confirm password ">
         </div>  
         <div class="input">
             <i class="bi bi-telephone-fill"></i>
-            <input type="text" name="name" placeholder="Phone number ">
+            <input type="text" name="phone" placeholder="Phone number ">
         </div> 
         <div class="input">
             <input type="radio">
             <span>I accept all terms & conditions </span>
         </div>
         <div class="input">
-            <button  type="button" class="btn btn-secondary">Register Now</button><br>
-            <span class="mt-2">Already have an account? Login now </span>
+            <button id="register" type="button" class="btn btn-secondary">Register Now</button><br>
+            <span id= "login" class="mt-2">Already have an account? Login now </span>
         </div>       
     </form>
+    <script src="Js/register.js"></script>
 </body>
 </html>
