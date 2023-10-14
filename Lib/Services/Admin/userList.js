@@ -1,8 +1,7 @@
-const usersAPi = "http://localhost:3000/users";
 
 async function getUsers() {
     try {
-      const response = await fetch(usersAPi, {
+      const response = await fetch(usersAPI, {
         method: "GET", 
         headers: {
           "Content-Type": "application/json",
@@ -37,6 +36,7 @@ async function getUsers() {
                             <button class="btn btn-danger">Delete</button></td>
                          </tr>`
       });
+      console.log(usersHtml);
       render(usersHtml);
     } catch (err) {
       alert(err.message);

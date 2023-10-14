@@ -1,8 +1,8 @@
-const usersAPi = "http://localhost:3000/tours";
+const toursAPI = "http://localhost:3000/tours";
 
 async function getUsers() {
     try {
-      const response = await fetch(usersAPi, {
+      const response = await fetch(toursAPI, {
         method: "GET", 
         headers: {
           "Content-Type": "application/json",

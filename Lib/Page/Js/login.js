@@ -1,14 +1,13 @@
 
 // const hashPassword = require('./hashPassword.js');
-
-const usersAPi = "http://localhost:3000/users";
+const usersAPI = "http://localhost:3000/users";
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 // const encodedPassword = hashPassword(password.value, process.env.PASSWORD_SALT);
 // console.log(encodedPassword);
 async function getUsers() {
   try {
-    const response = await fetch(usersAPi, {
+    const response = await fetch(usersAPI, {
       method: "GET", 
       headers: {
         "Content-Type": "application/json",

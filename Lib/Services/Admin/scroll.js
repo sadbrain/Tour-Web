@@ -6,7 +6,7 @@ window.addEventListener("scroll", function() {
     } else {
       backToTopButton.style.display = "none";
     }
-    if(window.scrollY > 70){
+    if(window.scrollY > 10){
         document.querySelector(".topbar-nav nav").classList.add("bg-dark");
     }else{
         document.querySelector(".topbar-nav nav").classList.remove("bg-dark");

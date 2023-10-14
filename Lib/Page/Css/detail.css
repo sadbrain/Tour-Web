@@ -117,7 +117,10 @@ header{
   margin-right: 10px;
 
 }
-
+.mainnav__list button a{
+  color: white;
+  text-decoration: none;
+}
 #navsecond {
   display: flex;
   justify-content: space-between;
