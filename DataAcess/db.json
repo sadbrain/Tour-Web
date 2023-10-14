@@ -6,7 +6,7 @@
       "email": "john.doe@example.com",
       "password": "password1",
       "phone": "123-456-7890",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 1
     },
     {
@@ -15,7 +15,7 @@
       "email": "jane.smith@example.com",
       "password": "password2",
       "phone": "987-654-3210",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
     },
     {
@@ -24,7 +24,7 @@
       "email": "alice.johnson@example.com",
       "password": "password3",
       "phone": "555-123-4567",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
     },
     {
@@ -33,7 +33,7 @@
       "email": "bob.brown@example.com",
       "password": "password4",
       "phone": "777-888-9999",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
     },
     {
@@ -42,7 +42,7 @@
       "email": "eve.davis@example.com",
       "password": "password5",
       "phone": "111-222-3333",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
+      "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
     }
   ],
@@ -65,7 +65,7 @@
       "country": "France",
       "description": "Paris, thành phố ánh sáng, nổi tiếng với tháp Eiffel và nhiều bảo tàng nghệ thuật.",
       "img": [
-        "../Assets/images/locations/france/paris/licensed-image.jpg"
+        "/Assets/images/locations/france/paris/licensed-image.jpg"
       ]
     },
     {
@@ -74,7 +74,7 @@
       "country": "Japan",
       "description": "Kyoto, nơi giữ gìn nhiều di sản văn hóa và nghệ thuật truyền thống của Nhật Bản.",
       "img": [
-        "../Assets/images/locations/japan/kyoto/licensed-image.jpg"
+        "/Assets/images/locations/japan/kyoto/licensed-image.jpg"
       ]
     },
     {
@@ -83,7 +83,7 @@
       "country": "Peru",
       "description": "Machu Picchu, thành phố cổ của người Inca nằm giữa các ngọn núi ở Peru.",
       "img": [
-        "../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
       ]
     },
     {
@@ -92,7 +92,7 @@
       "country": "Greece",
       "description": "Santorini, hòn đảo nổi tiếng với kiến trúc trắng và đồng quê trên biển Aegean.",
       "img": [
-        "../Assets/images/locations/greece/santorini/santorini.jpg"
+        "/Assets/images/locations/greece/santorini/santorini.jpg"
       ]
     },
     {
@@ -101,7 +101,7 @@
       "country": "Italy",
       "description": "Rome, thủ đô của Ý, với các di tích lịch sử nổi tiếng như La Mã cổ đại và Vatican.",
       "img": [
-        "../Assets/images/locations/italy/rome/licensed-image.jpg"
+        "/Assets/images/locations/italy/rome/licensed-image.jpg"
       ]
     }
   ],
@@ -116,7 +116,7 @@
       "destination": "Paris, France",
       "departure_location": "Sân bay quốc tế JFK, New York",
       "img": [
-        "../Assets/images/locations/france/paris/licensed-image.jpg"
+        "/Assets/images/locations/france/paris/licensed-image.jpg"
       ],
       "categories": [
         1
@@ -132,7 +132,7 @@
       "destination": "Bali, Indonesia",
       "departure_location": "Sân bay quốc tế LAX, Los Angeles",
       "img": [
-        "../Assets/images/locations/indonesia/bali/bali.jpg"
+        "/Assets/images/locations/indonesia/bali/bali.jpg"
       ],
       "categories": [
         2
@@ -148,7 +148,7 @@
       "destination": "Machu Picchu, Peru",
       "departure_location": "Sân bay quốc tế MIA, Miami",
       "img": [
-        "../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
       ],
       "categories": [
         3
@@ -164,7 +164,7 @@
       "destination": "Santorini, Greece",
       "departure_location": "Sân bay quốc tế ORD, Chicago",
       "img": [
-        "../Assets/images/locations/greece/santorini/santorini.jpg"
+        "/Assets/images/locations/greece/santorini/santorini.jpg"
       ],
       "categories": [
         2
@@ -180,7 +180,7 @@
       "destination": "Rome, Italy",
       "departure_location": "Sân bay quốc tế SFO, San Francisco",
       "img": [
-        "../Assets/images/locations/italy/rome/licensed-image.jpg"
+        "/Assets/images/locations/italy/rome/licensed-image.jpg"
       ],
       "categories": [
         1

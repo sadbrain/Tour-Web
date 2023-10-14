@@ -1,0 +1,82 @@
+.content-wrapper{
+    margin-left: 250px;
+    padding: 70px 10px;
+    overflow-x: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+} 
+.row.row-group>div {
+    border-right: 1px solid rgba(255, 255, 255, 0.12)
+}
+
+.row.row-group>div:last-child{
+    border-right: none;
+}
+.card{
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none!important;
+    background-color: rgba(0, 0, 0, 0.2)!important;
+}
+.card-header {
+    padding: 0.75rem 1.25rem!important;
+    margin-bottom: 0!important;
+    /* background: transparent; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12)!important;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff!important;
+    
+}
+.table-responsive {
+    white-space: nowrap;
+
+}
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.table {
+    width: 100%!important;
+    margin-bottom: 1rem!important;
+    color: rgba(255,255,255,.85);
+    
+}
+
+.table.align-items-center td, .table.align-items-center th {
+    vertical-align: middle;
+}
+.table thead th {
+    font-size: .72rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+.table-bordered {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.table-flush td, .table-flush th {
+    border-right: 0;
+    border-left: 0;
+}
+.table td, .table th {
+    white-space: nowrap;
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1.25rem!important;
+
+}
+th,td{
+    background-color: rgba(0, 0, 0, 0.0)!important;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.product-img {
+    height: 50px;
+}
