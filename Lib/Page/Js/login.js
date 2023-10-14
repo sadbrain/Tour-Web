@@ -79,5 +79,3 @@ function _navigateToHome() {
     }
   }
 }
-
-

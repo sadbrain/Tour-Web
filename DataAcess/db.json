@@ -1,5 +1,5 @@
 {
-  "users" : [
+  "users": [
     {
       "id": 1,
       "name": "John Doe",
@@ -17,7 +17,6 @@
       "phone": "987-654-3210",
       "img": "../Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
-  
     },
     {
       "id": 3,
@@ -59,50 +58,53 @@
       "description": "Standard user role with limited access"
     }
   ],
-
   "locations": [
     {
       "id": 1,
       "name": "Paris",
       "country": "France",
       "description": "Paris, thành phố ánh sáng, nổi tiếng với tháp Eiffel và nhiều bảo tàng nghệ thuật.",
-      "img": ["../Assets/images/locations/france/paris/licensed-image.jpg"]
-
+      "img": [
+        "../Assets/images/locations/france/paris/licensed-image.jpg"
+      ]
     },
     {
       "id": 2,
       "name": "Kyoto",
       "country": "Japan",
       "description": "Kyoto, nơi giữ gìn nhiều di sản văn hóa và nghệ thuật truyền thống của Nhật Bản.",
-      "img": ["../Assets/images/locations/japan/kyoto/licensed-image.jpg"]
-
+      "img": [
+        "../Assets/images/locations/japan/kyoto/licensed-image.jpg"
+      ]
     },
     {
       "id": 3,
       "name": "Machu Picchu",
       "country": "Peru",
       "description": "Machu Picchu, thành phố cổ của người Inca nằm giữa các ngọn núi ở Peru.",
-      "img": ["../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"]
-
+      "img": [
+        "../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
+      ]
     },
     {
       "id": 4,
       "name": "Santorini",
       "country": "Greece",
       "description": "Santorini, hòn đảo nổi tiếng với kiến trúc trắng và đồng quê trên biển Aegean.",
-      "img": ["../Assets/images/locations/greece/santorini/santorini.jpg"]
-
+      "img": [
+        "../Assets/images/locations/greece/santorini/santorini.jpg"
+      ]
     },
     {
       "id": 5,
       "name": "Rome",
       "country": "Italy",
       "description": "Rome, thủ đô của Ý, với các di tích lịch sử nổi tiếng như La Mã cổ đại và Vatican.",
-      "img": ["../Assets/images/locations/italy/rome/licensed-image.jpg"]
-
+      "img": [
+        "../Assets/images/locations/italy/rome/licensed-image.jpg"
+      ]
     }
   ],
-
   "tours": [
     {
       "id": 1,
@@ -113,8 +115,12 @@
       "duration": 7,
       "destination": "Paris, France",
       "departure_location": "Sân bay quốc tế JFK, New York",
-      "img": ["../Assets/images/locations/france/paris/licensed-image.jpg"],
-      "categories": [1]
+      "img": [
+        "../Assets/images/locations/france/paris/licensed-image.jpg"
+      ],
+      "categories": [
+        1
+      ]
     },
     {
       "id": 2,
@@ -125,9 +131,12 @@
       "duration": 10,
       "destination": "Bali, Indonesia",
       "departure_location": "Sân bay quốc tế LAX, Los Angeles",
-      "img": ["../Assets/images/locations/indonesia/bali/bali.jpg"],
-      "categories": [2]
-
+      "img": [
+        "../Assets/images/locations/indonesia/bali/bali.jpg"
+      ],
+      "categories": [
+        2
+      ]
     },
     {
       "id": 3,
@@ -138,10 +147,12 @@
       "duration": 8,
       "destination": "Machu Picchu, Peru",
       "departure_location": "Sân bay quốc tế MIA, Miami",
-      "img": ["../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"],
-      "categories": [3]
-
-
+      "img": [
+        "../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
+      ],
+      "categories": [
+        3
+      ]
     },
     {
       "id": 4,
@@ -152,9 +163,12 @@
       "duration": 9,
       "destination": "Santorini, Greece",
       "departure_location": "Sân bay quốc tế ORD, Chicago",
-      "img": ["../Assets/images/locations/greece/santorini/santorini.jpg"],
-      "categories": [2]
-
+      "img": [
+        "../Assets/images/locations/greece/santorini/santorini.jpg"
+      ],
+      "categories": [
+        2
+      ]
     },
     {
       "id": 5,
@@ -165,11 +179,15 @@
       "duration": 6,
       "destination": "Rome, Italy",
       "departure_location": "Sân bay quốc tế SFO, San Francisco",
-      "img": ["../Assets/images/locations/italy/rome/licensed-image.jpg"],
-      "categories": [1]
+      "img": [
+        "../Assets/images/locations/italy/rome/licensed-image.jpg"
+      ],
+      "categories": [
+        1
+      ]
     }
   ],
-  "categories" : [
+  "categories": [
     {
       "id": 1,
       "name": "Biển và Bãi biển"
@@ -183,7 +201,7 @@
       "name": "Nhiệt đới và Đảo quốc"
     }
   ],
-  "bookings" : [
+  "bookings": [
     {
       "id": 1,
       "booking_date": "2023-10-4",
@@ -192,7 +210,6 @@
       "status": 2,
       "user_id": 2,
       "tour_id": 1
-
     },
     {
       "id": 2,
@@ -202,7 +219,6 @@
       "status": 2,
       "user_id": 3,
       "tour_id": 1
-
     },
     {
       "id": 3,
@@ -212,7 +228,6 @@
       "status": 1,
       "user_id": 4,
       "tour_id": 1
-
     },
     {
       "id": 3,
@@ -224,7 +239,7 @@
       "tour_id": 1
     }
   ],
-  "status_bookings" : [
+  "status_bookings": [
     {
       "id": 1,
       "name": "pending"
@@ -241,7 +256,7 @@
   "reviews": [
     {
       "id": 1,
-      "comment": "greeting toi yeu chuyen di nay",  
+      "comment": "greeting toi yeu chuyen di nay",
       "rating": 3,
       "review_date": "2023-4-5",
       "user_id": 2,
@@ -249,7 +264,7 @@
     },
     {
       "id": 2,
-      "comment": "greeting toi vo cung hao huc voi chuyen di nay",  
+      "comment": "greeting toi vo cung hao huc voi chuyen di nay",
       "rating": 3,
       "review_date": "2023-4-5",
       "user_id": 3,
