@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
 
+
+
   <link rel="stylesheet" href="./Css/reset.css">
   <link rel="stylesheet" href="../Css/admin.style.css">
+  <link rel="stylesheet" href="../Css/tourManagement.css">
+  <link rel="stylesheet" href="../Css/contentWrapper.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 <link rel="stylesheet" href="">
 
-  <title>Admin</title>
+  <title>User Managment</title>
 </head>
 
 <body class="bg-theme" id="theme1">
-
+    
   <div id="wrapper">
     
     <div id="slide-wrrapper" data-simplebar="init" data-simplebar-auto-hide="true">
@@ -37,8 +41,8 @@
           </div>
           <ul class="sidebar-menu do-nicescrol in">
             <li class="sidebar-header">MAIN NAVIGATION</li>
-            <li class="active">
-              <a href="#">
+            <li >
+              <a href="home.html">
                 <i class="bi bi-dash-square-fill"></i> <span>Dashboard</span>
               </a>
             </li>
@@ -47,8 +51,8 @@
                 <i class="bi bi-person-square"></i><span>Quản lý user</span>
               </a>
             </li>
-            <li >
-              <a href="tourManagment.html">
+            <li class="active">
+              <a href="#">
                 <i class="bi bi-bag"></i><span>Quản lý các tour</span>
               </a>
             </li>
@@ -130,65 +134,33 @@
     <div class="main">
       <div class="content-wrapper"> 
         <div class="container-fluid">
-            I DON'T HAVE ANYIDEA TO CREATE CONTENT THIS PAGE
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
-            <div>hello</div>
+          <div class="card mt-3">
+            <div class="card-header row">
+              <div class="col-6">User list</div>
+              <div class="col-6 text-end">
+                <button class="btn btn-primary">Create a new user</button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="table align-items-center table-flush table-borderless">
+               <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Tên</th>
+                  <th>Giá</th>
+                <th>Thời lượng</th>
+                  <th>Ảnh</th>
+                  <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-  
+
       </div>  
 
     </div>
@@ -210,8 +182,9 @@
   <script src="../../Services/Admin/scroll.js"></script>
   <!-- <script src="../../Services/Admin/loadPartialContent.js"></script> -->
 
-
-<!-- <div class="text">hello a</div> -->
+ <!-- CRUD user  -->
+ <script src="../../Services/Admin/tourList.js"></script>
+  
 </body>
 
 </html>
