@@ -66,7 +66,7 @@ async function getUsers() {
     try{
         const data = await getUsers();
         return data.some(e => {
-            return e.email == email.value;
+            return e.email == email.value.trim();;
         })
     } catch (err) {
     alert(err.message);
