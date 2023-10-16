@@ -32,7 +32,8 @@ sumbit.onclick = async function login() {
     if (_checkUserValid(data)) {
       alert("Đăng nhập thành công");
       _setCurrentUser(data); // Define this function
-      _navigateToHome(); // Define this function for navigation
+      _navigateToHome();
+       // Define this function for navigation
     } else {
       alert("Email hoặc mật khẩu của bạn sai, vui lòng nhập lại!");
     }

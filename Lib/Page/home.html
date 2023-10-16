@@ -31,8 +31,35 @@
                 </div>
                 <p>Xem gần đây</p>
                 <p>Giỏ hàng</p>
-                <button><a href="register.html">Đăng ký</a></o>
-                <button><a href="login.html">Đăng nhập</a></button>
+                <button class="btn-register"><a href="register.html">Đăng ký</a></o>
+                <button class="btn-login"><a href="login.html">Đăng nhập</a></button>
+                <li class="nav-item user-info-container">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+                        <span class="user-profile"><img src="" class="img-circle" alt="user avatar"></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                       <li class="dropdown-item user-details">
+                        <a href="#">
+                           <div class="media">
+                             <div class="avatar"><img class="align-self-start me-3" src="" alt="user avatar"></div>
+                            <div class="media-body">
+                            <h6 class="mt-2 user-title"></h6>
+                            <p class="user-subtitle"></p>
+                            </div>
+                           </div>
+                          </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><i class="bi bi-inbox"></i> Inbox</li>
+                        <!-- <li class="dropdown-  divider"></li>
+                        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li> -->
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><i class="bi bi-gear"></i>Setting</li>
+                        <li class="dropdown-divider"></li>
+                        <li id="logout" class="dropdown-item"><i class="bi bi-box-arrow-left"></i> Logout</li>
+                      </ul>
+                </li>
+                
             </div>
 
         </nav>
@@ -445,7 +472,13 @@
             <p>Số giấy phép kinh doanh lữ hành quốc tế: 78-213/1022/TCDL-GP LHPT</p>
         </div>
     </footer>
+    <a href="#" class="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
+
+    <script src="../../Shared/enums/API.enum.js"></script>
+    <script src="../Services/User/loadProfileUser.js"></script>
+    <script src="../Services/User/logout.js"></script>
+    <script src="../Services/User/toggleMenu.js"></script>
+    <script src="../Services/User/scroll.js"></script>
 
 </body> 
-
 </html>

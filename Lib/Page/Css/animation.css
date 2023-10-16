@@ -1,0 +1,11 @@
+@keyframes fadeInOut {
+    0% {
+      opacity: 0; /* Ban đầu */
+    }
+    50% {
+      opacity: 0.5; /* Giữ nguyên trong suốt 50% của animation */
+    }
+    100% {
+      opacity: 1; /* Trở lại opacity ban đầu */
+    }
+  }

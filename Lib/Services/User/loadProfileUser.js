@@ -24,24 +24,24 @@ async function getUser(id) {
     try {
     const user_token = JSON.parse(localStorage.getItem("user_token"));
       // check dang nhap thanh cong hay chua
-    
-    if(!user_token) {
-      alert("bạn vui lòng đăng nhập");
-      window.location.href = "/Lib/Page/login.html";
+    if(!user_token){
       return;
     }
     //dang nhap thanh cong check vai tro
-
-    if(user_token.id == 1){
+    if(user_token.id ==  2){
         const user = await getUser(user_token.id);
+        //hide btn login and register
+        document.querySelector(".btn-login").style.display = "none";
+        document.querySelector(".btn-register").style.display = "none";
+        document.querySelector(".user-info-container").style.display = "block";
+        //show info user
         document.querySelector(".user-profile img").src = user[0].img;
         document.querySelector(".media .avatar img").src = user[0].img;
         document.querySelector(".media .media-body .user-title").innerHTML = user[0].name;
         document.querySelector(".media .media-body .user-subtitle").innerHTML = user[0].email;
-    }else if(user_token.id == 2){
-      alert("bạn không thể vào trang này với vai trò user");
-      window.location.href = "/Lib/Page/home.html";
-
+    }else if(user_token.id == 1){
+        alert("ban vui long dang xuat va dang nhap lai tai khoan");
+        window.location.href = "/Lib/Page/Admin/home.html";
     }
       // Fetch data from the API
 

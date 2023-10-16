@@ -1,24 +1,21 @@
-function loadPartialContent(nameFile) {
-    // Tạo một đối tượng XMLHttpRequest
-    var xhr = new XMLHttpRequest();
+async function loadPartialContent(htmlFilePath, jsFilePaths = null) {
+  const response = await fetch(htmlFilePath);
+  const html = await response.text();
+
+  document.querySelector(".main").innerHTML = html;
+  if(jsFilePaths){
+    jsFilePaths.forEach(jsFilePath => {
+      let scriptTag = document.createElement("script");
+      scriptTag.type = "text/javascript";
+      scriptTag.src = jsFilePath;
+      document.querySelector(".main").append(scriptTag)
+    });
   
-    // Xác định phương thức và URL bạn muốn tải nội dung từ
-    xhr.open("GET", nameFile, true);
-  
-    // Xử lý sự kiện khi yêu cầu đã hoàn thành
-    xhr.onload = function () {
-      if (xhr.status === 200) {
-        // Nếu yêu cầu thành công, thay thế nội dung của một phần trang web với nội dung tải về
-        document.querySelector(".main").innerHTML = xhr.responseText;
-      }
-    };
-  
-    // Gửi yêu cầu
-    xhr.send();
-  
-    // Ngăn chặn mặc định của thẻ <a>
-    return false;
-  }
+  } 
+
+
+
+}
 //   Trong ví dụ trên, loadPartialContent được gọi khi thẻ <a> được bấm. Nó tạo một đối tượng XMLHttpRequest để tải nội dung từ tệp nameFile và sau đó thay thế nội dung của một phần trang web (được định nghĩa bằng một thẻ có id="partialContentContainer") với nội dung tải về.
   
 //   Tạo tệp "partial-content.html" chứa nội dung bạn muốn hiển thị khi thẻ <a> được bấm.

@@ -1,5 +1,3 @@
-const toursAPI = "http://localhost:3000/tours";
-
 async function getUsers() {
     try {
       const response = await fetch(toursAPI, {

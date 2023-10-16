@@ -1,15 +1,3 @@
-const urlAPI = {
-    Users: "http://localhost:3000/users",
-    Tours: "http://localhost:3000/tours",
-}
-function getAPIByName(name){
-    switch(name) {
-        case "Users": 
+const usersAPI = "http://localhost:3000/users";
+const toursAPI = "http://localhost:3000/tours";
 
-            return urlAPI.Users;
-        case "Tours":
-            return urlAPI.Tours;
-        default:
-             return "Guess";
-    }
-}
