@@ -3,6 +3,7 @@
 const usersAPI = "http://localhost:3000/users";
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
+const formElement = document.querySelector("#form-login");
 // const encodedPassword = hashPassword(password.value, process.env.PASSWORD_SALT);
 // console.log(encodedPassword);
 async function getUsers() {
@@ -24,7 +25,8 @@ async function getUsers() {
     throw new Error(err.message);
   }
 }
-sumbit.onclick = async function login() {
+
+async function login() {
   try {
     // Fetch data from the API
     const data = await getUsers();

@@ -12,37 +12,61 @@
     </style>
 </head>
 <body>
-    <form class="form_register">
+    <form id="form_register">
         <h4>Register</h4><br>
-        <div class="input">
+        <div class="form-group">
             <i class="bi bi-person-fill"></i>
-            <input type="text" name="name" placeholder="Enter your name">
+            <input type="text" name="name" rules="required" placeholder="Enter your name">
+          <span class="form-message"></span>
+
         </div>   
-        <div class="input">
+        <div class="form-group">
             <i class="bi bi-envelope-fill"></i>
-            <input type="text" name="email" placeholder="Enter your email">
+            <input type="text" name="email" rules="required|email" placeholder="Enter your email">
+          <span class="form-message"></span>
         </div>  
-        <div class="input">
+        <div class="form-group">
             <i class="bi bi-lock-fill"></i>
-            <input type="password" name="password" placeholder="Create password ">
+            <input type="password" name="password" rules="required|password" placeholder="Create password ">
+          <span class="form-message"></span>
+
         </div>  
-        <div class="input">
+        <div class="form-group">
             <i class="bi bi-lock-fill"></i>
-            <input type="password" name="confirm_password" placeholder="Confirm password ">
+            <input type="password" name="confirm_password" rules="required|password" placeholder="Confirm password ">
+          <span class="form-message"></span>
+
         </div>  
-        <div class="input">
+        <div class="form-group">
             <i class="bi bi-telephone-fill"></i>
-            <input type="text" name="phone" placeholder="Phone number ">
+            <input type="text" name="phone" rules="required|minLength:10|phone" placeholder="Phone number ">
+          <span class="form-message"></span>
+
         </div> 
-        <div class="input">
+        <div class="form-group">
             <input type="radio">
             <span>I accept all terms & conditions </span>
+            <span class="form-message"></span>
         </div>
         <div class="input">
-            <button id="register" type="button" class="btn btn-secondary">Register Now</button><br>
+            <button id="register" type="submit" class="btn btn-secondary">Register Now</button><br>
             <span id= "login" class="mt-2">Already have an account? Login now </span>
         </div>       
     </form>
+    <script src="Js/validator.js"></script>
+
     <script src="Js/register.js"></script>
+    <script>
+        Validator("#form_register",{
+          otherFunc: register
+        });
+        // onSubmit: function(data) {
+        //   let scriptTag = document.createElement("script");
+        //   scriptTag.type = "text/javascript";
+        //   scriptTag.src = "js/login.js";
+        //   document.querySelector("body").append(scriptTag);
+        // }
+      
+    </script>
 </body>
 </html>

@@ -14,24 +14,42 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
+    <form id="form-login">
         <h3>Login Here</h3>
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="email"  />
-        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email"  name="email" rules="required|email" placeholder="email"  />
+          <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+          
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password"  name ="password" rules="required|password" placeholder="password"  />
+          <span class="form-message"></span>
+        </div>
 
-
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="password"  />
-        <button type="button" id="sumbit" >dang nhap</button>
+        <button type="submit" id="sumbit" >Đăng nhập</button>
 
         <div class="social">
           <div class="go"><i class="fab fa-google"></i>  Google</div>
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div>
     </form>
-
+    <script src="Js/validator.js"></script>
     <script src="js/login.js"></script>
-    <!-- <script src="bundle.js"></script> -->
+
+    <script>
+        Validator("#form-login",{
+          otherFunc: login
+        });
+        // onSubmit: function(data) {
+        //   let scriptTag = document.createElement("script");
+        //   scriptTag.type = "text/javascript";
+        //   scriptTag.src = "js/login.js";
+        //   document.querySelector("body").append(scriptTag);
+        // }
+      
+    </script>
+
 </body>
 </html>
