@@ -9,7 +9,7 @@ async function loadPartialContent(htmlFilePath, jsFilePaths = null) {
       scriptTag.type = "text/javascript";
       scriptTag.src = jsFilePath;
       document.querySelector(".main").append(scriptTag)
-    });
+    }); 
   
   } 
 

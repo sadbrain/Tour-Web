@@ -3,40 +3,63 @@ body{
     background-size: cover;
     background-image: url(/Assets/Images/imgHa/du\ lịch\ 1.png);
 }
-.form_register {
+#form_register {
     background: var(--Color-2, #FFF);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
     width:55vh;
     border: 1px solid black;
     padding: 20px;
     margin: 10vh auto;
     border-radius: 20px;
 }
-.form_register h4{
+#form_register h4{
     color:#CE690C;
 }
-.input {
+.form-group {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    width: 100%;
 }
 
-.input i {
+.form-group i {
 position: absolute;
-top: 50%;
-left: 10px;
-transform: translateY(-50%);
+right: 76%;
+transform: translateY(50%);
 }
 
-.input input {
-padding-left: 30px; /* Khoảng cách từ biểu tượng */
+.form-group input:not(input[type="radio"]) {
+padding: 10px 30px; /* Khoảng cách từ biểu tượng */
 border-radius: 20px;
+display: block;
+margin: 0 auto;
 }
+
 .btn{
     background-color: #CE690C;
     margin-left: 9vh;
     border-radius: 15px;
+
+}
+#register{
+    margin-bottom: 20px ;
+    margin-top: 10px ;
+}
+/* validate form css  */
+.form-group.invalid .form-message{
+    color: red;
+    font-size: 12px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 4px;
+}
+.form-group.invalid input{
+    border: 1px solid red;
+}
+.form-group:nth-child(8) {
+    text-align: center;
 }

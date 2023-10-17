@@ -40,7 +40,6 @@ body{
     bottom: -80px;
 }
 form{
-    height: 520px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
@@ -119,4 +118,14 @@ button{
 }
 .social i{
   margin-right: 4px;
+}
+
+/* validate form css  */
+.form-group.invalid .form-message{
+    color: red;
+    font-size: 12px;
+    position: relative;
+}
+.form-group.invalid input{
+    border: 1px solid red;
 }
