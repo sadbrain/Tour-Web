@@ -32,13 +32,13 @@ async function getUser(id) {
     }
     //dang nhap thanh cong check vai tro
 
-    if(user_token.id == 1){
+    if(user_token.role == 1){
         const user = await getUser(user_token.id);
         document.querySelector(".user-profile img").src = user[0].img;
         document.querySelector(".media .avatar img").src = user[0].img;
         document.querySelector(".media .media-body .user-title").innerHTML = user[0].name;
         document.querySelector(".media .media-body .user-subtitle").innerHTML = user[0].email;
-    }else if(user_token.id == 2){
+    }else if(user_token.role == 2){
       alert("bạn không thể vào trang này với vai trò user");
       window.location.href = "/Lib/Page/home.html";
 

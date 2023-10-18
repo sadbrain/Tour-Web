@@ -28,7 +28,7 @@ async function getUser(id) {
       return;
     }
     //dang nhap thanh cong check vai tro
-    if(user_token.id ==  2){
+    if(user_token.role ==  2){
         const user = await getUser(user_token.id);
         //hide btn login and register
         document.querySelector(".btn-login").style.display = "none";
@@ -39,7 +39,7 @@ async function getUser(id) {
         document.querySelector(".media .avatar img").src = user[0].img;
         document.querySelector(".media .media-body .user-title").innerHTML = user[0].name;
         document.querySelector(".media .media-body .user-subtitle").innerHTML = user[0].email;
-    }else if(user_token.id == 1){
+    }else if(user_token.role == 1){
         alert("ban vui long dang xuat va dang nhap lai tai khoan");
         window.location.href = "/Lib/Page/Admin/home.html";
     }

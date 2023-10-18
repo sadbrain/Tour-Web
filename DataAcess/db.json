@@ -4,7 +4,7 @@
       "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
-      "password": "password1",
+      "password": "Password@1",
       "phone": "123-456-7890",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 1
@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Jane Smith",
       "email": "jane.smith@example.com",
-      "password": "password2",
+      "password": "Password@2",
       "phone": "987-654-3210",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Alice Johnson",
       "email": "alice.johnson@example.com",
-      "password": "password3",
+      "password": "Password@3",
       "phone": "555-123-4567",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Bob Brown",
       "email": "bob.brown@example.com",
-      "password": "password4",
+      "password": "Password@4",
       "phone": "777-888-9999",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
@@ -40,19 +40,10 @@
       "id": 5,
       "name": "Eve Davis",
       "email": "eve.davis@example.com",
-      "password": "password5",
+      "password": "Password@5",
       "phone": "111-222-3333",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2
-    },
-    {
-      "name": "duyen",
-      "email": "onepiece200461@gmail.com",
-      "password": "12345678",
-      "phone": "0353537180",
-      "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2,
-      "id": 6
     }
   ],
   "roles": [
