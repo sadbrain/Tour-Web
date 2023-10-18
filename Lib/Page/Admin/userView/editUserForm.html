@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+
+  <link rel="stylesheet" href="../../../Page/Css/reset.css">
+  <link rel="stylesheet" href="../../../Page/Css/admin.style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../../Page/Css/formInfo.css">
+<link rel="stylesheet" href="">
+
+  <title>Admin</title>
+</head>
+
+<body class="bg-theme" id="theme1">
+
+        <div class="container mt-5" action="../../Services/Admin/createUser.js" method="post">
+            <div class="card form-position">
+                <div class="card-body">
+                <div class="card-title text-center fs-3">Edit user</div>
+                <div class="card-img col-12 text-center">
+                  <img class="col-3 user_avatar" src="" style="border-radius:50%;">
+                  <div class="col-12 mt-3">
+                  <button class="btn btn-primary col-3">Edit avatar</button>
+
+                  </div>
+                </div>
+                <hr>
+                 <form id="form-edit-user">
+  
+                  <div class="form-group">
+                 <label for="input-1">Name</label>
+                 <input type="text"  name="name" class="form-control" id="input-1" placeholder="Enter Your Name">
+                  <span class="form-message"></span>
+                 
+                </div>
+                <div class="form-group">
+                 <label for="input-2">Email</label>
+                 <input type="text" rules="email" name="email" class="form-control" id="input-2" placeholder="Enter Your Email Address">
+                  <span class="form-message"></span>
+                </div>
+                <div class="form-group">
+                 <label for="input-3">Phone</label>
+                 <input type="text" rules="phone|minLength:9" name="phone" class="form-control" id="input-3" placeholder="Enter Your Mobile Number">
+                  <span class="form-message"></span>
+                </div>
+             <div class="form-group">
+                 <label for="input-4">Password</label>
+                 <input type="password" rules="password" name ="password" class="form-control" id="input-4" placeholder="Enter Password">
+                  <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="input-5">Id</label>
+                <input type="text" disabled  name ="idUser" class="form-control" id="input-5" placeholder="Enter Password">
+                 <span class="form-message"></span>
+             </div>
+                <!-- <div class="form-group py-2">
+                  <div class="icheck-material-white">
+                 <input type="checkbox" id="user-checkbox1" checked=""/>
+                 <label for="user-checkbox1">I Agree Terms & Conditions</label>
+                 </div> -->
+                <div class="form-group">
+                 <button type="submit" class="col-6 col-md-3 btn btn-light px-5"> edit</button>
+                 <button class=" col-6 col-md-3 btn btn-light px-5 ms-5"><a href="../home.html" class="text-decoration-none text-light"> Back to user managment</a></button>
+      
+                </div>
+         
+               </form>
+              </div>
+            </div>
+        </div>
+        <script src="../../../../Shared/enums/API.enum.js"></script>
+  
+      <script src="../../../Page/Js/validator.js"></script>
+      <script src="../../../Services/Admin/crudUser/editUser.js"></script>
+      <script>
+        
+        Validator("#form-edit-user",{
+          otherFunc: handleEdit
+        });
+    
+    </script>
+</body>
+    
+</html>

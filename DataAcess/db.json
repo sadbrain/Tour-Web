@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
       "password": "Password@1",
       "phone": "123-456-7890",
       "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 1
+      "id_role": 2,
+      "id": 1
     },
     {
       "id": 2,
@@ -16,16 +16,18 @@
       "password": "Password@2",
       "phone": "987-654-3210",
       "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2
+      "id_role": 2,
+      "isBlock": false
     },
     {
-      "id": 3,
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com",
+      "name": "duyen",
+      "email": "onepiece200261@gmail.com",
       "password": "Password@3",
       "phone": "555-123-4567",
       "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2
+      "id_role": 2,
+      "id": 3,
+      "isBlock": false
     },
     {
       "id": 4,
@@ -34,7 +36,8 @@
       "password": "Password@4",
       "phone": "777-888-9999",
       "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2
+      "id_role": 2,
+      "isBlock": true
     },
     {
       "id": 5,
@@ -43,7 +46,28 @@
       "password": "Password@5",
       "phone": "111-222-3333",
       "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2
+      "id_role": 2,
+      "isBlock": true
+    },
+    {
+      "name": "duyen",
+      "email": "tyn@example.com",
+      "password": "pASSWORD@1",
+      "phone": "0353537180",
+      "img": "/Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2,
+      "id": 6,
+      "isBlock": true
+    },
+    {
+      "name": "asd",
+      "email": "tyd@gmail.com",
+      "password": "Password@2",
+      "phone": "033434343",
+      "img": "/Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2,
+      "id": 7,
+      "isBlock": true
     }
   ],
   "roles": [

@@ -1,4 +1,3 @@
-const usersAPI = "http://localhost:3000/users";
 const btnRegister = document.querySelector("#register");
 const btnLogin = document.querySelector("#login");
 const nameUser = document.querySelector("#form_register input[name='name']");
@@ -17,7 +16,7 @@ async function register(){
     if(! await _checkAccountExit()){
         if(password.value == confirm_password.value){
             alert("dang ky thanh cong");
-            postUser(nameUser.value, email.value, password.value, confirm_password.value, phone.value);
+            postUser(nameUser.value, email.value, password.value, phone.value);
             //  window.location.href = "./home.html";
             
         }else{
@@ -30,7 +29,7 @@ async function register(){
 btnLogin.onclick = () => {
     window.location.href = "/Lib/Page/login.html";    
 }
-async function postUser(name, email, password, confirm_password, phone){
+async function postUser(name, email, password, phone){
     fetch(usersAPI, {
         method: "POST",
         headers: {'Content-Type': 'application/json'},

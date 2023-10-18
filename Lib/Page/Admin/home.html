@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
-
   <link rel="stylesheet" href="../Css/reset.css">
   <link rel="stylesheet" href="../Css/animation.css">
   <link rel="stylesheet" href="../Css/admin.style.css">
@@ -46,15 +45,16 @@
             </li>
             <li >
               <!-- <a href="userManagment.html"> -->
-                <a href="javascript:void(0)" onclick="loadPartialContent('./userManagment.html', ['../../Services/Admin/userList.js'])">
+                <a href="javascript:void(0)" onclick="loadPartialContent('.main','./userManagment.html', ['../../Services/Admin/userList.js'])">
                 <i class="bi bi-person-square"></i><span>Quản lý user</span>
               </a>
             </li>
             <li >
-              <a href="javascript:void(0)" onclick="loadPartialContent('./tourManagment.html', ['../../Services/Admin/tourList.js'])">
+              <a href="javascript:void(0)" onclick="loadPartialContent('.main','./tourManagment.html', ['../../Services/Admin/tourList.js'])">
                 <i class="bi bi-bag"></i><span>Quản lý các tour</span>
               </a>
             </li>
+            
             <li class="sidebar-header">LABELS</li>
             <li><a href="#"><i class="bi bi-calendar-heart text-danger"></i></i><span>Important</span></a></li>
             <li><a href="#"><i class="bi bi-arrow-clockwise text-success"></i><span>Warning</span></a></li>
@@ -217,6 +217,7 @@
   <script src="../../Services/Admin/logout.js"></script>
   <script src="../../Services/Admin/activeElementInList.js"></script>
 <!-- <div class="text">hello a</div> -->
+
 </body>
 
 </html>

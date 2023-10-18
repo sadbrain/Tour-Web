@@ -7,7 +7,7 @@ async function getUsers() {
           "Content-Type": "application/json",
         },
       });
-  
+
       if (response.ok) {
         const data = await response.json();
         return data;
@@ -23,20 +23,21 @@ async function getUsers() {
       // Fetch data from the API
       const data = await getUsers();
       usersHtml = "";
-      let i = 1;
       data.forEach(e => {
+          if(!e.isBlock){
             usersHtml += `<tr>
-                            <td>${i++}</td>
+                            <td>${e.id}</td>
                             <td><img src="${e.img}" class="product-img" alt="product img"></td>
                             <td>${e.name}</td>
                             <td>${e.email}</td>
                             <td>${e.id_role == 1 ? "Admin" : "User"}</td>
                             <td>${e.phone}</td>
-                            <td><button class="btn btn-secondary">Edit</button>
-                            <button class="btn btn-danger">Delete</button></td>
+                            <td><button class="btn btn-secondary"><a class="text-decoration-none text-light" href="userView/editUserForm.html?id=${e.id}">Edit</a></button>
+                            <button class="btn btn-danger"><a class="text-decoration-none text-light" href="userView/deleteUserForm.html?id=${e.id}">Delete</a></button></td>
                          </tr>`
+          }
+
       });
-      console.log(usersHtml);
       render(usersHtml);
     } catch (err) {
       alert(err.message);
