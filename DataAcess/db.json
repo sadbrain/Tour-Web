@@ -49,26 +49,6 @@
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
       "isBlock": false
-    },
-    {
-      "name": "duyen",
-      "email": "tyn@example.com",
-      "password": "pASSWORD@1",
-      "phone": "0353537180",
-      "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2,
-      "id": 6,
-      "isBlock": false
-    },
-    {
-      "name": "asd",
-      "email": "tyd@gmail.com",
-      "password": "Password@2",
-      "phone": "033434343",
-      "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2,
-      "id": 7,
-      "isBlock": true
     }
   ],
   "roles": [
@@ -141,11 +121,15 @@
       "destination": "Paris, France",
       "departure_location": "Sân bay quốc tế JFK, New York",
       "img": [
+        "/Assets/images/locations/france/paris/licensed-image.jpg",
+        "/Assets/images/locations/france/paris/licensed-image.jpg",
+        "/Assets/images/locations/france/paris/licensed-image.jpg",
         "/Assets/images/locations/france/paris/licensed-image.jpg"
       ],
       "categories": [
         1
-      ]
+      ],
+      "isBlock": false
     },
     {
       "id": 2,
@@ -164,7 +148,8 @@
       ],
       "categories": [
         2
-      ]
+      ],
+      "isBlock": false
     },
     {
       "id": 3,
@@ -176,11 +161,15 @@
       "destination": "Machu Picchu, Peru",
       "departure_location": "Sân bay quốc tế MIA, Miami",
       "img": [
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
         "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
       ],
       "categories": [
         3
-      ]
+      ],
+      "isBlock": false
     },
     {
       "id": 4,
@@ -192,11 +181,15 @@
       "destination": "Santorini, Greece",
       "departure_location": "Sân bay quốc tế ORD, Chicago",
       "img": [
+        "/Assets/images/locations/greece/santorini/santorini.jpg",
+        "/Assets/images/locations/greece/santorini/santorini.jpg",
+        "/Assets/images/locations/greece/santorini/santorini.jpg",
         "/Assets/images/locations/greece/santorini/santorini.jpg"
       ],
       "categories": [
         2
-      ]
+      ],
+      "isBlock": false
     },
     {
       "id": 5,
@@ -208,11 +201,35 @@
       "destination": "Rome, Italy",
       "departure_location": "Sân bay quốc tế SFO, San Francisco",
       "img": [
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
         "/Assets/images/locations/italy/rome/licensed-image.jpg"
       ],
       "categories": [
         1
-      ]
+      ],
+      "isBlock": false
+    },
+    {
+      "name": "Japan bar",
+      "description": "một nơi tuyệt đẹp",
+      "price": "2000000",
+      "departure_day": "2024-02-22",
+      "duration": "59",
+      "destination": "2024-02-22",
+      "departure_location": "2024-02-22",
+      "categories": [
+        3
+      ],
+      "img": [
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg"
+      ],
+      "isBlock": true,
+      "id": 6
     }
   ],
   "categories": [
