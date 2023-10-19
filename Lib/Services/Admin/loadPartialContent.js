@@ -1,16 +1,18 @@
-async function loadPartialContent(htmlFilePath, jsFilePaths = null) {
+async function loadPartialContent(selector, htmlFilePath, jsFilePaths = null) {
+  event.preventDefault();
   const response = await fetch(htmlFilePath);
   const html = await response.text();
 
-  document.querySelector(".main").innerHTML = html;
+  document.querySelector(selector).innerHTML = html;
+
   if(jsFilePaths){
     jsFilePaths.forEach(jsFilePath => {
       let scriptTag = document.createElement("script");
       scriptTag.type = "text/javascript";
       scriptTag.src = jsFilePath;
-      document.querySelector(".main").append(scriptTag)
+      document.querySelector(selector).append(scriptTag)
     }); 
-  
+
   } 
 
 

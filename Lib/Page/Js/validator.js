@@ -20,40 +20,58 @@ function Validator(formSelector, options = {}){
             return value ? undefined : "Vui lòng nhập trường này";
         },
         phone: function(value){
-            const regex = /^(\d+-)*(\d+)$/; 
-            return regex.test(value) ? undefined : "Số điện thoại nhập vào không chính xác";
-        },
+            console.log(value);
+            if(value){
+                const regex = /^(\d+-)*(\d+)$/; 
+                return regex.test(value) ? undefined : "Số điện thoại nhập vào không chính xác";
+            }
+         },
         email: function(value) {
-            const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
-            return regex.test(value) ? undefined : "Vui lòng nhập email";
-       
+            if(value){
+                const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+                return regex.test(value) ? undefined : "Vui lòng nhập email";
+           
+            }
+
         },
         password: function(value){
-            let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-            return regex.test(value) ? undefined : "ít nhất 1 số, gồm chữ hoa và thường, một ký tự đặt biệt, ít nhất 8 kí tự";
+            if(value){
+                let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                return regex.test(value) ? undefined : "ít nhất 1 số, gồm chữ hoa và thường, một ký tự đặt biệt, ít nhất 8 kí tự";
+           
+            }
         },
         minLength: function(min){
             return function(value){
-                return value.length >= min ? undefined : `Vui lòng nhập ít nhât ${min} kí tự`;
+                if(value){
+                    return value.length >= min ? undefined : `Vui lòng nhập ít nhât ${min} kí tự`;
+
+                }
 
             }
         },
         maxLength: function(max){
             return function(value){
-                return value.length <= max ? undefined : `Vui lòng nhập tối đa ${max} kí tự`;
+                if(value){
 
+                return value.length <= max ? undefined : `Vui lòng nhập tối đa ${max} kí tự`;
+                }
             }
         },
         min: function(min){
             return function(value){
-                return value >= min ? undefined : `Vui lòng nhập số lớn hơn ${min}`;
+                if(value){
 
+                    return value >= min ? undefined : `Vui lòng nhập số lớn hơn ${min}`;
+                }
             }
         },
         max: function(max){
             return function(value){
-                return value <= max ? undefined : `Vui lòng nhập số nhỏ hơn ${max}`;
+                if(value){
 
+                return value <= max ? undefined : `Vui lòng nhập số nhỏ hơn ${max}`;
+                }
             }
         }
         
@@ -95,7 +113,6 @@ function Validator(formSelector, options = {}){
                     
                 }
             }
-
 
             input.onblur = handleValidate;
             input.oninput = handleClearError;
@@ -195,7 +212,7 @@ function Validator(formSelector, options = {}){
                     options.onSubmit(formValues);
                 }else if(typeof options.otherFunc === "function"){
                     options.otherFunc();
-
+                    
                 }
                 else{
                     formElement.submit();
