@@ -1,13 +1,14 @@
 {
   "users": [
     {
+      "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
       "password": "Password@1",
       "phone": "123-456-7890",
       "img": "/Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2,
-      "id": 1
+      "id_role": 1,
+      "isBlock": false
     },
     {
       "id": 2,
@@ -37,7 +38,7 @@
       "phone": "777-888-9999",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
-      "isBlock": true
+      "isBlock": false
     },
     {
       "id": 5,
@@ -47,7 +48,7 @@
       "phone": "111-222-3333",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
-      "isBlock": true
+      "isBlock": false
     },
     {
       "name": "duyen",
@@ -57,7 +58,7 @@
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
       "id": 6,
-      "isBlock": true
+      "isBlock": false
     },
     {
       "name": "asd",

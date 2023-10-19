@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="../Css/reset.css">
     <link rel="stylesheet" href="../Css/profileEdit.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
   </head>
   <body>
     <header id="header">
       <nav id="mainnav">
           <div class="mainnav__logo">
+            <a href="../home.html">
               <img src="../../../Assets/Figma/yellow and black minimalist agency logo.png" alt="">
-              <h2>Mana</h2>
+              
+            </a>
+            <h2>Mana</h2>
+
               <div class="mainnav__search">
                   <i class="bi bi-search"></i>
                   <input type="text" placeholder="Tìm theo điểm đến hoạt động">
@@ -33,8 +38,34 @@
               </div>
               <p>Xem gần đây</p>
               <p>Giỏ hàng</p>
-              <button>Đăng ký</button>
-              <button>Đăng nhập</button>
+              <button class="btn-register"><a href="../register.html">Đăng ký</a></o>
+              <button class="btn-login"><a href="../login.html">Đăng nhập</a></button>
+                <li class="nav-item user-info-container">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+                        <span class="user-profile"><img src="" class="img-circle" alt="user avatar"></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                       <li class="dropdown-item user-details">
+                        <a href="#">
+                           <div class="media">
+                             <div class="avatar"><img class="align-self-start me-3" src="" alt="user avatar"></div>
+                            <div class="media-body">
+                            <h6 class="mt-2 user-title"></h6>
+                            <p class="user-subtitle"></p>
+                            </div>
+                           </div>
+                          </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><i class="bi bi-inbox"></i> Inbox</li>
+                        <!-- <li class="dropdown-  divider"></li>
+                        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li> -->
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><i class="bi bi-gear"></i>Setting</li>
+                        <li class="dropdown-divider"></li>
+                        <li id="logout" class="dropdown-item"><i class="bi bi-box-arrow-left"></i> Logout</li>
+                      </ul>
+                </li>
           </div>
 
       </nav>
@@ -103,43 +134,52 @@
                 Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG. Completely open source, MIT licensed and built by Ionic.
             </div>
         </div>
-        <div class="field">
+        <form id="user-info-form" action="">
+          <div class="form-group field">
             <div class="label">
-                <div class="name">Ten cua ban</div>
-                <div class="button">Chinh sua</div>
+                <div class="name">Tên của bạn</div>
+                <div class="button">chỉnh sửa</div>
             </div>
-            <div class="value">Chua co</div>
-        </div>
-        <div class="field">
+            <input type="text" disabled   name="name" placeholder="chưa có" />
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group field">
             <div class="label">
-                <div class="name">Ten cua ban</div>
-                <div class="button">Chinh sua</div>
+                <div class="name">Email</div>
+                <div class="button">chỉnh sửa</div>
             </div>
-            <div class="value">Chua co</div>
-        </div>
-        <div class="field">
+            <input type="text" disabled   name="email" rules="email" placeholder="chưa có" />
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group field">
             <div class="label">
-                <div class="name">Ten cua ban</div>
-                <div class="button">Chinh sua</div>
+                <div class="name">Phone</div>
+                <div class="button">chỉnh sửa</div>
             </div>
-            <div class="value">Chua co</div>
-        </div>
-        <div class="field">
+            <input type="text" disabled   name="phone" rules="phone" placeholder="chưa có" />
+            <span class="form-message"></span>
+          </div>
+
+          <div class="form-group field">
             <div class="label">
-                <div class="name">Ten cua ban</div>
-                <div class="button">Chinh sua</div>
+                <div class="name">Password</div>
+                <div class="button">chỉnh sửa</div>
             </div>
-            <div class="value">Chua co</div>
-        </div>
-        <div class="field">
-            <div class="label">
-                <div class="name">Ten cua ban</div>
-                <div class="button">Chinh sua</div>
-            </div>
-            <div class="value">Chua co</div>
-        </div>
+            <input type="Password" disabled   name="password" rules="password" placeholder="chưa có" />
+            <span class="form-message"></span>
+          </div>
+
+          <div class="col-12 text-end">
+            <button type="submit" id="savechange" class="col-4 btn btn-dark">Save Change</button>
+
+          </div>
+        </form>
+        
       </div>
     </div>
+    <a href="#" class="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
 
     <script
       type="module"
@@ -149,5 +189,17 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="../../../Shared/enums/API.enum.js"></script>
+    <script src="../../Services/User/loadProfileUser.js"></script>
+    <script src="../../Services/User/logout.js"></script>
+    <script src="../../Services/User/toggleMenu.js"></script>
+    <script src="../../Services/User/scroll.js"></script>
+    
+    <script src="../Js/validator.js">
+          
+    </script>
+    <script>
+      Validator("#user-info-form");
+    </script>
   </body>
 </html>
