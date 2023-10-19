@@ -24,6 +24,7 @@ async function getUsers() {
       usersHtml = "";
       let i = 1;
       data.forEach(element => {
+        if(!element.isBlock){
             usersHtml += `<tr>
                             <td>${i++}</td>
                             <td>${element.name}</td>
@@ -31,9 +32,10 @@ async function getUsers() {
                             <td>${element.duration} h</td>
                             <td><img src="${element.img[0]}" class="product-img" alt="product img"></td>
 
-                            <td><button class="btn btn-secondary">Edit</button>
-                                <button class="btn btn-danger">Delete</button></td>           
+                            <td><button class="btn btn-secondary"><a class="text-decoration-none text-light" href="tourView/editTourForm.html?id=${element.id}">Edit</a></button>
+                                <button class="btn btn-danger"><a class="text-decoration-none text-light" href="tourView/deleteTourForm.html?id=${element.id}">Delete</a></button></td>           
                                     </tr>`;
+        }
       });
       render(usersHtml);
     } catch (err) {
