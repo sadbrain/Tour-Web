@@ -28,7 +28,7 @@ async function getUsers() {
             usersHtml += `<tr>
                             <td>${i++}</td>
                             <td>${element.name}</td>
-                            <td>${element.price} vnd</td>
+                            <td>${element.price.toLocaleString('vi', {style : 'currency', currency : 'VND'})}</td>
                             <td>${element.duration} h</td>
                             <td><img src="${element.img[0]}" class="product-img" alt="product img"></td>
 

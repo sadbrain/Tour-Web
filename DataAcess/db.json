@@ -1,14 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
       "password": "Password@1",
       "phone": "123-456-7890",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 1,
-      "isBlock": false
+      "isBlock": false,
+      "id": 1
     },
     {
       "id": 2,
