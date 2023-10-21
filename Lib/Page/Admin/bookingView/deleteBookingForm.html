@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+
+  <link rel="stylesheet" href="../../../Page/Css/reset.css">
+  <link rel="stylesheet" href="../../../Page/Css/admin.style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../../Page/Css/formInfo.css">
+<link rel="stylesheet" href="">
+
+  <title>Admin</title>
+</head>
+
+<body class="bg-theme" id="theme1">
+
+        <div class="container mt-5" action="../../Services/Admin/createUser.js" method="post">
+            <div class="card form-position">
+                <div class="card-body">
+                <div class="card-title text-center fs-3">Delete booking</div>
+
+                <hr>
+                 <form id="form-delete-booking">
+  
+                    <div class="form-group">
+                        <label for="input-1">Name</label>
+                        <input disabled type="text"  name="name" class="form-control" id="input-1" placeholder="Chưa có">
+                         <span class="form-message"></span>
+                        
+                       </div>
+                       <div class="form-group">
+                        <label for="input-2">Description</label>
+                        <textarea disabled id="w3review"  class="form-control" name="description"   rows="4" cols="50"></textarea>
+                         <span class="form-message"></span>
+                       </div>
+                       <div class="form-group">
+                        <label for="input-3">Price</label>
+                        <input disabled type="number" name="price" rules="min:100000" class="form-control" id="input-3" placeholder="Chưa có">
+                         <span class="form-message"></span>
+                       </div>
+                       <div class="form-group">
+                        <label for="input-4">Departure day</label>
+                        <input disabled type="date"  class="form-control" name="departure_day" placeholder="đd/mm/yy"/>
+                        <!-- <input disabled type="password" rules="|password" name ="password" class="form-control" id="input-4" placeholder="Enter Password"> -->
+                         <span class="form-message"></span>
+                       </div>
+                       <div class="form-group">
+                        <label for="input-5">Duration</label>
+                        <input disabled type="number" rules="min:24" name="duration" class="form-control" id="input-5" placeholder="Chưa có">
+                         <span class="form-message"></span>
+                       </div>
+       
+                       <div class="form-group">
+                           <label for="input-6">Departure Location</label>
+                           <input disabled type="text"  name="departure_location" class="form-control" id="input-6" placeholder="Chưa có">
+                            <span class="form-message"></span>
+                       </div>
+                       
+                       <div class="form-group">
+                           <label for="input-7">Destination</label>
+                           <input disabled type="text"  name="destination" class="form-control" id="input-7" placeholder="Chưa có">
+                            <span class="form-message"></span>
+                       </div>
+
+                                           
+                       <div class="form-group">
+                        <label for="input-8">Categories</label>
+                        <input disabled type="text"  name="categories"  class="form-control" id="input-8" placeholder="Chưa có">
+                         <span class="form-message"></span>
+                    </div>
+                <!-- <div class="form-group py-2">
+                  <div class="icheck-material-white">
+                 <input disabled type="checkbox" id="user-checkbox1" checked=""/>
+                 <label for="user-checkbox1">I Agree Terms & Conditions</label>
+                 </div> -->
+
+  
+                 <div class="form-group">
+                    <label for="input-10">Id</label>
+                    <input type="text"   name ="idTour" class="form-control" id="input-10" placeholder="Chưa có">
+                     <span class="form-message"></span>
+                 </div>
+
+                 <div class="form-group col-12 container-img text-center">
+  
+                  </div> 
+                <div class="form-group">
+                 <button type="submit" class="col-6 col-md-3 btn btn-light px-5"> delete</button>
+                 <button type="button" class="col-6 col-md-3 btn btn-light px-5 ms-5"><a href="../home.html" class="text-decoration-none text-light"> Back to user managment</a></button>
+      
+                </div>
+         
+               </form>
+              </div>
+            </div>
+        </div>
+    <script src="../../../../Shared/enums/API.enum.js"></script>
+      <script src="../../../Page/Js/validator.js"></script>
+      <script src="../../../Services/Admin/crudBooking/deleteBooking.js"></script>
+      <script>
+        
+        Validator("#form-delete-booking",{
+          otherFunc: handleDelete
+        });
+    
+    </script>
+</body>
+    
+</html>
