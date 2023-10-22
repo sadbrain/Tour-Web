@@ -44,8 +44,8 @@ sumbit.onclick = async function login() {
       _navigateToHome(); // Define this function for navigation
     } else {
       alert("Email hoặc mật khẩu của bạn sai, vui lòng nhập lại!");
-=======
-// import {hashPassword} from "./hashPassword.js";
+
+          }      // import {hashPassword} from "./hashPassword.js";
 const usersAPi = "http://localhost:3000/users";
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");

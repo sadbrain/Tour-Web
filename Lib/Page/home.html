@@ -30,7 +30,6 @@
                     <i class="bi bi-search"></i>
                     <input type="text" placeholder="Tìm theo điểm đến hoạt động">
                 </div>
-
             </div>
             <div class="mainnav__list">
                 <div class="mainnav__country">
@@ -62,56 +61,9 @@
                                     <p>Miền Nam Việt Nam</p>
                             </div>
                             <div class="nav-right-content">
-                                <ul class="navsecond__container">
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li><img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                    <li>
-                                        <img src="../../Assets/Figma/1.jpg" alt="">
-                                        <span>Đà Lạt</span>
-                                    </li>
-                                </ul>
-              
+                                <div id="top-cities">
+                                    
+                                </div>
                         </div>
                     </div>
                     </p>
@@ -194,8 +146,8 @@
     <main id="Tour">
         <div class="container">
             <h2>Các hoạt động nổi bật</h2>
-            <div class="row">
-                <div class="active__halong col-sm-3">
+            <div class=" tourJs container-tour">
+                <!-- <div class="active__halong col-sm-3">
                     <img src="../../Assets/Figma/1.jpg" alt="">
                     <p>Tour Hạ Long</p>
                     <h4>Tour ngắm cảnh Hạ Long trên cạn</h4>
@@ -207,8 +159,8 @@
                     <button>Hoàn toàn dễ dàng</button>
                     <p class="money">Từ đ 993,173 </p>
                     <button class="policy">Chính sách đảm bảo về giá</button>
-                </div>
-                <div class="active__halong col-sm-3">
+                </div> -->
+                <!-- <div class="active__halong col-sm-3">
                     <img src="../../Assets/Figma/2.jpg" alt="">
                     <p>Tour Sapa</p>
                     <h4>Tour đi bộ xuyên rừng ở trên Sapa</h4>
@@ -245,7 +197,7 @@
                     <button>Hoàn toàn dễ dàng</button>
                     <p class="money">Từ đ 500,173 </p>
                     <button class="policy">Chính sách đảm bảo về giá</button>
-                </div>
+                </div> -->
             </div>
             <div class="see-more">
                 <button>Xem Thêm</button>
@@ -256,6 +208,7 @@
             <div class="container">
             <h2 class="place_h2">Địa điểm Hot nhất tại Mana</h2>
             <div class="row">
+                <div id="list-hot"></div>
                 <div class="place__hotter col-sm-4">
                     <div class="place__listhot">
                         <button>Hoạt động du lịch Việt Nam bán chạy</button>
@@ -375,32 +328,34 @@
             <div class="container">
                 <p class="place_h2">Những trải nghiệm ở Tour</p>
                 <div class="row">
-                    <div class="Tour col-sm-4">
-                        <div class="Tour__background" style=" background-image: url(../../Assets/Figma/Tour1.png);width: 410px;">
-                            <div class="Tour__content">
-                                <p class="Tour__content_p">Chốt Gấp Kèo Đi TP - HCM</p>
-                                <p class="Tour__content_p1">Deal du lịch HOT nhất miền Nam Việt Nam</p>
+                    <div id="tour-experience" class="row">
+                        <!-- <div class="Tour col-sm-4">
+                            <div class="Tour__background" style=" background-image: url(../../Assets/Figma/Tour1.png);width: 410px;">
+                                <div class="Tour__content">
+                                    <p class="Tour__content_p">Chốt Gấp Kèo Đi TP - HCM</p>
+                                    <p class="Tour__content_p1">Deal du lịch HOT nhất miền Nam Việt Nam</p>
+                                </div>
+    <button class="Tour__button" type="button">Khám phá</button>
                             </div>
-<button class="Tour__button" type="button">Khám phá</button>
                         </div>
-                    </div>
-                    <div class="Tour col-sm-4">
-                        <div class="Tour__background" style=" background-image: url(../../Assets/Figma/Tour2.png);width: 410px;">
-                            <div class="Tour__content">
-                                <p class="Tour__content_p">Chốt Gấp Kèo Đi TP - HCM</p>
-                                <p class="Tour__content_p1">Deal du lịch HOT nhất miền Nam Việt Nam</p>
+                        <div class="Tour col-sm-4">
+                            <div class="Tour__background" style=" background-image: url(../../Assets/Figma/Tour2.png);width: 410px;">
+                                <div class="Tour__content">
+                                    <p class="Tour__content_p">Chốt Gấp Kèo Đi TP - HCM</p>
+                                    <p class="Tour__content_p1">Deal du lịch HOT nhất miền Nam Việt Nam</p>
+                                </div>
+                                <button class="Tour__button" type="button">Khám phá</button>
                             </div>
-                            <button class="Tour__button" type="button">Khám phá</button>
                         </div>
-                    </div>
-                    <div class="Tour col-sm-4">
-                        <div class="Tour__background" style=" background-image: url(../../Assets/Figma/Tour3.png); width: 410px;">
-                            <div class="Tour__content">
-                                <p class="Tour__content_p">Chốt Gấp Kèo Đi TP - HCM</p>
-                                <p class="Tour__content_p1">Deal du lịch HOT nhất miền Nam Việt Nam</p>
+                        <div class="Tour col-sm-4">
+                            <div class="Tour__background" style=" background-image: url(../../Assets/Figma/Tour3.png); width: 410px;">
+                                <div class="Tour__content">
+                                    <p class="Tour__content_p">Chốt Gấp Kèo Đi TP - HCM</p>
+                                    <p class="Tour__content_p1">Deal du lịch HOT nhất miền Nam Việt Nam</p>
+                                </div>
+                                <button class="Tour__button" type="button">Khám phá</button>
                             </div>
-                            <button class="Tour__button" type="button">Khám phá</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -409,35 +364,13 @@
             <div class="container">
                 <p class="place_h2">Bạn muốn đi chơi ở đâu?</p>
                 <div class="row">
-                    <div class="where__item col-sm-2">
-                        <div class="where__background" style=" background-image: url(../../Assets/Figma/Group58.png);width:190px;" >
-                            <p class="where__p">TP Hồ Chí ..</p>
-                        </div>
-                    </div>
-                    <div class="where__item col-sm-2">
-                        <div class="where__background" style=" background-image: url(../../Assets/Figma/Group60.png);width:190px;" >
-                            <p class="where__p">Đà Nẵng</p>
-                        </div>
-                    </div>
-                    <div class="where__item col-sm-2">
-                        <div class="where__background" style=" background-image: url(../../Assets/Figma/Group61.png);width:190px;" >
-                            <p class="where__p">Đà Lạt</p>
-                        </div>
-                    </div>
-                    <div class="where__item col-sm-2">
-                        <div class="where__background" style=" background-image: url(../../Assets/Figma/Group62.png);width:190px;" >
-                            <p class="where__p">Hà Nội</p>
-                        </div>
-                    </div>
-                    <div class="where__item col-sm-2">
-<div class="where__background" style=" background-image: url(../../Assets/Figma/Group64.png);width:190px;" >
-                            <p class="where__p">Hội An</p>
-                        </div>
-                    </div>
-                    <div class="where__item col-sm-2">
-                        <div class="where__background" style=" background-image: url(../../Assets/Figma/Tour1.png);width:190px;" >
-                            <p class="where__p">Quảng Ninh</p>
-                        </div>
+                    <div id="where-place">
+                        <!-- <div class="where__item col-sm-2">
+                            <div class="where__background" style=" background-image: url(../../Assets/Figma/Group58.png);width:190px;" >
+                                <p class="where__p">TP Hồ Chí ..</p>
+                            </div>
+                        </div> -->
+                        
                     </div>
                 </div>
             </div>
@@ -535,6 +468,7 @@
         </div>
     </footer>
     <a href="#" class="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
+    <script src="./home.js"></script>
 </body> 
 
 </html>

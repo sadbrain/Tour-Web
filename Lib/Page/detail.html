@@ -40,8 +40,34 @@
               </div>
               <p>Xem gần đây</p>
               <p>Giỏ hàng</p>
-              <button>Đăng ký</button>
-              <button>Đăng nhập</button>
+              <button class="btn-register"><a href="register.html">Đăng ký</a></o>
+                <button class="btn-login"><a href="login.html">Đăng nhập</a></button>
+                <li class="nav-item user-info-container">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+                        <span class="user-profile"><img src="" class="img-circle" alt="user avatar"></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                       <li class="dropdown-item user-details">
+                        <a href="#">
+                           <div class="media">
+                             <div class="avatar"><img class="align-self-start me-3" src="" alt="user avatar"></div>
+                            <div class="media-body">
+                            <h6 class="mt-2 user-title"></h6>
+                            <p class="user-subtitle"></p>
+                            </div>
+                           </div>
+                          </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><i class="bi bi-inbox"></i> Inbox</li>
+<!-- <li class="dropdown-  divider"></li>
+                        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li> -->
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><i class="bi bi-gear"></i>Setting</li>
+                        <li class="dropdown-divider"></li>
+                        <li id="logout" class="dropdown-item"><i class="bi bi-box-arrow-left"></i> Logout</li>
+                      </ul>
+                </li>
           </div>
 
       </nav>
@@ -74,7 +100,7 @@
         <div class="header__filter">
           <button class="filter-button">Bán chạy</button>
           <button class="filter-button">Nhóm 1-40 khách</button>
-          <button class="filter-button">Tiếng Hoa/Tiếng Anh</button>
+          <button class="filter-button">Tiếng Việt/Tiếng Anh</button>
           <button class="filter-button">Tour ghép & Tour riêng</button>
         </div>
         <div class="header__rating">
@@ -99,7 +125,6 @@
             <img
               src="https://www.chudu24.com/wp-content/uploads/2018/06/ha-long-1.jpg"
               alt="Image 1"
-              style="margin-bottom: 20px"
             />
             <img
               src="https://www.chudu24.com/wp-content/uploads/2018/06/ha-long-1.jpg"
@@ -115,7 +140,7 @@
         <section id="section-left">
           <div class="main">
             <div class="main__button">
-              <button class="main__left-button">
+<button class="main__left-button">
                 Chính sách đảm bảo về giá
               </button>
               <p class="main__right">Ưu đãi có sẵn ></p>
@@ -142,17 +167,60 @@
             <button class="content1__dulich-button">
               Xem trạng thái du lịch
             </button>
-            <div class="content1__GoiDV">Gói dịch vụ</div>
-            <button class="content1__ve-button">
-              Vé 1 Ngày (Safari Park + Marine Park)
-            </button>
-            <button class="content1__ve2-button">
-              Vé 1 Ngày (Safari Park + Marine Park) + Buffet món Ấn Độ
-            </button>
+            <div id="form-booking" action="">
+              <div class="form-group" ischecked = 'false'>
+                <h3 class="title">Gói dịch vụ</h3>
+
+                  <input isClicked = "false" type="button" value="Vé 1 Ngày (Safari Park + Marine Park)" price="10000">
+                  <input isClicked= "false" type="button" value="Vé 1 Ngày (Safari Park + Marine Park) + Buffet Quốc tế" price="20000">
+                  <span class="form-message">Vui lòng chọn dịch vụ này</span>
+              
+              </div>
+      
+              <div class="form-group" ischecked="false">
+                <h3 class="title">điểm đón</h3>
+
+                  <input isClicked = "false" type="button" value="Central World" price="30000">
+                  <input isClicked = "false" type="button" value="Siam Paragon" price="40000">
+                  <input isClicked = "false" type="button" value="Đón tại khách sạn" price="50000">
+                  <span class="form-message">Vui lòng chọn dịch vụ này</span>
+              </div>
+
+              <div class="form-group" ischecked="false">
+            <h3 class="title">Loại hình chuyển chở</h3>
+
+                <input isClicked = "false" type="button" value="xe chung" price="60000">
+                <input isClicked = "false" type="button" value="xe riêng" price="70000">
+                <span class="form-message">Vui lòng chọn dịch vụ này</span>
+            </div>
+
+            <div class="form-group" ischecked="false">
+              <h3 class="title">Số lượng</h3>
+
+                <input isClicked = "false" type="number" placeholder="người lớn" price="80000">
+                <input isClicked = "false" type="number" placeholder="trẻ em" price="90000">
+<span class="form-message">Vui lòng chọn dịch vụ này</span>
+            </div>
+            <div class="total col-4"></div>
+              
+              <div class="col-12 text-end mt-3">
+
+                <button class ="btn btn-primary text-center col-3" type="button" onclick="addToCart()">thêm vào giỏ hàng</button>
+
+                <button class ="btn btn-primary text-center col-3" type="button" onclick="onsumbit()">thanh toán</button>
+              </div>
+
+            </div>
+              <button class="content1__ve-button">
+                Vé 1 Ngày (Safari Park + Marine Park)
+              </button>
+              <button class="content1__ve2-button">
+                Vé 1 Ngày (Safari Park + Marine Park) + Buffet món Ấn Độ
+              </button>
             <div class="title">Điểm tập trung</div>
             <div class="content1__dtt-button">
-              <button>Central World</button>
-              <button>Siam Paragon</button>
+              <button></button>
+              <button></button>
               <button>Đón tại khách sạn</button>
             </div>
             <div class="title">Loại hình chuyển chở</div>
@@ -199,7 +267,7 @@
             <div class="nguoidung1">
               <div class="nguoidung-top">
                 <div class="nguoidung1__daidien">
-                  <i class="bi bi-person-circle"></i>
+<i class="bi bi-person-circle"></i>
                   <h3>Người dùng Mana</h3>
                 </div>
                 <p class="nguoidung1__tieude">
@@ -215,7 +283,7 @@
           </div>
           <div class="content2">
             <h2>Về dịch vụ này</h2>
-            <p>
+            <p class="desecription">
               Một chuyến đi sẽ vui và thuận tiện biết mấy khi không phải lo lắng
               về phương tiện di chuyển trong chuyến đi của mình đúng không nào?
               Dịch vụ đưa đón chung và đưa đón riêng đến Safari World - cách
@@ -234,12 +302,12 @@
               tiện.
             </p>
             <img
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/seckga9d9w4gai73kdzy/TourC%C3%B4ngVi%C3%AAnBangkokSafariWorldv%E1%BB%9BiXe%C4%90%C6%B0a%C4%90%C3%B3nChungRi%C3%AAng.webp"
+              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/acti...ng.webp"
               alt=""
             />
             <p>Quầy đổi vé độc quyền của Klook</p>
             <img
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_861/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/yvqkthyshzth46h8b4nq/TourC%C3%B4ngVi%C3%AAnBangkokSafariWorldv%E1%BB%9BiXe%C4%90%C6%B0a%C4%90%C3%B3nChungRi%C3%AAng.webp"
+              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_861/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/acti...ng.webp"
               alt=""
             />
             <p>
@@ -247,7 +315,7 @@
               World
             </p>
             <img
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1193,h_675/w_73,x_13,y_13,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/b98thg8jtwgcflurttms/TourC%C3%B4ngVi%C3%AAnBangkokSafariWorldv%E1%BB%9BiXe%C4%90%C6%B0a%C4%90%C3%B3nChungRi%C3%AAng.webp"
+src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1193,h_675/w_73,x_13,y_13,g_south_west,l_Klook_water_br_trans_yhcmh3/acti...ng.webp"
               alt=""
             />
             <p>
@@ -255,7 +323,7 @@
               cá heo!
             </p>
             <img
-              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_862/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/trm77eb2cmiyr79t1cjv/TourC%C3%B4ngVi%C3%AAnBangkokSafariWorldv%E1%BB%9BiXe%C4%90%C6%B0a%C4%90%C3%B3nChungRi%C3%AAng.webp"
+              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_862/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/acti...ng.webp"
               alt=""
             />
             <p>Hãy tham khảo phí phụ thu theo khu vực đón tại khách sạn</p>
@@ -280,7 +348,7 @@
             </div>
             <div class="content4__item">
               <img
-                src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/npmeh1gdtsnqgbfdkhsr.webp"
+                src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/npmeh1gd...sr.webp"
                 alt=""
               />
               <p>Tour riêng Safari World và Jodd Fairs ở Bangkok</p>
@@ -288,7 +356,7 @@
             </div>
             <div class="content4__item">
               <img
-                src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/npmeh1gdtsnqgbfdkhsr.webp"
+                src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/npmeh1gd...sr.webp"
                 alt=""
               />
               <p>Tour riêng Safari World và Jodd Fairs ở Bangkok</p>
@@ -301,7 +369,7 @@
             <button name="button" value="OK" type="button" onclick="hello()">
               Chat với chúng tôi
             </button>
-            <div class="danh-gia">Đánh giá</div>
+<div class="danh-gia">Đánh giá</div>
             <div class="star-danhgia">
               <div>4.7/5</div>
               <div>3K+ Đánh giá</div>
@@ -375,7 +443,7 @@
                   alt=""
                 />
               </div>
-            </div>
+</div>
             <div class="content6-item">
               <div class="desc">
                 Đánh giá cho: Tour Riêng · Van (4 - 10 Người) Đặt ngay
@@ -437,7 +505,14 @@
           </div>
         </section>
 
-        <section id="section-right"></section>
+        <section id="section-right">
+          <div class="booking">
+            <h3>đ 504,607</h3>
+            <button class="add-to-cart btn">add to cart</button>
+<button class="btn-booking btn">booking</button>
+          </div>
+
+        </section>
       </div>
     </main>
 
@@ -479,7 +554,7 @@
               <h4>Kênh thanh toán</h4>
               <ul class="information_web_list">
                   <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 10.png" alt=""></a></li>
-                  <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 9.png" alt=""></a></li>
+<li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 9.png" alt=""></a></li>
                   <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 15.png" alt=""></a></li>
                   <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 14.png" alt=""></a></li>
                   <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 11.png" alt=""></a></li>
@@ -494,7 +569,14 @@
           <p>Số giấy phép kinh doanh lữ hành quốc tế: 78-213/1022/TCDL-GP LHPT</p>
       </div>
   </footer>
+  <a href="#" class="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
 
-
+  <script src="../../Shared/enums/API.enum.js"></script>
+  <script src="../Services/User/loadProfileUser.js"></script>
+  <script src="../Services/User/logout.js"></script>
+  <script src="../Services/User/booking.js"></script>
+  <script src="../Services/User/toggleMenu.js"></script>
+  <script src="../Services/User/scroll.js"></script>
+  <script src="./detail.js"></script>
   </body>
 </html>

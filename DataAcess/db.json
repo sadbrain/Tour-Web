@@ -1,50 +1,54 @@
 {
-  "users" : [
+  "users": [
     {
-      "id": 1,
       "name": "John Doe",
       "email": "john.doe@example.com",
-      "password": "password1",
+      "password": "Password@1",
       "phone": "123-456-7890",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
-      "id_role": 1
+      "img": "/Assets/images/users/default_profile_picture.jpg",
+      "id_role": 1,
+      "isBlock": false,
+      "id": 1
     },
     {
       "id": 2,
       "name": "Jane Smith",
       "email": "jane.smith@example.com",
-      "password": "password2",
+      "password": "Password@2",
       "phone": "987-654-3210",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2
-  
+      "img": "/Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2,
+      "isBlock": false
     },
     {
-      "id": 3,
-      "name": "Alice Johnson",
-      "email": "alice.johnson@example.com",
-      "password": "password3",
+      "name": "duyen",
+      "email": "onepiece200261@gmail.com",
+      "password": "Password@3",
       "phone": "555-123-4567",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2
+      "img": "/Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2,
+      "id": 3,
+      "isBlock": false
     },
     {
       "id": 4,
       "name": "Bob Brown",
       "email": "bob.brown@example.com",
-      "password": "password4",
+      "password": "Password@4",
       "phone": "777-888-9999",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2
+      "img": "/Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2,
+      "isBlock": false
     },
     {
       "id": 5,
       "name": "Eve Davis",
       "email": "eve.davis@example.com",
-      "password": "password5",
+      "password": "Password@5",
       "phone": "111-222-3333",
-      "img": "../Assets/images/users/default_profile_picture.jpg",
-      "id_role": 2
+      "img": "/Assets/images/users/default_profile_picture.jpg",
+      "id_role": 2,
+      "isBlock": false
     }
   ],
   "roles": [
@@ -59,50 +63,43 @@
       "description": "Standard user role with limited access"
     }
   ],
-
   "locations": [
     {
       "id": 1,
       "name": "Paris",
       "country": "France",
       "description": "Paris, thành phố ánh sáng, nổi tiếng với tháp Eiffel và nhiều bảo tàng nghệ thuật.",
-      "img": ["../Assets/images/locations/france/paris/licensed-image.jpg"]
-
+      "img": ["/Assets/images/locations/france/paris/licensed-image.jpg"]
     },
     {
       "id": 2,
       "name": "Kyoto",
       "country": "Japan",
       "description": "Kyoto, nơi giữ gìn nhiều di sản văn hóa và nghệ thuật truyền thống của Nhật Bản.",
-      "img": ["../Assets/images/locations/japan/kyoto/licensed-image.jpg"]
-
+      "img": ["/Assets/images/locations/japan/kyoto/licensed-image.jpg"]
     },
     {
       "id": 3,
       "name": "Machu Picchu",
       "country": "Peru",
       "description": "Machu Picchu, thành phố cổ của người Inca nằm giữa các ngọn núi ở Peru.",
-      "img": ["../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"]
-
+      "img": ["/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"]
     },
     {
       "id": 4,
       "name": "Santorini",
       "country": "Greece",
       "description": "Santorini, hòn đảo nổi tiếng với kiến trúc trắng và đồng quê trên biển Aegean.",
-      "img": ["../Assets/images/locations/greece/santorini/santorini.jpg"]
-
+      "img": ["/Assets/images/locations/greece/santorini/santorini.jpg"]
     },
     {
       "id": 5,
       "name": "Rome",
       "country": "Italy",
       "description": "Rome, thủ đô của Ý, với các di tích lịch sử nổi tiếng như La Mã cổ đại và Vatican.",
-      "img": ["../Assets/images/locations/italy/rome/licensed-image.jpg"]
-
+      "img": ["/Assets/images/locations/italy/rome/licensed-image.jpg"]
     }
   ],
-
   "tours": [
     {
       "id": 1,
@@ -113,8 +110,14 @@
       "duration": 7,
       "destination": "Paris, France",
       "departure_location": "Sân bay quốc tế JFK, New York",
-      "img": ["../Assets/images/locations/france/paris/licensed-image.jpg"],
-      "categories": [1]
+      "img": [
+        "/Assets/images/locations/france/paris/licensed-image.jpg",
+        "/Assets/images/locations/france/paris/licensed-image.jpg",
+        "/Assets/images/locations/france/paris/licensed-image.jpg",
+        "/Assets/images/locations/france/paris/licensed-image.jpg"
+      ],
+      "categories": [1],
+      "isBlock": false
     },
     {
       "id": 2,
@@ -125,9 +128,14 @@
       "duration": 10,
       "destination": "Bali, Indonesia",
       "departure_location": "Sân bay quốc tế LAX, Los Angeles",
-      "img": ["../Assets/images/locations/indonesia/bali/bali.jpg"],
-      "categories": [2]
-
+      "img": [
+        "/Assets/images/locations/indonesia/bali/bali.jpg",
+        "/Assets/images/locations/indonesia/bali/bali.jpg",
+        "/Assets/images/locations/indonesia/bali/bali.jpg",
+        "/Assets/images/locations/indonesia/bali/bali.jpg"
+      ],
+      "categories": [2],
+      "isBlock": false
     },
     {
       "id": 3,
@@ -138,10 +146,14 @@
       "duration": 8,
       "destination": "Machu Picchu, Peru",
       "departure_location": "Sân bay quốc tế MIA, Miami",
-      "img": ["../Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"],
-      "categories": [3]
-
-
+      "img": [
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
+        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
+      ],
+      "categories": [3],
+      "isBlock": false
     },
     {
       "id": 4,
@@ -152,9 +164,14 @@
       "duration": 9,
       "destination": "Santorini, Greece",
       "departure_location": "Sân bay quốc tế ORD, Chicago",
-      "img": ["../Assets/images/locations/greece/santorini/santorini.jpg"],
-      "categories": [2]
-
+      "img": [
+        "/Assets/images/locations/greece/santorini/santorini.jpg",
+        "/Assets/images/locations/greece/santorini/santorini.jpg",
+        "/Assets/images/locations/greece/santorini/santorini.jpg",
+        "/Assets/images/locations/greece/santorini/santorini.jpg"
+      ],
+      "categories": [2],
+      "isBlock": false
     },
     {
       "id": 5,
@@ -165,11 +182,18 @@
       "duration": 6,
       "destination": "Rome, Italy",
       "departure_location": "Sân bay quốc tế SFO, San Francisco",
-      "img": ["../Assets/images/locations/italy/rome/licensed-image.jpg"],
-      "categories": [1]
+      "img": [
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg"
+      ],
+      "categories": [1],
+      "isBlock": false
     }
+
   ],
-  "categories" : [
+  "categories": [
     {
       "id": 1,
       "name": "Biển và Bãi biển"
@@ -183,65 +207,146 @@
       "name": "Nhiệt đới và Đảo quốc"
     }
   ],
-  "bookings" : [
+  "bookings": [
     {
       "id": 1,
       "booking_date": "2023-10-4",
-      "num_of_participants": 4,
+      "num_of_participants": {
+        "adults": 2,
+        "children": 4
+      },
       "total": 132000000,
       "status": 2,
       "user_id": 2,
-      "tour_id": 1
-
+      "tour_id": 1,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "Vé 1 Ngày (Safari Park + Marine Park)",
+          "servicePrice": "10000"
+        },
+        {
+          "title": "điểm đón",
+          "serviceValue": "Siam Paragon",
+          "servicePrice": "40000"
+        },
+        {
+          "title": "Loại hình chuyển chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "50000"
+        }
+      ],
+      "isBlock": false
     },
     {
       "id": 2,
       "booking_date": "2023-10-2",
-      "num_of_participants": 4,
+      "num_of_participants": {
+        "adults": 3,
+        "children": 2
+      },
       "total": 132000000,
       "status": 2,
       "user_id": 3,
-      "tour_id": 1
-
+      "tour_id": 1,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "Vé 1 Ngày (Safari Park + Marine Park)",
+          "servicePrice": "10000"
+        },
+        {
+          "title": "điểm đón",
+          "serviceValue": "Siam Paragon",
+          "servicePrice": "40000"
+        },
+        {
+          "title": "Loại hình chuyển chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "50000"
+        }
+      ],
+      "isBlock": false
     },
     {
       "id": 3,
       "booking_date": "2023-10-1",
-      "num_of_participants": 4,
+      "num_of_participants": {
+        "adults": 2,
+        "children": 1
+      },
       "total": 132000000,
       "status": 1,
       "user_id": 4,
-      "tour_id": 1
-
+      "tour_id": 1,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "Vé 1 Ngày (Safari Park + Marine Park)",
+          "servicePrice": "10000"
+        },
+        {
+          "title": "điểm đón",
+          "serviceValue": "Siam Paragon",
+          "servicePrice": "40000"
+        },
+        {
+          "title": "Loại hình chuyển chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "50000"
+        }
+      ],
+      "isBlock": false
     },
     {
       "id": 3,
       "booking_date": "2023-10-1",
-      "num_of_participants": 4,
+      "num_of_participants": {
+        "adults": 2,
+        "children": 2
+      },
       "total": 132000000,
       "status": 1,
       "user_id": 5,
-      "tour_id": 1
+      "tour_id": 1,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "Vé 1 Ngày (Safari Park + Marine Park)",
+          "servicePrice": "10000"
+        },
+        {
+          "title": "điểm đón",
+          "serviceValue": "Siam Paragon",
+          "servicePrice": "40000"
+        },
+        {
+          "title": "Loại hình chuyển chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "50000"
+        }
+      ],
+      "isBlock": false
     }
   ],
-  "status_bookings" : [
+  "status_bookings": [
     {
       "id": 1,
-      "name": "pending"
+      "name": "chờ xác nhận"
     },
     {
       "id": 2,
-      "name": "confirmed"
+      "name": "đã xác nhận"
     },
     {
       "id": 3,
-      "name": "cancelled"
+      "name": "đã hủy"
     }
   ],
   "reviews": [
     {
       "id": 1,
-      "comment": "greeting toi yeu chuyen di nay",  
+      "comment": "greeting toi yeu chuyen di nay",
       "rating": 3,
       "review_date": "2023-4-5",
       "user_id": 2,
@@ -249,7 +354,7 @@
     },
     {
       "id": 2,
-      "comment": "greeting toi vo cung hao huc voi chuyen di nay",  
+      "comment": "greeting toi vo cung hao huc voi chuyen di nay",
       "rating": 3,
       "review_date": "2023-4-5",
       "user_id": 3,
