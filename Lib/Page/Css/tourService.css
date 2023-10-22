@@ -1,0 +1,30 @@
+#container-services .services-type{
+    display: flex;
+}
+#container-services .services-type input{
+    width: 49.5%;
+    margin-bottom:1rem;
+    border: 0px solid #e5eaef;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff !important;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.375rem 0.75rem;
+}
+#container-services .services-type input:focus{
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.45);
+    outline:none;
+}
+#container-services .services-type input:first-child{
+    margin-right: 1%;
+}
+/* label {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+} */

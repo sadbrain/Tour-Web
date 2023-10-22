@@ -29,6 +29,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 
 }
 .mainnav__logo{
@@ -177,6 +178,8 @@ header{
   margin-right: auto;
   padding: 0 20px;
   max-width: 1440px;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 main {
@@ -188,11 +191,50 @@ main {
 #section-left,
 .banner-left {
   width: calc(70% - 10px);
+  display: inline-block;
+}
+#section-right{
+  position: absolute;
+  top: 43px;
+  right: 10px;
+
+}
+.booking{
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  padding: 20px;
+}
+.booking h3{
+  margin-bottom: 20px;
+  font-size: 20px;
+
+}
+
+.booking .btn-booking, .booking .add-to-cart{
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: #ff5b00;
+  border: 1px solid #ff5b00;
+  width: 48%;
+}
+.booking .btn-booking:hover, .booking .add-to-cart:hover{
+  color: #fff;
+  background-color: #ff5b00;
+  border: 1px solid #ff5b00;
+  opacity: 0.7;
 }
 
 #section-right,
 .banner-right {
   width: calc(30% - 10px);
+  display: inline-block;
+
+
 }
 .banner {
   display: flex;
@@ -203,8 +245,17 @@ main {
 .banner-right img {
   width: 100%;
   object-fit: cover;
-}
 
+  
+}
+.banner-right img{
+  /* height: 300px;
+   */
+   height: 49%;
+}
+.banner-right img:first-child{
+  margin-bottom: 12px;
+}
 .header__name {
   font-size: 34px;
   font-weight: 400;
@@ -297,6 +348,16 @@ main {
 }
 .content1__goi p {
   font-size: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.content1__goi a {
+color: #000;
+font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;  
 }
 .content1__goi {
   display: flex;
@@ -305,13 +366,40 @@ main {
   align-items: center;
   padding: 0 15px;
 }
+.content1__chonngay{
+  line-height: 18px;
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 12px;
+  margin-top: 0;
+  margin-left: 23px;
 
+}
 .content1__dulich-button {
   margin-top: 15px;
   margin-left: 20px;
   border-radius: 20px;
-  background: #fc6e08;
-  border: 1px solid #fc6e08;
+  color: #fff;
+  background-color: #ff5b00;
+  border: 1px solid #ff5b00;
+  transition: background-color .24s cubic-bezier(.22,0,.08,1);
+  min-width: 86px;
+  display: inline-block;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 22px;
+  outline: none;
+  user-select: none;
+  appearance: none;
+  text-transform: none;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
 }
 .content1__GoiDV {
   margin-top: 20px;
@@ -341,6 +429,7 @@ main {
 .content1 {
   background-color: #d9d9d9;
   margin-top: 30px;
+  padding-bottom: 20px;
 }
 .danhgia {
   display: flex;
@@ -611,6 +700,12 @@ color: #ffffff;
 .dropdown-item i{
   margin-right: 10px;
 }
+.dropdown-item a{
+  display: inline-block;
+  width: 100%;
+color: #ffffff;
+
+}
 .dropdown-toggle-nocaret::after{
   display: none!important;;
 }
@@ -637,4 +732,55 @@ color: #ffffff;
   color: white;
   background-color: rgba(255, 255, 255, 0.54);
   transition: all .5s;
+}
+
+
+#form-booking{
+    padding: 0 20px;
+  margin-top: 10px;
+}
+#form-booking .form-group .title{
+  line-height: 18px;
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 12px;
+  margin-top: 0;
+  margin-left: 0;
+}
+#form-booking .form-group input[type="button"]{
+  position: relative;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    color: #212121;
+    border: 1px solid #4a4a4a;
+    padding: 8px 16px;
+    margin: 0 12px 16px 0;
+}
+#form-booking .form-group input[type="button"].value{
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#form-booking .form-group input.btnIsClick {
+  border-color: #ff5b00;
+  color: #ff5b00;
+  background-color: #fff0e5;
+}
+#form-booking .form-message{
+  display: none;
+  font-size: 14px;
+  color: red;
+}
+#form-booking .total{
+  font-size: 24px;
+  line-height: 1.32;
+  font-weight: 600;
+  color: #212121;
+  position: relative;
+  top: 38px;
+  left:10px;
 }
