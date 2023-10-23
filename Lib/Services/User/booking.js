@@ -106,7 +106,14 @@ function handleParticipants(event){
 
 }
 function onsumbit(){
-
+    const user_token = JSON.parse(localStorage.getItem("user_token"));
+    // check dang nhap thanh cong hay chua
+  
+  if(!user_token) {
+    alert("bạn vui lòng đăng nhập để thực hiện chức năng này");
+    window.location.href = "/Lib/Page/login.html";
+    return;
+  }
     let isValid = true;
     formGroups.forEach(formGroup => {
         if(formGroup.getAttribute("ischecked") === "false"){
@@ -166,7 +173,6 @@ function onsumbit(){
 
 
     window.location.href = "./User/comfilmInfoBooking.html";
-
         // console.log(services);
         // console.log(participants);
         // console.log(totalService);

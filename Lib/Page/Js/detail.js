@@ -23,8 +23,9 @@ fetch(toursAPI+ "/" + id)
 }
 showInforTour()
 
-
+let servicesHtml = "";
 function showServives(services, priceAdult, priceChild){
+
     if(services.length === 0){
         servicesHtml += `
         <div class="form-group" ischecked="false">
@@ -46,7 +47,7 @@ formBooking.innerHTML = servicesHtml;
         
           return;
     }
-    let servicesHtml = "";
+     servicesHtml = "";
     services.forEach(service => {
         servicesHtml += `
            <div class="form-group" ischecked = 'false'>

@@ -120,7 +120,9 @@ let topCities = [
   
       data.forEach((element) => {
         // console.log(element.img);
-        tourHtml += ` <div class="active__halong " onclick="navToDetail(${element.id})">
+        if(element.isBlock === false){
+
+            tourHtml += ` <div class="active__halong " onclick="navToDetail(${element.id})">
             <img src="${element.img[0]}" alt="">
             <p>${element.name}</p>
             <h4>${element.description}</h4>
@@ -135,7 +137,9 @@ let topCities = [
               currency: "VND",
             })} </p>
             <button class="policy">Chính sách đảm bảo về giá</button>
-          </div>`;
+          </div>`; 
+        }
+
       });
       document.querySelector(".tourJs").innerHTML = tourHtml;
     });
