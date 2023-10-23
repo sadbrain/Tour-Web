@@ -1,5 +1,15 @@
 const formGroups = formBooking.querySelectorAll('.form-group');
-let totalService = parseInt(document.querySelector("#section-right .booking h3").innerHTML);
+let totalService = "";
+let string = document.querySelector("#section-right .booking h3").innerHTML.split("&")[0]
+for(let e of string){
+
+    if(e!=="."){
+
+        totalService+= e
+    }
+    
+}
+totalService =  parseInt(totalService)
 let adultCurrents= 0;
 let childrentCurrents = 0;
 let totalCurrencyAdult = 0;
@@ -170,12 +180,36 @@ function onsumbit(){
             })
 
         })
+    
 
-
-    window.location.href = "./User/comfilmInfoBooking.html";
         // console.log(services);
         // console.log(participants);
+        var ngayHienTai = new Date(); // Tạo một đối tượng Date hiện tại
+
+        var ngay = ngayHienTai.getDate(); // Lấy ngày (1-31)
+        var thang = ngayHienTai.getMonth() + 1; // Lấy tháng (0-11), cần cộng thêm 1
+        var nam = ngayHienTai.getFullYear(); // Lấy năm (4 chữ số)
+
+        let stringDate =  ngay + "/" + thang + "/" + nam
+
+
+        let url = window.location.href;
+        var paramsString = url.split("?")[1];
+        var idTour = paramsString.split("=")[1];
         // console.log(totalService);
+        try{
+            postBooking(stringDate, participants, services, user_token.id, parseInt(idTour), totalService);
+            // console.log(stringDate);
+            // console.log(participants);
+            // console.log(services);
+            // console.log(user_token.id);
+            // console.log(idTour);
+            // console.log(totalService);
+    window.location.href = "./User/comfilmInfoBooking.html?idTour=" + idTour+"&idUser=" + user_token.id;
+
+        }catch(e){
+            alert(e.message);
+          }
 
     }
 
@@ -183,21 +217,21 @@ function onsumbit(){
 
 
 
-// async function postBooking(){
+async function postBooking(stringDate, participants, services, idUser, idTour, totalService){
 
-//     fetch(bookingsAPI, {
-//         method: "POST",
-//         headers: {'Content-Type': 'application/json'},
-//         body: JSON.stringify({
-//             booking_date: "2023-10-4",
-//             num_of_participants: 4,
-//             total: 132000000,
-//             status: 2,
-//             user_id: 2,
-//             tour_id: 1,
-//             services: 
-//             isBlock: false
+    fetch(bookingsAPI, {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
 
-//         })
-//     })
-// }
+        body: JSON.stringify({
+            booking_date: stringDate,
+            num_of_participants: participants,
+            total: totalService,
+            status: 1,
+            user_id: idUser,
+            tour_id: idTour,
+            services: services,
+            isBlock: false
+        })
+    })
+}

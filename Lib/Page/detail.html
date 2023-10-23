@@ -578,7 +578,15 @@
   <script src="../Services/User/logout.js"></script>
   <script src="../Services/User/toggleMenu.js"></script>
   <script src="../Services/User/scroll.js"></script>
-  <script src="../Services/User/booking.js"></script>
-
+  <!-- <script src="../Services/User/booking.js"></script> -->
+  
+<script>
+window.onload = function() {
+    // Code bên trong này sẽ chạy sau khi cả trang và script1.js đã tải xong.
+    var script2 = document.createElement('script');
+    script2.src = "../Services/User/booking.js";
+    document.body.appendChild(script2);
+  };
+</script>
   </body>
 </html>

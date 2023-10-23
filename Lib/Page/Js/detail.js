@@ -17,7 +17,7 @@ fetch(toursAPI+ "/" + id)
       });
       document.querySelector(".content2 .description").innerHTML=data.description;
       showServives(data.services, data.priceAdult, data.priceChild)
-      console.log(data)
+      // console.log(data)
 })
 
 }
@@ -79,4 +79,4 @@ formBooking.innerHTML = servicesHtml;
       </div>`
 formBooking.innerHTML = servicesHtml;
 
-}
+} 

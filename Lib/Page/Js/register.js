@@ -17,7 +17,7 @@ async function register(){
         if(password.value == confirm_password.value){
             alert("dang ky thanh cong");
             postUser(nameUser.value, email.value, password.value, phone.value);
-            //  window.location.href = "./home.html";
+             window.location.href = "./home.html";
             
         }else{
             alert("mat khau khong trung nhau, vui long nhap lai")

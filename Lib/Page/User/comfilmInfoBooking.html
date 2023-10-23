@@ -49,28 +49,28 @@
               <div class="title-main">Điền thông tin</div>
               <hr />
               <div class="form">
-                <div class="detail title-1">Thông tin đơn hàng </div>
-                <div class="d-flex align-items-center flex-row box-normal">
-                  <img height="70" class="h-5 w-5" src="../../Assets/Figma/Tour4.png" />
+                <div class="detail title-1 ">Thông tin đơn hàng </div>
+                <div class="d-flex align-items-center flex-row box-normal info-product">
+                  <img height="70" class="h-5 w-5"/>
                   <div class="ml-5">
-                    <div>Tour VinWonders Nha Trang</div>
-                    <div class="text-orange">🔥Khám phá một trong những địa điểm nổi tiếng nhất ở Nha Trang </div>
+                    <div class="product-name"></div>
+                    <div class="text-orange services"></div>
                   </div>
                 </div>
-                <h4 class="title title-2">Thông tin người tham gia</h4>
-                <button class="mt-2 normal-button">+ Thêm</button>
+                <!-- <h4 class="title title-2">Thông tin người tham gia</h4>
+                <button class="mt-2 normal-button">+ Thêm</button> -->
 
 
-                <div class="box-normal mt-4">
-                  <div class="row">
+                <!-- <div class="box-normal mt-4"> -->
+                  <!-- <div class="row">
                     <div class="col-md-6 form-group">
                       <div>Số điện thoại</div>
                     </div>
                     <div class="col-md-6 text-orange form-group mt-3 mt-md-0">
                       Vui lòng nhập
                     </div>
-                  </div>
-                  <div class="row">
+                  </div> -->
+                  <!-- <div class="row">
                     <div class="col-md-6 form-group">
                       <div>Liên lạc qua ứng dụng </div>
 
@@ -82,8 +82,8 @@
                     <div class="col-md-3 text-underline form-group mt-3 mt-md-0">
                       Chỉnh sửa
                     </div>
-                  </div>
-                </div>
+                  </div> -->
+                <!-- </div> -->
                 <h4 class="title title-2">Thông tin khác </h4>
                 <div class="detail">Thực phẩm dị ứng </div>
                 <div class="form-group mt-3">
@@ -137,29 +137,29 @@
                   </div>
                 </div>
 
-
-                <div class="">
-                  <h3 class="detail title-1">Loại ưu đãi </h3>
-                  <div class="box-discount mt-3">
-                    <div>Hiện không có mã ưu đãi nào khả dụng cho đơn hàng này </div>
-                    <hr />
-                    <div class="d-flex flex-row">
-                      <input type="text" class="form-control " name="discount" id="discount"
-                        placeholder="Nhập mã ưu đãi " required />
-                      <button class="w-25 apply-button">Áp dụng</button>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-md-6 form-group">
-                        <div class="fw-bold">Hiện có (0) </div>
+  <!-- 
+                  <div class="">
+                    <h3 class="detail title-1">Loại ưu đãi </h3>
+                    <div class="box-discount mt-3">
+                      <div>Hiện không có mã ưu đãi nào khả dụng cho đơn hàng này </div>
+                      <hr />
+                      <div class="d-flex flex-row">
+                        <input type="text" class="form-control " name="discount" id="discount"
+                          placeholder="Nhập mã ưu đãi " required />
+                        <button class="w-25 apply-button">Áp dụng</button>
                       </div>
-                      <div class="col-md-6 form-group mt-3 mt-md-0">
-                        Chưa có sẵn (0)
+                      <div class="row mt-3">
+                        <div class="col-md-6 form-group">
+                          <div class="fw-bold">Hiện có (0) </div>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                          Chưa có sẵn (0)
+                        </div>
                       </div>
+                      <hr />
+                      <div class="text-center mt-5">Hiện đang trống </div>
                     </div>
-                    <hr />
-                    <div class="text-center mt-5">Hiện đang trống </div>
-                  </div>
-                </div>
+                  </div> -->
                 <div class="custom-control mt-3 d-flex custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
                   <label class="custom-control-label mt-2 ml-5" for="customCheck1">Tôi muốn nhận các thông tin về chương
@@ -189,18 +189,20 @@
         <div class="row ">
           <div class="container mt-2 max-width-container">
             <form role="form" class="email-form">
-              <div class="title font-bold">Tour VinWonders Nha Trang
+              <div class="title font-bold nameTour">Tour VinWonders Nha Trang
               </div>
-              <div class="detail mt-2">Tour ngắm cảnh (14:00 - 15:30)
+              <div class="detail mt-2 servicesName">Tour ngắm cảnh (14:00 - 15:30)
               </div>
               <div class="detail text-success mt-2 ">Hoàn hủy miễn phí trong 24h
               </div>
-              <div class="date mt-2">Ngày
+              <div class="date mt-2 dateBooking">Ngày
               </div>
               <div class="mt-2">Đơn vị
               </div>
               <hr />
-              <div class="total">Tổng cộng</div>
+              <!-- <div class="total ">Tổng cộng 
+                <span class="totalBeforeApplyCode"></span>
+              </div> -->
             </form>
         </div>
       </div>
@@ -209,18 +211,24 @@
           <div class="container mt-5 max-width-container">
             <form role="form" class="email-form">
               <div class="title">Tổng cộng
+                <span class="totalAfterApplyCode"></span>
               </div>
-              <div class="detail mt-2">Số tiền thanh toán
+              <div class="detail mt-2 ">Số tiền thanh 
+                <span class="confilmPay"></span>
               </div>
               <hr />
-              <div class="detail ">Nhận <span class="text-success font-bold">20</span> credit cho đơn hàng này <span>  <i class="bi bi-cash-coin"></i></span>
-              </div>
+              <!-- <div class="detail ">Nhận <span class="text-success font-bold">20</span> credit cho đơn hàng này <span>  <i class="bi bi-cash-coin"></i></span>
+              </div> -->
             </form>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <script src="../../../Shared/enums/API.enum.js"></script>
+  <script src="../../Services/User/comfilmInfoBooking.js"></script>
+
   <!-- End Contact Section -->
   </main>
 </body>
