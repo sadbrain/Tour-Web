@@ -59,7 +59,7 @@
                           </a>
                         </li>
                         <li class="dropdown-divider"></li>
-                        <li class="dropdown-item"><i class="bi bi-inbox"></i> Inbox</li>
+                        <li class="dropdown-item"><a href="../Page/User/profileEdit.html"><i class="bi bi-inbox"></i> Inbox</a></li>
                         <!-- <li class="dropdown-  divider"></li>
                         <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li> -->
                         <li class="dropdown-divider"></li>
@@ -117,18 +117,17 @@
         <div class="banner">
           <div class="banner-left">
             <img
-              src="https://www.chudu24.com/wp-content/uploads/2018/06/ha-long-1.jpg"
+              src=""
               alt="Image 1"
             />
           </div>
           <div class="banner-right">
             <img
-              src="https://www.chudu24.com/wp-content/uploads/2018/06/ha-long-1.jpg"
+              src=""
               alt="Image 1"
-              style="margin-bottom: 20px"
             />
             <img
-              src="https://www.chudu24.com/wp-content/uploads/2018/06/ha-long-1.jpg"
+              src=""
               alt="Image 3"
             />
           </div>
@@ -168,20 +167,63 @@
             <button class="content1__dulich-button">
               Xem trạng thái du lịch
             </button>
-            <div class="content1__GoiDV">Gói dịch vụ</div>
-            <button class="content1__ve-button">
-              Vé 1 Ngày (Safari Park + Marine Park)
-            </button>
-            <button class="content1__ve2-button">
-              Vé 1 Ngày (Safari Park + Marine Park) + Buffet món Ấn Độ
-            </button>
-            <div class="title">Điểm tập trung</div>
-            <div class="content1__dtt-button">
-              <button>Central World</button>
-              <button>Siam Paragon</button>
-              <button>Đón tại khách sạn</button>
+            <div id="form-booking" action="">
+              <!-- <div class="form-group" ischecked = 'false'>
+                <h3 class="title">Gói dịch vụ</h3>
+
+                  <input isClicked = "false" type="button" value="Vé 1 Ngày (Safari Park + Marine Park)" price="10000">
+                  <input isClicked= "false" type="button" value="Vé 1 Ngày (Safari Park + Marine Park) + Buffet Quốc tế" price="20000">
+                  <span class="form-message">Vui lòng chọn dịch vụ này</span>
+              
+              </div>
+      
+              <div class="form-group" ischecked="false">
+                <h3 class="title">điểm đón</h3>
+
+                  <input isClicked = "false" type="button" value="Central World" price="30000">
+                  <input isClicked = "false" type="button" value="Siam Paragon" price="40000">
+                  <input isClicked = "false" type="button" value="Đón tại khách sạn" price="50000">
+                  <span class="form-message">Vui lòng chọn dịch vụ này</span>
+              </div>
+
+              <div class="form-group" ischecked="false">
+            <h3 class="title">Loại hình chuyển chở</h3>
+
+                <input isClicked = "false" type="button" value="xe chung" price="60000">
+                <input isClicked = "false" type="button" value="xe riêng" price="70000">
+                <span class="form-message">Vui lòng chọn dịch vụ này</span>
+            </div> -->
+
+            <!-- <div class="form-group" ischecked="false">
+              <h3 class="title">Số lượng</h3>
+
+                <input isClicked = "false" type="number" placeholder="người lớn" price="80000">
+                <input isClicked = "false" type="number" placeholder="trẻ em" price="90000">
+                <span class="form-message">Vui lòng chọn dịch vụ này</span>
             </div>
-            <div class="title">Loại hình chuyển chở</div>
+            <div class="total col-4"></div>
+              
+              <div class="col-12 text-end mt-3">
+
+                <button class ="btn btn-primary text-center col-3" type="button" onclick="addToCart()">thêm vào giỏ hàng</button>
+
+                <button class ="btn btn-primary text-center col-3" type="button" onclick="onsumbit()">thanh toán</button>
+              </div> -->
+
+            </div>
+              <!-- <button class="content1__ve-button">
+                Vé 1 Ngày (Safari Park + Marine Park)
+              </button>
+              <button class="content1__ve2-button">
+                Vé 1 Ngày (Safari Park + Marine Park) + Buffet món Ấn Độ
+              </button> -->
+            <!-- <div class="title">Điểm tập trung</div>
+            <div class="content1__dtt-button">
+              <button></button>
+              <button></button>
+              <button>Đón tại khách sạn</button>
+            </div> -->
+            <!-- <div class="title">Loại hình chuyển chở</div>
             <div class="content1__dtt-button">
               <button>Xe chung</button>
               <button>Xe riêng</button>
@@ -197,7 +239,7 @@
               <button>Toyota Alphard (1-5 người)</button>
               <button>Xe buýt Klook</button>
               <button>Xe Van (4-10 người)</button>
-            </div>
+            </div> -->
           </div>
           <div class="title">Đánh giá gần đây</div>
           <div class="danhgia">
@@ -241,7 +283,7 @@
           </div>
           <div class="content2">
             <h2>Về dịch vụ này</h2>
-            <p>
+            <p class="description">
               Một chuyến đi sẽ vui và thuận tiện biết mấy khi không phải lo lắng
               về phương tiện di chuyển trong chuyến đi của mình đúng không nào?
               Dịch vụ đưa đón chung và đưa đón riêng đến Safari World - cách
@@ -321,7 +363,7 @@
               <p>đ 3,781,197</p>
             </div>
           </div>
-          <div class="content5">
+          <!-- <div class="content5">
             <h2>Liên hệ với chúng tôi</h2>
             <p>Bạn thắc mắc về dịch vụ này? Chat với Klook!</p>
             <button name="button" value="OK" type="button" onclick="hello()">
@@ -460,10 +502,17 @@
                 />
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
 
-        <section id="section-right"></section>
+        <section id="section-right">
+          <div class="booking">
+            <h3>đ 504,607</h3>
+            <button class="add-to-cart btn">add to cart</button>
+            <button class="btn-booking btn">booking</button>
+          </div>
+
+        </section>
       </div>
     </main>
 
@@ -521,11 +570,15 @@
       </div>
   </footer>
   <a href="#" class="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
-
+  " alt="">
   <script src="../../Shared/enums/API.enum.js"></script>
   <script src="../Services/User/loadProfileUser.js"></script>
+  <script src="./Js/detail.js"></script>
+
   <script src="../Services/User/logout.js"></script>
   <script src="../Services/User/toggleMenu.js"></script>
   <script src="../Services/User/scroll.js"></script>
+  <script src="../Services/User/booking.js"></script>
+
   </body>
 </html>

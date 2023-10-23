@@ -166,7 +166,7 @@ function Validator(formSelector, options = {}){
         // sau đay ta đẫ được form chứa những cái rule
         //xử lý hành vi sumbit form
         formElement.onsubmit = function(event){
-            event.preventDefault();
+            event.preventDefault(); 
             var inputs = formElement.querySelectorAll("[name][rules]");
             var isValid = true;
             //mong muốn có lỗi thì set isValid = false 

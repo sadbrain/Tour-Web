@@ -17,7 +17,7 @@ async function handleShowInfoTour(){
     if(tour){
         nameTour.placeholder = tour[0].name;
         description.placeholder = tour[0].description;
-        price.placeholder  = tour[0].price.toLocaleString('vi', {style : 'currency', currency : 'VND'});
+        price.placeholder  = tour[0].price.z;
         departure_day.value = tour[0].departure_day;
         duration.placeholder = tour[0].duration;
         departure_location.placeholder = tour[0].departure_location;

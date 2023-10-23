@@ -1,4 +1,5 @@
 
+
 // const hashPassword = require('./hashPassword.js');
 const usersAPI = "http://localhost:3000/users";
 const email = document.querySelector("#email");

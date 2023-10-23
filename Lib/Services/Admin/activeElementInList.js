@@ -6,7 +6,7 @@ listNavs.forEach((item, index) => {
       });
   
       item.classList.add("active");
-    });
+    }); 
   });
  
   
