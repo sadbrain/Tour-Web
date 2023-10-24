@@ -80,7 +80,6 @@ function Validator(formSelector, options = {}){
     
     
     const formElement =  document.querySelector(formSelector);
-
     if(formElement){ 
         // láy những thằng input có rules và name 
         var inputs = formElement.querySelectorAll("[name][rules]");
@@ -173,7 +172,7 @@ function Validator(formSelector, options = {}){
             // khi có lỗi là lúc trả về errorMessage là một cái chuỗi
             // !errorMessage => false
             // !!errorMessage => true khi có lỗi 
-            for(let input of inputs){
+            for(let input    of inputs){
                 if(!handleValidate({target: input}))
                 {
                     isValid = false;

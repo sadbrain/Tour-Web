@@ -1,17 +1,22 @@
+let bookingid = 0;
 async function showFormComfilm(){
     let url = window.location.href;
     var paramsString = url.split("?")[1];
     var idTour = parseInt(paramsString.split("&")[0].split("=")[1]);
     var idUser = parseInt(paramsString.split("&")[1].split("=")[1]);
-    console.log(idTour);
-    console.log(idUser);
+
     const bookings = await getBooking();
     // console.log(bookings);
     const booking = bookings.find(booking => {
         return booking.user_id === idUser && booking.tour_id === idTour && booking.status === 1;
     })
+    bookingid = booking.id;
     const tour = await getTour(booking.tour_id);
+    const user = await getUser(booking.user_id);
+
     console.log(tour);
+    console.log(user);
+
     console.log(booking);
 
     document.querySelector(".info-product img").src = tour.img[0];
@@ -31,8 +36,15 @@ async function showFormComfilm(){
     document.querySelector(".totalAfterApplyCode").innerHTML = booking.total.toLocaleString('vi', {style : 'currency', currency : 'VND'})  ;   
     document.querySelector(".confilmPay").innerHTML = booking.total.toLocaleString('vi', {style : 'currency', currency : 'VND'})   ;   
 
-    d
-
+    
+    const contact_information = user.contact_information;
+    if(contact_information.length !== 0){
+      document.querySelector('#form-confirm-info .form-group  input[name="lastname"]').placeholder = contact_information[0].lastName;
+      document.querySelector('#form-confirm-info .form-group  input[name="firstname"]').placeholder = contact_information[0].firstName;
+      document.querySelector('#form-confirm-info .form-group  input[name="phone"]').placeholder = contact_information[0].phone;
+      document.querySelector('#form-confirm-info .form-group  input[name="email"]').placeholder = contact_information[0].email;
+      
+    }
     
 
 }
@@ -78,3 +90,84 @@ async function getBooking() {
       throw new Error(err.message);
     }
   }
+  async function confilmInfoBooking(){
+    const user_token = JSON.parse(localStorage.getItem("user_token"));
+    // check dang nhap thanh cong hay chua
+    if(!user_token){
+      return;
+    }
+    const obj_contact_info = {
+        lastName: document.querySelector('#form-confirm-info .form-group  input[name="lastname"]').value.trim(),
+        firstName: document.querySelector('#form-confirm-info .form-group  input[name="firstname"]').value.trim(),
+        phone: document.querySelector('#form-confirm-info .form-group  input[name="phone"]').value.trim(),
+        email: document.querySelector('#form-confirm-info .form-group  input[name="email"]').value.trim(),
+        food_allergies: document.querySelector('#form-confirm-info  textarea[name="message"]').value.trim(),
+        
+    }
+
+    const user = await getUser(user_token.id);
+    console.log(obj_contact_info);
+    const contact_information = user.contact_information;
+
+    // for(let contact of contact_information){
+      if(contact_information.length === 0){
+       contact_information.push(obj_contact_info) 
+      }else{
+        contact_information[0] = obj_contact_info;
+      }
+
+      await updateContactUser(contact_information, user_token.id)
+      console.log(user);
+
+      
+    // }
+
+  }
+  async function getUser(id) {
+
+    try {
+      const response = await fetch(usersAPI + "/" +id, {
+        method: "GET", 
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        return data;
+      } else {
+        throw new Error("Failed to fetch data from the API");
+      }
+    } catch (err) {
+      throw new Error(err.message);
+    }
+}
+
+
+async function updateContactUser(contact_information, id){
+  try{
+    fetch(usersAPI + "/" +id, {
+      method: "PATCH", 
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          contact_information  : contact_information,
+         })
+      });
+
+    alert("đã update thành công");
+
+  }catch(e) {
+    alert(e.message);
+  }
+}
+const paymentbtn = document.querySelector(".payment_btn");
+paymentbtn.onclick = () => {
+
+  if(bookingid !== 0){
+    window.location.href = "./payment.html?id=" + bookingid;
+
+  }
+}

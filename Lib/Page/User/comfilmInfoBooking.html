@@ -45,7 +45,7 @@
       <div class="row ">
         <div class="col-8">
           <div class="container mt-2 max-width-container">
-            <form role="form" class="email-form">
+            <form id="form-confirm-info" class = "email-form">
               <div class="title-main">Điền thông tin</div>
               <hr />
               <div class="form">
@@ -88,53 +88,40 @@
                 <div class="detail">Thực phẩm dị ứng </div>
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="message" rows="5" placeholder="Vui lòng nhập "
-                    required></textarea>
+                    ></textarea>
                 </div>
               </div>
               <div class="form">
                 <h3 class="detail title-1">Thông tin liên lạc </h3>
                 <div class="mt-2">Chúng tôi sẽ thông báo mọi thay đổi về đơn hàng cho bạn </div>
-                <button class="mt-4 normal-button">+ Thêm</button>
+                <!-- <button type="button" class="mt-4 normal-button">+ Thêm</button> -->
                 <div class="box-normal mt-4">
-                  <div class="row ">
-                    <div class="col-md-6 form-group">
-                      <div>Họ </div>
-                    </div>
-                    <div class="col-md-6 text-orange form-group mt-3 mt-md-0">
-                      <input type="text" placeholder="Vui lòng nhập">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <div>Tên </div>
-
-
-                    </div>
-                    <div class="col-md-6 text-orange form-group mt-3 mt-md-0">
-                      <input type="text" placeholder="Vui lòng nhập">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <div>Số điện thoại </div>
-
-
-                    </div>
-                    <div class="col-md-6 text-orange form-group mt-3 mt-md-0">
-                      <input type="text" placeholder="Vui lòng nhập">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <div>Email (để cập nhật thông tin đơn hàng của bạn) </div>
-                    </div>
-                    <div class="col-md-3 text-orange form-group mt-3 mt-md-0">
-                      <input type="text" placeholder="Vui lòng nhập">
-                    </div>
-                    <div class="col-md-3 text-underline form-group mt-3 mt-md-0">
-                      Chỉnh sửa
-                    </div>
-                  </div>
+                  <div id="form-confirm-info">
+                        <div class="form-group">
+                          <label for="email">Họ</label>
+                          <input type="text" id="lastname"  name="lastname" rules="required" placeholder="Vui lòng nhập"  />
+                          <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Tên</label>
+                          <input type="text" id="firstname"  name="firstname" rules="required" placeholder="Vui lòng nhập"  />
+                          <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Phone</label>
+                          <input type="text" id="phone"  name="phone" rules="required|phone|minLength:10" placeholder="Vui lòng nhập"  />
+                          <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" id="email"  name="email" rules="required|email" placeholder="Vui lòng nhập"  />
+                          <span class="form-message"></span>
+                        </div>
+                        <div class="text-end col-12">
+                          <input value="lưu" type="submit" onclick="(event) =>event.preventDefault();" class="btn btn-primary col-4 col-md-3  mt-3 mt-md-0">
+                          </input>
+                        </div>
+                  </div>    
                 </div>
 
   <!-- 
@@ -177,7 +164,7 @@
                 <div class="mt-4 box-orange">Vui lòng điền thông tin chính xác. Một khi đã gửi, bạn sẽ không thay đổi
                   được. </div>
                 <div class="text-center mt-5">
-                  <button type="reset">THANH TOÁN</button>
+                  <button type="reset" class="payment_btn">THANH TOÁN</button>
                 </div>
             </form>
           </div>
@@ -228,7 +215,26 @@
 
   <script src="../../../Shared/enums/API.enum.js"></script>
   <script src="../../Services/User/comfilmInfoBooking.js"></script>
+  <script src="../Js/validator.js"></script>
 
+  <script>
+  //     document.querySelector(".email-form").addEventListener("submit", function (event) {
+  //   // Ngăn chặn hành động mặc định của biểu mẫu
+  //   event.preventDefault();
+
+  //   // Thực hiện các xử lý khác ở đây nếu cần
+  // });
+      Validator("#form-confirm-info",{
+        otherFunc: confilmInfoBooking
+      });
+      // onSubmit: function(data) {
+      //   let scriptTag = document.createElement("script");
+      //   scriptTag.type = "text/javascript";
+      //   scriptTag.src = "js/login.js";
+      //   document.querySelector("body").append(scriptTag);
+      // }
+    
+  </script>
   <!-- End Contact Section -->
   </main>
 </body>

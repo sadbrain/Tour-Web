@@ -8,6 +8,7 @@
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 1,
       "isBlock": false,
+      "contact_information": [],
       "id": 1
     },
     {
@@ -18,6 +19,15 @@
       "phone": "987-654-3210",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
+      "contact_information": [
+        {
+          "lastName": "tinh",
+          "firstName": "tinh",
+          "phone": "0353537180",
+          "email": "john.doe@example.com",
+          "food_allergies": ""
+        }
+      ],
       "isBlock": false
     },
     {
@@ -28,6 +38,7 @@
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
       "id": 3,
+      "contact_information": [],
       "isBlock": false
     },
     {
@@ -38,6 +49,7 @@
       "phone": "777-888-9999",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
+      "contact_information": [],
       "isBlock": false
     },
     {
@@ -48,6 +60,7 @@
       "phone": "111-222-3333",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
+      "contact_information": [],
       "isBlock": false
     }
   ],
