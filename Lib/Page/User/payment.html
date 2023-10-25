@@ -1,11 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mana</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../Css/payment.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../Css/reset.css">
 </head>
 <body>
-    nơi thực hiệ việc thanh toán
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div class="logo me-auto d-flex align-items-center">
+        <img src="../../../Assets/Figma/yellow and black minimalist agency logo.png" style="border-radius: 20px;" />
+        <h1 class="m-2"><a href="booking.html">Mana</a></h1>
+      </div>
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+
+      <a class="" href="" class="text-underline"> <u>Trợ giúp</u></a>
+    </div>
+  </header>
+
+
+  <!-- End Header -->
+  <ul class="progressbar">
+    <li class="complete">Chọn đơn hàng </li>
+    <li class="complete">Điền thông tin  </li>
+    <li class="active">Thanh toán </li>
+  </ul>
+  <br>
+  <br>
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container max-width-container">
+      <div class="row ">
+        <div class="col-8">
+            <header class="payment">
+                <span class="left_header__title">Xác nhận để thanh toán</span>
+                <div class="left_header__count-down-time"><p class="klk_count_down_time"><span class="left_header__count-down-time_text">Xin thanh toán trong vòng 
+                     <span class="time">01:29:32</span> </span></p></div>
+            </header>
+
+
+            <div class="payment-type_wrap">
+                <div class="payment-type">
+                    <div class="payment_type-wrapper">
+                        <div class="payment_type-main">
+                            <div class="payment_type-main-left">
+                                <span class="radio">
+                                    <span class="radio__inner">
+                                        <input type="radio" class="radio__input" name="radioGroup">
+                                    </span>
+                                </span>
+                                <span class="payment_type-name">Thẻ Credit/Debit</span>
+
+                            </div>
+
+                            <div class="payment_type-icons">
+                                <svg aria-hidden="true" class="credit_card_icon symbol"><use xlink:href="#icon-credit-visa"></use></svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="payment_type-wrapper">
+                        <div class="payment_type-main">
+                            <div class="payment_type-main-left">
+                                <span class="radio">
+                                    <span class="radio__inner">
+                                        <input type="radio" class="radio__input" name="radioGroup">
+                                    </span>
+                                </span>
+                                <span class="payment_type-name">MoMo E-Wallet</span>
+
+                            </div>
+
+                            <div class="payment_type-icons">
+                                <svg aria-hidden="true" class="credit_card_icon symbol"><use xlink:href="#icon-credit-visa"></use></svg>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="payment_type-wrapper">
+                        <div class="payment_type-main">
+                            <div class="payment_type-main-left">
+                                <span class="radio">
+                                    <span class="radio__inner">
+                                        <input type="radio" class="radio__input" name="radioGroup">
+                                    </span>
+                                </span>
+                                <span class="payment_type-name">PayPal</span>
+
+                            </div>
+
+                            <div class="payment_type-icons">
+                                <svg aria-hidden="true" class="credit_card_icon symbol"><use xlink:href="#icon-credit-visa"></use></svg>
+                            </div>
+                            
+                        </div>
+                                                
+                        <div class="payment-tip-content">
+                            <div class="pay-tip">
+                                <span class="pay-tip_content">There might be extra fees when using PayPal. Contact your bank for more details.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment_type-wrapper">
+                        <div class="payment_type-main">
+                            <div class="payment_type-main-left">
+                                <span class="radio">
+                                    <span class="radio__inner">
+                                        <input type="radio" class="radio__input" name="radioGroup">
+                                    </span>
+                                </span>
+                                <span class="payment_type-name">ATM by MoMo</span>
+
+                            </div>
+
+                            <div class="payment_type-icons">
+                                <svg aria-hidden="true" class="credit_card_icon symbol"><use xlink:href="#icon-credit-visa"></use></svg>
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="payment-tip-content">
+                            <div class="pay-tip">
+                                <span class="pay-tip_content">Hoàn tiền không áp dụng cho lựa chọn thanh toán của bạn </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="payment-coupon-wrap">
+                <div class="payment-coupon-wrap-left">
+                    <div data-v-36e9003e="" class="warp-left-icon"><img data-v-36e9003e="" src="https://res.klook.com/image/upload/v1656399869/ued/Other/coupon.png"></div>
+                    <div data-v-36e9003e="" class="warp-left-tips">Sử dụng ưu đãi thanh toán</div>
+                </div>
+                <div class="payment-coupon-wrap-right">
+                    <div class="warp-right-price">
+                        <i></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="submit-section">
+                <div class="submit">
+                    <p class="submit__tip">
+                        Khi nhấp vào "Thanh toán", bạn đồng ý rằng bạn đã đọc và hiểu 
+                        <a class="f_h_main" href="/vi/conditions?cashier_policy_type=Conditions" target="_blank" style="text-decoration: underline">Điều khoản sử dụng </a>
+                        <a class="f_h_main" href="/vi/faq?cashier_policy_type=Refundpolicy" target="_blank" style="text-decoration: underline">Chính sách hoàn huỷ</a>
+    
+                    </p>
+                    <div class="submit__operation">
+                        <div class="submit_price_box"><span class="submit_price">
+                            ₫
+                            3,871,310
+                            </span> <!----></div>
+                   
+                            <div class="module_pay_btn">
+                                <button type="button" class="submit_btn item_pay_btn" data-spm-item="__default?trg=manual&amp;typ=entry" style="width: 100%; height: auto;">
+                                    <!----> <!----> <span>
+                                Thanh toán ngay
+                            </span> <!----></button></div>
+                    </div>
+    
+   
+                </div>
+                
+            </div>
+        </div>
+
+
+      <div class="col-4">
+        <div class="row ">
+          <div class="container mt-2 max-width-container">
+            <form role="form" class="email-form">
+              <div class="title font-bold nameTour">Tour VinWonders Nha Trang
+              </div>
+              <div class="detail mt-2 servicesName">Tour ngắm cảnh (14:00 - 15:30)
+              </div>
+              <!-- <div class="detail text-success mt-2 ">Hoàn hủy miễn phí trong 24h
+              </div> -->
+              <div class="date mt-2 dateBooking">Ngày
+              </div>
+              <div class="mt-2">Đơn vị
+              </div>
+              <hr />
+              <!-- <div class="total ">Tổng cộng 
+                <span class="totalBeforeApplyCode"></span>
+              </div> -->
+            </form>
+        </div>
+      </div>
+       
+        <div class="row">
+          <div class="container mt-5 max-width-container">
+            <form role="form" class="email-form">
+              <div class="title">Tổng cộng
+                <span class="totalAfterApplyCode"></span>
+              </div>
+              <div class="detail mt-2 ">Số tiền thanh 
+                <span class="confilmPay"></span>
+              </div>
+              <hr />
+              <!-- <div class="detail ">Nhận <span class="text-success font-bold">20</span> credit cho đơn hàng này <span>  <i class="bi bi-cash-coin"></i></span>
+              </div> -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer" class="m_footer g_row1">
+    <div class="default-footer_divider"></div>
+    <div class="b">
+        <div class="g_main m_grid">
+            <div id="simple_footer_container" class="m_justify_list">
+                <p class="t12 copyright ">
+                    <span>© 2014-2023 Klook. All Rights Reserved.</span> 
+                    <span class="dathongbao"><a href="javascript:void(0)" class="i_dathongbao"></a>
+                    </span>
+                </p>
+            </div>
+            <span class="m_justify_fix"></span>
+        </div>
+    </div>
+  </footer>
+  <script src="../../../Shared/enums/API.enum.js"></script>
+  <script src="../../Services/User/payment.js"></script>
+  <!-- <script src="../Js/validator.js"></script>
+
+  <script>
+  //     document.querySelector(".email-form").addEventListener("submit", function (event) {
+  //   // Ngăn chặn hành động mặc định của biểu mẫu
+  //   event.preventDefault();
+
+  //   // Thực hiện các xử lý khác ở đây nếu cần
+  // });
+      Validator("#form-confirm-info",{
+        otherFunc: confilmInfoBooking
+      });
+      // onSubmit: function(data) {
+      //   let scriptTag = document.createElement("script");
+      //   scriptTag.type = "text/javascript";
+      //   scriptTag.src = "js/login.js";
+      //   document.querySelector("body").append(scriptTag);
+      // }
+    
+  </script> -->
+  <!-- End Contact Section -->
+  </main>
 </body>
 </html>

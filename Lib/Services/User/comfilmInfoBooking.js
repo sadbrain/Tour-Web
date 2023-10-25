@@ -1,5 +1,9 @@
 let bookingid = 0;
-async function showFormComfilm(){
+const lastname = document.querySelector('#form-confirm-info .form-group  input[name="lastname"]');
+const firstname = document.querySelector('#form-confirm-info .form-group  input[name="firstname"]');
+const phone = document.querySelector('#form-confirm-info .form-group  input[name="phone"]');
+const email = document.querySelector('#form-confirm-info .form-group  input[name="email"]');
+async function showInfoComfirm(){
     let url = window.location.href;
     var paramsString = url.split("?")[1];
     var idTour = parseInt(paramsString.split("&")[0].split("=")[1]);
@@ -14,10 +18,10 @@ async function showFormComfilm(){
     const tour = await getTour(booking.tour_id);
     const user = await getUser(booking.user_id);
 
-    console.log(tour);
-    console.log(user);
+    // console.log(tour);
+    // console.log(user);
 
-    console.log(booking);
+    // console.log(booking);
 
     document.querySelector(".info-product img").src = tour.img[0];
     document.querySelector(".info-product .product-name").innerHTML = tour.name;  
@@ -39,17 +43,20 @@ async function showFormComfilm(){
     
     const contact_information = user.contact_information;
     if(contact_information.length !== 0){
-      document.querySelector('#form-confirm-info .form-group  input[name="lastname"]').placeholder = contact_information[0].lastName;
-      document.querySelector('#form-confirm-info .form-group  input[name="firstname"]').placeholder = contact_information[0].firstName;
-      document.querySelector('#form-confirm-info .form-group  input[name="phone"]').placeholder = contact_information[0].phone;
-      document.querySelector('#form-confirm-info .form-group  input[name="email"]').placeholder = contact_information[0].email;
+      lastname.placeholder = contact_information[0].lastName;
+      firstname.placeholder = contact_information[0].firstName;
+      phone.placeholder = contact_information[0].phone;
+      email.placeholder = contact_information[0].email;
       
     }
-    
-
 }
-showFormComfilm()
-
+showInfoComfirm()
+async function handleConfirmInfo(lastname, firstname, phone, email){
+    lastname.value = lastname.value ? lastname.value : lastname.placeholder;
+    firstname.value = firstname.value ? firstname.value : firstname.placeholder;
+    phone.value = phone.value ? phone.value : phone.placeholder;
+    email.value = email.value ? email.value : email.placeholder;
+}
 async function getTour(id) {
 
     try {
@@ -96,11 +103,12 @@ async function getBooking() {
     if(!user_token){
       return;
     }
+    await handleConfirmInfo(lastname, firstname, phone, email)
     const obj_contact_info = {
-        lastName: document.querySelector('#form-confirm-info .form-group  input[name="lastname"]').value.trim(),
-        firstName: document.querySelector('#form-confirm-info .form-group  input[name="firstname"]').value.trim(),
-        phone: document.querySelector('#form-confirm-info .form-group  input[name="phone"]').value.trim(),
-        email: document.querySelector('#form-confirm-info .form-group  input[name="email"]').value.trim(),
+        lastName: lastname.value.trim(),
+        firstName: firstname.value.trim(),
+        phone: phone.value.trim(),
+        email: email.value.trim(),
         food_allergies: document.querySelector('#form-confirm-info  textarea[name="message"]').value.trim(),
         
     }
@@ -123,6 +131,7 @@ async function getBooking() {
     // }
 
   }
+
   async function getUser(id) {
 
     try {
