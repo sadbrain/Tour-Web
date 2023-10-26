@@ -33,7 +33,7 @@ console.log(idBooking)
     // document.querySelector(".totalBeforeApplyCode").innerHTML = booking.total.toLocaleString('vi', {style : 'currency', currency : 'VND'}) ;   
     document.querySelector(".totalAfterApplyCode").innerHTML = booking.total.toLocaleString('vi', {style : 'currency', currency : 'VND'})  ;   
     document.querySelector(".confilmPay").innerHTML = booking.total.toLocaleString('vi', {style : 'currency', currency : 'VND'})   ;   
-
+    document.querySelector(".submit_price").innerHTML = booking.total.toLocaleString('vi', {style : 'currency', currency : 'VND'})   ;   
     
     // const contact_information = user.contact_information;
     // if(contact_information.length !== 0){
