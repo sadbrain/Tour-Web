@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="../../../Page/Css/formInfo.css">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="../../../Page/Css/tourService.css">
 
   <title>Admin</title>
 </head>
@@ -64,7 +64,7 @@
                             <span class="form-message"></span>
                        </div>
 
-                                           
+                                       
                        <div class="form-group">
                         <label for="input-8">Categories</label>
                         <input type="text"  name="categories" disabled class="form-control" id="input-8" placeholder="Chưa có">
@@ -86,6 +86,36 @@
                  <div class="form-group col-12 container-img text-center">
   
                   </div> 
+
+
+                 <button type="button" onclick="editServices()" class="col-6 col-md-3 btn btn-light px-5 my-5"> edit Services</button>
+                  
+                 <div class="form-group">
+                  <label for="input-7">adult price</label>
+                  <input type="number" rules="min:-1" name="adult_price" class="form-control" id="input-8" placeholder="Enter price of adult">
+                   <span class="form-message"></span>
+              </div>              
+               <div class="form-group">
+                <label for="input-7">children price</label>
+                <input type="number" rules="min:-1" name="children_price" class="form-control" id="input-9" placeholder="Enter price of children">
+                 <span class="form-message"></span>
+            </div>
+                 <!-- <div class="services mb-3">
+                    <label class="title">
+                    Service: 
+                    </label>    
+                    <input  type="text"  class="form-control mb-3 nameService"  placeholder="Enter title" >
+                    <div class="services-type-container">
+                    <div class="services-type">
+                        <input type="text" class=" "  placeholder="Enter services name" >
+                        <input type="number" class=" "  placeholder="Enter services price">
+                    </div>
+        
+                    </div>
+                    <button type="button" class="col-6 col-md-3 btn btn-light px-5" onclick="addServicesType(event)">add type services</button>
+        
+                </div> -->
+
                 <div class="form-group">
                  <button type="submit" class="col-6 col-md-3 btn btn-light px-5"> edit</button>
                  <button type="button" class="col-6 col-md-3 btn btn-light px-5 ms-5"><a href="../home.html" class="text-decoration-none text-light"> Back to user managment</a></button>
@@ -96,10 +126,25 @@
               </div>
             </div>
         </div>
+
+        <div class="modal_services">
+            <div class="modal_overlay"></div>
+            <div class="modal_body">
+              <div id="container-services">
+      
+              </div>
+              <button type="button" class="col-6 col-md-3 btn btn-light px-5 mb-3" onclick="addServices()">Add services</button>
+              <button type="button" class="col-6 col-md-3 btn btn-light px-5 mb-3" onclick="saveServices()">Save services</button>
+            </div>
+        </div>
         <script src="../../../../Shared/enums/API.enum.js"></script>
   
       <script src="../../../Page/Js/validator.js"></script>
       <script src="../../../Services/Admin/crudTour/editTour.js"></script>
+      <script src="../../../Services/Admin/crudTour/addServices.js"></script>
+      <script src="../../../Services/Admin/crudTour/showServices.js"></script>
+      <script src="../../../Services/Admin/crudTour/saveServices.js"></script>
+      <script src="../../../Services/Admin/crudTour/editServices.js"></script>
       <script>
         
         Validator("#form-edit-tour",{

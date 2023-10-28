@@ -40,6 +40,9 @@ async function postUser(name, email, password, phone){
             phone: phone.trim(),
             img: "/Assets/images/users/default_profile_picture.jpg",
             id_role: 2,
+            contact_information: [
+      
+            ],
             isBlock: false
 
         })

@@ -402,6 +402,16 @@ margin:4px 4px;
     justify-content: center;
     border-radius: 10px 10px 0 0;
 }
+.active__halong h4{
+    position: relative;
+    height: 86px;
+    overflow: hidden;
+    word-break:break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+}
 .place {
     margin-top:5%;
     display: flex;

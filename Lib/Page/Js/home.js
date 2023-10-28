@@ -128,7 +128,7 @@ let topCities = [
             <h4>${element.description}</h4>
             <div class="grid">
                 <p><i class="bi bi-star-fill"></i></p>
-                <p>4.7 (3,230)  100K+ Đã được đặt</p>
+                <p>${element.rating} (3,230)  100K+ Đã được đặt</p>
             </div>
             <button>Bán chạy</button>
             <button>Hoàn toàn dễ dàng</button>

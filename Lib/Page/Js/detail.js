@@ -53,7 +53,7 @@ formBooking.innerHTML = servicesHtml;
            <div class="form-group" ischecked = 'false'>
                  <h3 class="title">${service.title}</h3>`
         service.serviceList.forEach(element => {
-        servicesHtml += `<input isClicked = "false" type="button" value="${element.name}" price="${element.price}">`
+        servicesHtml += `<input isClicked = "false" type="button" value="${element.name}" price=${element.price}>`
         })
 
         servicesHtml += ` <span class="form-message">Vui lòng chọn dịch vụ này</span>
@@ -65,8 +65,8 @@ formBooking.innerHTML = servicesHtml;
     <div class="form-group" ischecked="false">
       <h3 class="title">Số lượng</h3>
 
-        <input isClicked = "false" type="number" placeholder="người lớn" price="${priceAdult}">
-        <input isClicked = "false" type="number" placeholder="trẻ em" price="${priceChild}">
+        <input isClicked = "false" type="number" placeholder="người lớn" price=${priceAdult}>
+        <input isClicked = "false" type="number" placeholder="trẻ em" price=${priceChild}>
         <span class="form-message">Vui lòng chọn dịch vụ này</span>
     </div>
     <div class="total col-4"></div>

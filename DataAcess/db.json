@@ -125,25 +125,24 @@
   ],
   "tours": [
     {
-      "id": 1,
       "name": "Hành trình đến Paris",
       "description": "Khám phá vẻ đẹp của Paris với tháp Eiffel và các bảo tàng nghệ thuật.",
-      "price": 33000000,
+      "price": 25000000,
       "departure_day": "2023-07-15",
-      "duration": 7,
+      "duration": "7",
       "destination": "Paris, France",
       "departure_location": "Sân bay quốc tế JFK, New York",
+      "categories": [
+        1
+      ],
+      "priceAdult": 500000,
+      "priceChild": 300000,
       "img": [
         "/Assets/images/locations/france/paris/licensed-image.jpg",
         "/Assets/images/locations/france/paris/licensed-image.jpg",
         "/Assets/images/locations/france/paris/licensed-image.jpg",
         "/Assets/images/locations/france/paris/licensed-image.jpg"
       ],
-      "categories": [
-        1
-      ],
-      "priceAdult": 500000,
-      "priceChild": 300000,
       "services": [
         {
           "serviceList": [
@@ -154,6 +153,10 @@
             {
               "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
               "price": "300000"
+            },
+            {
+              "name": "vé vào nhật",
+              "price": "200000"
             }
           ],
           "title": "Gói dịch vụ"
@@ -189,7 +192,8 @@
           "title": "Loại hình chuyên chở"
         }
       ],
-      "isBlock": false
+      "isBlock": false,
+      "id": 1
     },
     {
       "id": 2,
@@ -212,6 +216,7 @@
       "priceAdult": 400000,
       "priceChild": 200000,
       "services": [],
+      "rating": 3,
       "isBlock": false
     },
     {
@@ -279,6 +284,7 @@
           "title": "Loại hình chuyên chở"
         }
       ],
+      "rating": 4.8,
       "isBlock": false
     },
     {
@@ -346,6 +352,7 @@
           "title": "Loại hình chuyên chở"
         }
       ],
+      "rating": 4.4,
       "isBlock": false
     },
     {
@@ -413,6 +420,7 @@
           "title": "Loại hình chuyên chở"
         }
       ],
+      "rating": 4,
       "isBlock": false
     }
   ],
