@@ -124,270 +124,39 @@
     }
   ],
   "tours": [
-    {
-      "name": "Hành trình đến Paris",
-      "description": "Khám phá vẻ đẹp của Paris với tháp Eiffel và các bảo tàng nghệ thuật.",
-      "price": 25000000,
-      "departure_day": "2023-07-15",
-      "duration": "7",
-      "destination": "Paris, France",
-      "departure_location": "Sân bay quốc tế JFK, New York",
-      "categories": [
-        1
-      ],
-      "priceAdult": 500000,
-      "priceChild": 300000,
-      "img": [
-        "/Assets/images/locations/france/paris/licensed-image.jpg",
-        "/Assets/images/locations/france/paris/licensed-image.jpg",
-        "/Assets/images/locations/france/paris/licensed-image.jpg",
-        "/Assets/images/locations/france/paris/licensed-image.jpg"
-      ],
-      "services": [
-        {
-          "serviceList": [
-            {
-              "name": "vé 1 ngày (safari park + marine park)",
-              "price": "200000"
-            },
-            {
-              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-              "price": "300000"
-            },
-            {
-              "name": "vé vào nhật",
-              "price": "200000"
-            }
-          ],
-          "title": "Gói dịch vụ"
-        },
-        {
-          "serviceList": [
-            {
-              "name": "central world",
-              "price": "200000"
-            },
-            {
-              "name": "Siam Paragon",
-              "price": "300000"
-            },
-            {
-              "name": "Đón tại khách sạn",
-              "price": "400000"
-            }
-          ],
-          "title": "Điểm đón"
-        },
-        {
-          "serviceList": [
-            {
-              "name": "xe chung",
-              "price": "200000"
-            },
-            {
-              "name": "xe riêng",
-              "price": "300000"
-            }
-          ],
-          "title": "Loại hình chuyên chở"
-        }
-      ],
-      "isBlock": false,
-      "id": 1
-    },
-    {
-      "id": 2,
-      "name": "Kỳ nghỉ ở Bali",
-      "description": "Thư giãn tại các bãi biển tuyệt đẹp và tham quan các đền Hindu ở Bali.",
-      "price": 26400000,
-      "departure_day": "2023-08-20",
-      "duration": 10,
-      "destination": "Bali, Indonesia",
-      "departure_location": "Sân bay quốc tế LAX, Los Angeles",
-      "img": [
-        "/Assets/images/locations/indonesia/bali/bali.jpg",
-        "/Assets/images/locations/indonesia/bali/bali.jpg",
-        "/Assets/images/locations/indonesia/bali/bali.jpg",
-        "/Assets/images/locations/indonesia/bali/bali.jpg"
-      ],
-      "categories": [
-        2
-      ],
-      "priceAdult": 400000,
-      "priceChild": 200000,
-      "services": [],
-      "rating": 3,
-      "isBlock": false
-    },
-    {
-      "id": 3,
-      "name": "Khám phá Machu Picchu",
-      "description": "Hành trình đến thành phố cổ của người Inca, Machu Picchu.",
-      "price": 39600000,
-      "departure_day": "2023-09-10",
-      "duration": 8,
-      "destination": "Machu Picchu, Peru",
-      "departure_location": "Sân bay quốc tế MIA, Miami",
-      "img": [
-        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
-        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
-        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg",
-        "/Assets/images/locations/peru/machu_picchu/machu_picchu.jpg"
-      ],
-      "categories": [
-        3
-      ],
-      "priceAdult": 500000,
-      "priceChild": 300000,
-      "services": [
-        {
-          "serviceList": [
-            {
-              "name": "vé 1 ngày (safari park + marine park)",
-              "price": "200000"
-            },
-            {
-              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-              "price": "300000"
-            }
-          ],
-          "title": "Gói dịch vụ"
-        },
-        {
-          "serviceList": [
-            {
-              "name": "central world",
-              "price": "200000"
-            },
-            {
-              "name": "Siam Paragon",
-              "price": "300000"
-            },
-            {
-              "name": "Đón tại khách sạn",
-              "price": "400000"
-            }
-          ],
-          "title": "Điểm đón"
-        },
-        {
-          "serviceList": [
-            {
-              "name": "xe chung",
-              "price": "200000"
-            },
-            {
-              "name": "xe riêng",
-              "price": "300000"
-            }
-          ],
-          "title": "Loại hình chuyên chở"
-        }
-      ],
-      "rating": 4.8,
-      "isBlock": false
-    },
-    {
-      "id": 4,
-      "name": "Dạo chơi ở Santorini",
-      "description": "Thư giãn tại hòn đảo Santorini nổi tiếng với kiến trúc trắng và biển xanh.",
-      "price": 35200000,
-      "departure_day": "2023-10-05",
-      "duration": 9,
-      "destination": "Santorini, Greece",
-      "departure_location": "Sân bay quốc tế ORD, Chicago",
-      "img": [
-        "/Assets/images/locations/greece/santorini/santorini.jpg",
-        "/Assets/images/locations/greece/santorini/santorini.jpg",
-        "/Assets/images/locations/greece/santorini/santorini.jpg",
-        "/Assets/images/locations/greece/santorini/santorini.jpg"
-      ],
-      "categories": [
-        2
-      ],
-      "priceAdult": 500000,
-      "priceChild": 300000,
-      "services": [
-        {
-          "serviceList": [
-            {
-              "name": "vé 1 ngày (safari park + marine park)",
-              "price": "200000"
-            },
-            {
-              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-              "price": "300000"
-            }
-          ],
-          "title": "Gói dịch vụ"
-        },
-        {
-          "serviceList": [
-            {
-              "name": "central world",
-              "price": "200000"
-            },
-            {
-              "name": "Siam Paragon",
-              "price": "300000"
-            },
-            {
-              "name": "Đón tại khách sạn",
-              "price": "400000"
-            }
-          ],
-          "title": "Điểm đón"
-        },
-        {
-          "serviceList": [
-            {
-              "name": "xe chung",
-              "price": "200000"
-            },
-            {
-              "name": "xe riêng",
-              "price": "300000"
-            }
-          ],
-          "title": "Loại hình chuyên chở"
-        }
-      ],
-      "rating": 4.4,
-      "isBlock": false
-    },
-    {
-      "id": 5,
-      "name": "Du lịch qua Roma",
-      "description": "Khám phá di tích lịch sử của La Mã cổ đại và thăm Vatican.",
-      "price": 37400000,
+     {
+      "id": 1,
+      "name": "Du lịch ra Hà Nội",
+      "description": "Tham quan Quảng trường Ba Đình - Lăng Bác",
+      "price": 565000,
       "departure_day": "2023-11-15",
-      "duration": 6,
-      "destination": "Rome, Italy",
-      "departure_location": "Sân bay quốc tế SFO, San Francisco",
+      "duration": 28,
+     "destination":  "Hà Nội",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
-        "/Assets/images/locations/italy/rome/licensed-image.jpg",
-        "/Assets/images/locations/italy/rome/licensed-image.jpg",
-        "/Assets/images/locations/italy/rome/licensed-image.jpg",
-        "/Assets/images/locations/italy/rome/licensed-image.jpg"
+        "/Assets//Figma/QT2.jpg",
+        "/Assets/Figma/QT3.jpg",
+        "/Assets/Figma/Qt4.jpg",
+        "/Assets/Figma/Quang truong1.jpg"
       ],
       "categories": [
         1
       ],
-      "priceAdult": 500000,
-      "priceChild": 300000,
+      "priceAdult": 700000,
+      "priceChild": 340000,
       "services": [
         {
-          "serviceList": [
-            {
-              "name": "vé 1 ngày (safari park + marine park)",
-              "price": "200000"
-            },
-            {
-              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-              "price": "300000"
-            }
-          ],
-          "title": "Gói dịch vụ"
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -420,7 +189,1183 @@
           "title": "Loại hình chuyên chở"
         }
       ],
-      "rating": 4,
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 2,
+      "name": "Du lịch ra Hà Nội",
+      "description": "Hồ Gươm",
+      "price": 700000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Hà Nội",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/HG1.jpg",
+        "/Assets//Figma/HG2.jpg",
+        "/Assets/Figma/HG3.jpg",
+        "/Assets/Figma/HG4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 700000,
+      "priceChild": 340000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 5,
+      "name": "Du lịch ra Hà Nội",
+      "description": "Tham quan Quảng trường Ba Đình - Lăng Bác",
+      "price": 565000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Hà Nội",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets//Figma/QT2.jpg",
+        "/Assets/Figma/QT3.jpg",
+        "/Assets/Figma/Qt4.jpg",
+        "/Assets/Figma/Quang truong1.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 700000,
+      "priceChild": 340000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 3,
+      "name": "Du lịch ra Hà Nội",
+      "description": " Phố cổ Hà Nội – địa điểm du lịch hấp dẫn",
+      "price": 850000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Hà Nội",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/PC1.jpg",
+        "/Assets//Figma/PC2.jpg",
+        "/Assets/Figma/PC3.jpg",
+        "/Assets/Figma/PC4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 850000,
+      "priceChild": 540000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+  
+     {
+      "id": 4,
+      "name": "Du lịch ra Hà Nội",
+      "description": "Văn Miếu – Quốc Tử Giám",
+      "price": 450000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Hà Nội",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/VM1.jpg",
+        "/Assets//Figma/VM2.jpg",
+        "/Assets/Figma/VM3.jpg",
+        "/Assets/Figma/VM4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 450000,
+      "priceChild": 290000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 5,
+      "name": "Du lịch ra Hà Nội",
+      "description": " Hồ Tây – điểm du lịch Hà Nội thú vị",
+      "price": 999000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Hà Nội",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/HT1.jpg",
+        "/Assets//Figma/HT2.jpg",
+        "/Assets/Figma/HT3.jpg",
+        "/Assets/Figma/HT4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 999000,
+      "priceChild": 760000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+  
+     {
+      "id": 6,
+      "name": "Du lịch ra Đà Nẵng",
+      "description": " Bà Nà Hills (Đà Nẵng)",
+      "price": 1500000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Đà Nẵng",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/BNH1.jpg",
+        "/Assets//Figma/BNH@.jpg",
+        "/Assets/Figma/BNH3.jpg",
+        "/Assets/Figma/BNH4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 1500000,
+      "priceChild": 1340000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 7,
+      "name": "Du lịch Đà Nẵng",
+      "description": " Biển Mỹ Khê (Đà Nẵng)",
+      "price": 800000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Quảng Nam",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/BMK1.jpg",
+        "/Assets//Figma/BMK2.jpg",
+        "/Assets/Figma/BMK3.jpg",
+        "/Assets/Figma/BMK4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 800000,
+      "priceChild": 600000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 8,
+      "name": "Du lịch Quảng Nam",
+      "description": " Cù Lao Chàm (Hội An)",
+      "price": 650000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Quảng Nam",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/CLC1.jpg",
+        "/Assets//Figma/CLC2.jpg",
+        "/Assets/Figma/CLC3.jpg",
+        "/Assets/Figma/CLC4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 650000,
+      "priceChild": 430000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 5,
+      "name": "Du lịch Quảng Bình",
+      "description": "Phong Nha Kẻ Bàng (Quảng Bình)",
+      "price": 870000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Quảng Bình",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets//Figma/QT2.jpg",
+        "/Assets/Figma/QT3.jpg",
+        "/Assets/Figma/Qt4.jpg",
+        "/Assets/Figma/Quang truong1.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 870000,
+      "priceChild": 450000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 9,
+      "name": "Du lịch Quảng Nam",
+      "description": " Phố cổ Hội An (Quảng Nam)",
+      "price": 500000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Quảng Nam",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/PCHA1.jpg",
+        "/Assets//Figma/PCHA2.jpg",
+        "/Assets/Figma/PCHA3.jpg",
+        "/Assets/Figma/PCHA4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 500000,
+      "priceChild": 380000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 10,
+      "name": "Du lịch Huế",
+      "description": "Đại Nội (Kinh thành Huế)",
+      "price": 300000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Huế",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/KTH1.jpg",
+        "/Assets//Figma/KTH2.jpg",
+        "/Assets/Figma/KTH3.jpg",
+        "/Assets/Figma/KTH4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 300000,
+      "priceChild": 230000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+
+     {
+      "id": 11,
+      "name": "Du lịch Tây Ninh ",
+      "description": "Núi Bà Đen - Tây Ninh",
+      "price": 760000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Tây Ninh",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/NBD1.jpg",
+        "/Assets//Figma/NBD2.jpg",
+        "/Assets/Figma/NBD3.jpg",
+        "/Assets/Figma/NBD4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 760000,
+      "priceChild": 450000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 12,
+      "name": "Du lịch Vũng Tàu",
+      "description": "Biển Suối Ồ - Vũng Tàu",
+      "price": 600000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Vũng Tàu",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/BSO1.jpg",
+        "/Assets//Figma/BSO2.jpg",
+        "/Assets/Figma/BSO3.jpg",
+        "/Assets/Figma/BSO4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 600000,
+      "priceChild": 450000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+     {
+      "id": 13,
+      "name": "Du lịch Phú Quốc",
+      "description": "Phú Quốc",
+      "price": 2000000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Kiên Giang",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/PQ1.jpg",
+        "/Assets//Figma/PQ2.jpg",
+        "/Assets/Figma/PQ3.jpg",
+        "/Assets/Figma/PQ4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 2000000,
+      "priceChild": 1800000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+    
+     {
+      "id": 14,
+      "name": "Du lịch Nha Trang",
+      "description": "Nha Trang",
+      "price": 1700000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Khánh Hòa",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/NT1.jpg",
+        "/Assets//Figma/NT2.jpg",
+        "/Assets/Figma/NT3.jpg",
+        "/Assets/Figma/NT4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 1700000,
+      "priceChild": 1500000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+  
+  
+     {
+      "id": 15,
+      "name": "Du lịch Sóc Trăng",
+      "description": "Bảo Tàng Khmer Sóc Trăng",
+      "price": 500000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Sóc Trăng",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/st1.jpg",
+        "/Assets//Figma/st22.jpg",
+        "/Assets/Figma/ST3.jpg",
+        "/Assets/Figma/St4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 500000,
+      "priceChild": 400000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
+      "isBlock": false
+    },
+     {
+      "id": 16,
+      "name": "Du lịch Sóc Trăng",
+      "description": "Bảo Tàng Khmer Sóc Trăng",
+      "price": 500000,
+      "departure_day": "2023-11-15",
+      "duration": 28,
+     "destination":  "Sóc Trăng",
+      "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
+      "img": [
+        "/Assets/Figma/MCM1.jpg",
+        "/Assets//Figma/MCM2.jpg",
+        "/Assets/Figma/MCM3.jpg",
+        "/Assets/Figma/MCM4.jpg"
+      ],
+      "categories": [
+        1
+      ],
+      "priceAdult": 500000,
+      "priceChild": 400000,
+      "services": [
+        {
+            "serviceList": [
+              {
+                "name": "vé 1 ngày (safari park + marine park)",
+                "price": "200000"
+              },
+              {
+                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+                "price": "300000"
+              }
+            ],
+            "title": "Gói dịch vụ"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "central world",
+              "price": "200000"
+            },
+            {
+              "name": "Siam Paragon",
+              "price": "300000"
+            },
+            {
+              "name": "Đón tại khách sạn",
+              "price": "400000"
+            }
+          ],
+          "title": "Điểm đón"
+        },
+        {
+          "serviceList": [
+            {
+              "name": "xe chung",
+              "price": "200000"
+            },
+            {
+              "name": "xe riêng",
+              "price": "300000"
+            }
+          ],
+          "title": "Loại hình chuyên chở"
+        }
+      ],
+      "rating": 4.5,
       "isBlock": false
     }
   ],

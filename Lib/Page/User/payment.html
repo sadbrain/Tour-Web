@@ -245,8 +245,36 @@
   </footer>
   <script src="../../../Shared/enums/API.enum.js"></script>
   <script src="../../Services/User/payment.js"></script>
-  <!-- <script src="../Js/validator.js"></script>
+  <script>
+    const startTime = new Date().getTime();
+
+    const endTime = new Date(startTime + 2 * 60 * 60 * 1000).getTime();
+
+// Cập nhật đồng hồ đếm ngược sau mỗi giây
+const timer = setInterval(function() {
+    const currentTime = new Date().getTime();
+    const timeRemaining = endTime - currentTime;
+
+    // Tính thời gian còn lại
+    const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    // Hiển thị đồng hồ đếm ngược trên trang web
+    const countdownElement = document.querySelector('.left_header__count-down-time .time');
+    countdownElement.innerHTML = `${hours} : ${minutes} : ${seconds}`;
+
+    // Kiểm tra nếu thời gian đã hết, dừng đồng hồ đếm ngược
+    if (timeRemaining <= 0) {
+        clearInterval(timer);
+        countdownElement.innerHTML = 'Đã hết thời gian!';
+    }
+}, 1000);
+</script>
     
+  </script>
+  <!-- <script src="../Js/validator.js"></script>
+
   <script>
   //     document.querySelector(".email-form").addEventListener("submit", function (event) {
   //   // Ngăn chặn hành động mặc định của biểu mẫu
