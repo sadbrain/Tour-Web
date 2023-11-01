@@ -124,14 +124,14 @@
     }
   ],
   "tours": [
-     {
+    {
       "id": 1,
       "name": "Du lịch ra Hà Nội",
       "description": "Tham quan Quảng trường Ba Đình - Lăng Bác",
       "price": 565000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Hà Nội",
+      "destination": "Hà Nội",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets//Figma/QT2.jpg",
@@ -146,17 +146,17 @@
       "priceChild": 340000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -192,15 +192,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 2,
       "name": "Du lịch ra Hà Nội",
       "description": "Hồ Gươm",
       "price": 700000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Hà Nội",
+      "destination": "Hà Nội",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/HG1.jpg",
@@ -215,17 +214,17 @@
       "priceChild": 340000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -261,15 +260,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 5,
       "name": "Du lịch ra Hà Nội",
       "description": "Tham quan Quảng trường Ba Đình - Lăng Bác",
       "price": 565000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Hà Nội",
+      "destination": "Hà Nội",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets//Figma/QT2.jpg",
@@ -284,17 +282,17 @@
       "priceChild": 340000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -330,15 +328,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 3,
       "name": "Du lịch ra Hà Nội",
       "description": " Phố cổ Hà Nội – địa điểm du lịch hấp dẫn",
       "price": 850000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Hà Nội",
+      "destination": "Hà Nội",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/PC1.jpg",
@@ -353,17 +350,17 @@
       "priceChild": 540000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -399,16 +396,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-  
-     {
+    {
       "id": 4,
       "name": "Du lịch ra Hà Nội",
       "description": "Văn Miếu – Quốc Tử Giám",
       "price": 450000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Hà Nội",
+      "destination": "Hà Nội",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/VM1.jpg",
@@ -423,17 +418,17 @@
       "priceChild": 290000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -469,15 +464,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 5,
       "name": "Du lịch ra Hà Nội",
       "description": " Hồ Tây – điểm du lịch Hà Nội thú vị",
       "price": 999000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Hà Nội",
+      "destination": "Hà Nội",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/HT1.jpg",
@@ -492,17 +486,17 @@
       "priceChild": 760000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -538,16 +532,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-  
-     {
+    {
       "id": 6,
       "name": "Du lịch ra Đà Nẵng",
       "description": " Bà Nà Hills (Đà Nẵng)",
       "price": 1500000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Đà Nẵng",
+      "destination": "Đà Nẵng",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/BNH1.jpg",
@@ -562,17 +554,17 @@
       "priceChild": 1340000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -608,15 +600,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 7,
       "name": "Du lịch Đà Nẵng",
       "description": " Biển Mỹ Khê (Đà Nẵng)",
       "price": 800000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Quảng Nam",
+      "destination": "Quảng Nam",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/BMK1.jpg",
@@ -631,17 +622,17 @@
       "priceChild": 600000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -677,15 +668,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 8,
       "name": "Du lịch Quảng Nam",
       "description": " Cù Lao Chàm (Hội An)",
       "price": 650000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Quảng Nam",
+      "destination": "Quảng Nam",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/CLC1.jpg",
@@ -700,17 +690,17 @@
       "priceChild": 430000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -746,15 +736,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 5,
       "name": "Du lịch Quảng Bình",
       "description": "Phong Nha Kẻ Bàng (Quảng Bình)",
       "price": 870000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Quảng Bình",
+      "destination": "Quảng Bình",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets//Figma/QT2.jpg",
@@ -769,17 +758,17 @@
       "priceChild": 450000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -815,15 +804,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 9,
       "name": "Du lịch Quảng Nam",
       "description": " Phố cổ Hội An (Quảng Nam)",
       "price": 500000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Quảng Nam",
+      "destination": "Quảng Nam",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/PCHA1.jpg",
@@ -838,17 +826,17 @@
       "priceChild": 380000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -884,15 +872,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 10,
       "name": "Du lịch Huế",
       "description": "Đại Nội (Kinh thành Huế)",
       "price": 300000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Huế",
+      "destination": "Huế",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/KTH1.jpg",
@@ -907,17 +894,17 @@
       "priceChild": 230000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -953,16 +940,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-
-     {
+    {
       "id": 11,
       "name": "Du lịch Tây Ninh ",
       "description": "Núi Bà Đen - Tây Ninh",
       "price": 760000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Tây Ninh",
+      "destination": "Tây Ninh",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/NBD1.jpg",
@@ -977,17 +962,17 @@
       "priceChild": 450000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -1023,15 +1008,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 12,
       "name": "Du lịch Vũng Tàu",
       "description": "Biển Suối Ồ - Vũng Tàu",
       "price": 600000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Vũng Tàu",
+      "destination": "Vũng Tàu",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/BSO1.jpg",
@@ -1046,17 +1030,17 @@
       "priceChild": 450000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -1092,15 +1076,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-     {
+    {
       "id": 13,
       "name": "Du lịch Phú Quốc",
       "description": "Phú Quốc",
       "price": 2000000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Kiên Giang",
+      "destination": "Kiên Giang",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/PQ1.jpg",
@@ -1115,17 +1098,17 @@
       "priceChild": 1800000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -1161,15 +1144,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-    
-     {
+    {
       "id": 14,
       "name": "Du lịch Nha Trang",
       "description": "Nha Trang",
       "price": 1700000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Khánh Hòa",
+      "destination": "Khánh Hòa",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/NT1.jpg",
@@ -1184,17 +1166,17 @@
       "priceChild": 1500000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -1230,16 +1212,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-  
-  
-     {
+    {
       "id": 15,
       "name": "Du lịch Sóc Trăng",
       "description": "Bảo Tàng Khmer Sóc Trăng",
       "price": 500000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Sóc Trăng",
+      "destination": "Sóc Trăng",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/st1.jpg",
@@ -1254,17 +1234,17 @@
       "priceChild": 400000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -1300,14 +1280,14 @@
       "rating": 4.5,
       "isBlock": false
     },
-     {
+    {
       "id": 16,
       "name": "Du lịch Sóc Trăng",
       "description": "Bảo Tàng Khmer Sóc Trăng",
       "price": 500000,
       "departure_day": "2023-11-15",
       "duration": 28,
-     "destination":  "Sóc Trăng",
+      "destination": "Sóc Trăng",
       "departure_location": "Sân bay tại địa điểm nơi gần bạn sống",
       "img": [
         "/Assets/Figma/MCM1.jpg",
@@ -1322,17 +1302,17 @@
       "priceChild": 400000,
       "services": [
         {
-            "serviceList": [
-              {
-                "name": "vé 1 ngày (safari park + marine park)",
-                "price": "200000"
-              },
-              {
-                "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
-                "price": "300000"
-              }
-            ],
-            "title": "Gói dịch vụ"
+          "serviceList": [
+            {
+              "name": "vé 1 ngày (safari park + marine park)",
+              "price": "200000"
+            },
+            {
+              "name": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+              "price": "300000"
+            }
+          ],
+          "title": "Gói dịch vụ"
         },
         {
           "serviceList": [
@@ -1539,6 +1519,114 @@
       ],
       "isBlock": false,
       "id": 4
+    },
+    {
+      "booking_date": "1/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 700000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
+      },
+      "total": 2165000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 5,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "Đón tại khách sạn",
+          "servicePrice": "400000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "300000"
+        }
+      ],
+      "isBlock": false,
+      "id": 6
+    },
+    {
+      "booking_date": "1/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 700000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
+      },
+      "total": 2165000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 5,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "Đón tại khách sạn",
+          "servicePrice": "400000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "300000"
+        }
+      ],
+      "isBlock": false,
+      "id": 7
+    },
+    {
+      "booking_date": "1/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 850000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
+      },
+      "total": 2500000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 3,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "Siam Paragon",
+          "servicePrice": "300000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "300000"
+        }
+      ],
+      "isBlock": false,
+      "id": 8
     }
   ],
   "status_bookings": [
