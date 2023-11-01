@@ -1367,9 +1367,15 @@
     {
       "id": 1,
       "booking_date": "2023-10-4",
-      "num_of_participants": {
-        "adults": 2,
-        "children": 4
+      "num_of_participants":{
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 700000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
       },
       "total": 132000000,
       "status": 2,
@@ -1398,8 +1404,14 @@
       "id": 2,
       "booking_date": "2023-10-2",
       "num_of_participants": {
-        "adults": 3,
-        "children": 2
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 700000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
       },
       "total": 132000000,
       "status": 2,
@@ -1428,8 +1440,14 @@
       "id": 3,
       "booking_date": "2023-10-1",
       "num_of_participants": {
-        "adults": 2,
-        "children": 1
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 700000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
       },
       "total": 132000000,
       "status": 1,
@@ -1458,8 +1476,14 @@
       "id": 5,
       "booking_date": "2023-10-1",
       "num_of_participants": {
-        "adults": 2,
-        "children": 2
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 700000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
       },
       "total": 132000000,
       "status": 1,
@@ -1591,42 +1615,6 @@
       ],
       "isBlock": false,
       "id": 7
-    },
-    {
-      "booking_date": "1/11/2023",
-      "num_of_participants": {
-        "adults": {
-          "quantity": 1,
-          "totalPrice": 850000
-        },
-        "childrens": {
-          "quantity": 0,
-          "totalPrice": 0
-        }
-      },
-      "total": 2500000,
-      "status": 1,
-      "user_id": 2,
-      "tour_id": 3,
-      "services": [
-        {
-          "title": "Gói dịch vụ",
-          "serviceValue": "vé 1 ngày (safari park + marine park)",
-          "servicePrice": "200000"
-        },
-        {
-          "title": "Điểm đón",
-          "serviceValue": "Siam Paragon",
-          "servicePrice": "300000"
-        },
-        {
-          "title": "Loại hình chuyên chở",
-          "serviceValue": "xe riêng",
-          "servicePrice": "300000"
-        }
-      ],
-      "isBlock": false,
-      "id": 8
     }
   ],
   "status_bookings": [

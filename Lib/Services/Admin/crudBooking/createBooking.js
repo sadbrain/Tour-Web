@@ -80,7 +80,7 @@ async function handleCreate(){
     let stringDate =  ngay + "/" + thang + "/" + nam
 // console.log(stringDate)
 // console.log(listServiecBooking)
-// console.log(listServiecBooking)
+// console.log(participants)
 
 
   

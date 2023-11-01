@@ -6,7 +6,7 @@ profileEdit.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../Css/reset.css">
-    <link rel="stylesheet" href="../Css/profileEdit.css">
+    <link rel="stylesheet" href="../Css/orderPage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -102,10 +102,7 @@ profileEdit.html
         <div class="feature">
           <ul>
             <li>
-              <a href="./orderPage.html" class="text-white text-decoration-none">
-                <p><ion-icon name="bag-outline"></ion-icon>Don hang</p>
-
-              </a>
+              <p><ion-icon name="bag-outline"></ion-icon>Don hang</p>
             </li>
             <li>
               <p><ion-icon name="bag-outline"></ion-icon>Danh gia</p>
@@ -118,8 +115,11 @@ profileEdit.html
             </li>
             <li>
               <p>
-                <ion-icon name="bag-outline"></ion-icon>Quan ly thong tin khach
-                hang
+                <a href="./profileEdit.html" class="text-white text-decoration-none">
+                    <ion-icon name="bag-outline"></ion-icon>Quan ly thong tin khach
+                    hang
+                </a>
+
               </p>
             </li>
             <li>
@@ -133,53 +133,36 @@ profileEdit.html
       </div>
       <div class="right-content">
         <div class="title-section">
-            <div class="title">Thong tin ca nhan</div>
-            <div class="description">
-                Premium designed icons for use in web, iOS, Android, and desktop apps. Support for SVG. Completely open source, MIT licensed and built by Ionic.
-            </div>
+            <div class="title">Đơn hàng</div>
+  
         </div>
-        <form id="user-info-form" action="">
-          <div class="form-group field">
-            <div class="label">
-                <div class="name">Tên của bạn</div>
-                <div class="button">chỉnh sửa</div>
-            </div>
-            <input type="text" id="profile_name" disabled name="name" placeholder="chưa có" />
-            <span class="form-message"></span>
-          </div>
+        <!-- <div class="content_normal">
+            <div class="content_container">
+                <div class="booking-item-module">
+                    <div class="booking-item">
+                        <section class="booking-content">
+                            <section class="booking-content_wrapper">
+                                <div class="booking-content_wrapper--content"><p class="booking-content_title">
+                                    Trải Nghiệm Du Thuyền Chao Phraya Princess ở Bangkok
+                                  </p> <p class="booking-content_desc">
+                                      Vé Ăn tối trên Du thuyền tại Bến tàu ICONSIAM
+                                    </p><p class="booking-content_desc">
+                                      2023-11-18
+                                    </p><p class="booking-content_desc">
+                                       Người lớn * 1
+                                    </p> <p class="booking-content_price">
+                                    Cần thanh toán: ₫ 814605
+                                  </p></div>
+                            </section>
+                        </section>
 
-          <div class="form-group field">
-            <div class="label">
-                <div class="name" >Email</div>
-                <div class="button">chỉnh sửa</div>
-            </div>
-            <input type="text" id="profile_email" disabled name="email" rules="email" placeholder="chưa có" />
-            <span class="form-message"></span>
-          </div>
-
-          <div class="form-group field">
-            <div class="label">
-                <div class="name" >Phone</div>
-                <div class="button">chỉnh sửa</div>
-            </div>
-            <input type="text" id="profile_phone" disabled name="phone" rules="phone" placeholder="chưa có" />
-            <span class="form-message"></span>
-          </div>
-
-          <div class="form-group field">
-            <div class="label">
-                <div class="name">Password</div>
-                <div class="button">chỉnh sửa</div>
-            </div>
-            <input type="Password" id="profile_password" disabled name="password" rules="password" placeholder="chưa có" />
-            <span class="form-message"></span>
-          </div>
-
-          <div class="col-12 text-end">
-            <button type="submit" id="savechange" class="col-4 btn btn-dark">Save Change</button>
-
-          </div>
-        </form>
+                        <section class="booking-content_wrapper"><div class="booking-content_wrapper--left"><p class="booking-content_status" style="color: rgb(255, 156, 0);">
+                            Chờ Thanh Toán
+                            <span class="count-down">00:00:00</span></p> <div class="booking-content_option"><span data-spm-item="Tab?typ=entry&amp;ext={&quot;LinkUrl&quot;:&quot;https%3A%2F%2Fwww.klook.com%2Fvi%2Forder-checkout%3Fentrance%3D2%26order_no%3D4863411984&quot;}" class="booking-content_option--margin"><button type="button" class="klk-button klk-button-primary klk-button-small"><!----> <!----> <span>
+           
+        <div class="bookings-content_normal">
+   
+     </div>
 
       </div>
     </div>
@@ -198,14 +181,7 @@ profileEdit.html
     <script src="../../Services/User/logout.js"></script>
     <script src="../../Services/User/toggleMenu.js"></script>
     <script src="../../Services/User/scroll.js"></script>
-    <script src="../../Services/User/profileEdit.js"></script>
-
-    <script src="../Js/validator.js">
-    </script>
-    <script>
-      Validator("#user-info-form",{
-          otherFunc: handleEdit
-        });
-    </script>
+    <script src="../../Services/User/orderPage.js"></script>
+  
   </body>
 </html>
