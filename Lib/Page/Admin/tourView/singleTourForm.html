@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+
+  <link rel="stylesheet" href="../../../Page/Css/reset.css">
+  <link rel="stylesheet" href="../../../Page/Css/admin.style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../../Page/Css/formInfo.css">
+  <link rel="stylesheet" href="../../../Page/Css/tourService.css">
+
+<link rel="stylesheet" href="">
+
+  <title>Admin</title>
+</head>
+
+<body class="bg-theme" id="theme1">
+
+        <div class="container mt-5" action="../../Services/Admin/createUser.js" method="post">
+            <div class="card form-position">
+                <div class="card-body">
+                <div class="card-title text-center fs-3">single tour</div>
+                <div class="card-img col-12 text-center">
+                  <img class="col-3 user_avatar" src="" style="border-radius:50%;">
+                  <div class="col-12 mt-3">
+
+                  </div>
+                </div>
+                <hr>
+                 <form id="form-single-tour">
+  
+                    <div class="form-group">
+                        <label for="input-1">Name</label>
+                        <input disabled type="text"  name="name" class="form-control" id="input-1" placeholder="Chưa có">
+                         <span class="form-message"></span>
+                        
+                       </div>
+                       <div class="form-group">
+                        <label for="input-2">Description</label>
+                        <textarea id="w3review"  class="form-control" name="description"   rows="4" cols="50"></textarea>
+                         <span class="form-message"></span>
+                       </div>
+                       <div class="form-group">
+                        <label for="input-3">Price</label>
+                        <input disabled type="number" name="price" rules="min:100000" class="form-control" id="input-3" placeholder="Chưa có">
+                         <span class="form-message"></span>
+                       </div>
+                       <div class="form-group">
+                        <label for="input-4">Departure day</label>
+                        <input disabled type="date"  class="form-control" name="departure_day" placeholder="đd/mm/yy"/>
+                        <!-- <input disabled type="password" rules="|password" name ="password" class="form-control" id="input-4" placeholder="Enter Password"> -->
+                         <span class="form-message"></span>
+                       </div>
+                       <div class="form-group">
+                        <label for="input-5">Duration</label>
+                        <input disabled type="number" rules="min:24" name="duration" class="form-control" id="input-5" placeholder="Chưa có">
+                         <span class="form-message"></span>
+                       </div>
+       
+                       <div class="form-group">
+                           <label for="input-6">Departure Location</label>
+                           <input disabled type="text"  name="departure_location" class="form-control" id="input-6" placeholder="Chưa có">
+                            <span class="form-message"></span>
+                       </div>
+                       
+                       <div class="form-group">
+                           <label for="input-7">Destination</label>
+                           <input disabled type="text"  name="destination" class="form-control" id="input-7" placeholder="Chưa có">
+                            <span class="form-message"></span>
+                       </div>
+
+                                       
+                       <div class="form-group">
+                        <label for="input-8">Categories</label>
+                        <input disabled type="text"  name="categories" disabled class="form-control" id="input-8" placeholder="Chưa có">
+                         <span class="form-message"></span>
+                    </div>
+                <!-- <div class="form-group py-2">
+                  <div class="icheck-material-white">
+                 <input type="checkbox" id="user-checkbox1" checked=""/>
+                 <label for="user-checkbox1">I Agree Terms & Conditions</label>
+                 </div> -->
+
+  
+                 <div class="form-group">
+                    <label for="input-10">Id</label>
+                    <input type="text" disabled  name ="idTour" class="form-control" id="input-10" placeholder="Chưa có">
+                     <span class="form-message"></span>
+                 </div>
+
+                 <div class="form-group col-12 container-img text-center">
+  
+                  </div> 
+
+
+                  
+                 <div class="form-group">
+                  <label for="input-7">adult price</label>
+                  <input disabled type="number" rules="min:-1" name="adult_price" class="form-control" id="input-8" placeholder="Enter price of adult">
+                   <span class="form-message"></span>
+              </div>              
+               <div class="form-group">
+                <label for="input-7">children price</label>
+                <input disabled type="number" rules="min:-1" name="children_price" class="form-control" id="input-9" placeholder="Enter price of children">
+                 <span class="form-message"></span>
+            </div>
+                 <!-- <div class="services mb-3">
+                    <label class="title">
+                    Service: 
+                    </label>    
+                    <input  type="text"  class="form-control mb-3 nameService"  placeholder="Enter title" >
+                    <div class="services-type-container">
+                    <div class="services-type">
+                        <input type="text" class=" "  placeholder="Enter services name" >
+                        <input type="number" class=" "  placeholder="Enter services price">
+                    </div>
+        
+                    </div>
+                    <button type="button" class="col-6 col-md-3 btn btn-light px-5" onclick="addServicesType(event)">add type services</button>
+        
+                </div> -->
+                <button type="button" onclick="showServices()" class="col-6 col-md-3 btn btn-light px-5 my-3"> Show Services</button>
+
+                <div class="form-group">
+                 <button type="submit" class="col-6 col-md-3 btn btn-light px-5"> edit</button>
+                 <button type="button" class="col-6 col-md-3 btn btn-light px-5 ms-5"><a href="../home.html" class="text-decoration-none text-light"> Back to user managment</a></button>
+      
+                </div>
+         
+               </form>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal_services">
+            <div class="modal_overlay"></div>
+            <div class="modal_body">
+              <div id="container-services">
+      
+              </div>
+              <button type="button" class="col-6 col-md-3 btn btn-light px-5 mb-3" onclick="exitServicesForm()">Exit services form</button>
+            </div>
+        </div>
+         
+               </form>
+              </div>
+            </div>
+        </div>
+        <script src="../../../../Shared/enums/API.enum.js"></script>
+  
+      <script src="../../../Services/Admin/crudTour/singleTour.js"></script>
+        
+    
+    </script>
+    <script>
+
+   
+const modal = document.querySelector('.modal_services');
+const containerServices = document.querySelector("#container-services");
+let countService = 0;   
+function showServices(){
+    modal.style.display = 'block';
+    servicesHtml = '';
+    servicesArray.forEach(service => {
+        servicesHtml += `
+        <div class="services mb-3">
+            <label class="title">
+            Service: ${++countService}
+            </label>    
+            <input  disabled type="text"  class="form-control mb-3 nameService"  placeholder="${service.title}" >
+            <div class="services-type-container">
+            `
+        service.serviceList.forEach(serviceType => {
+            servicesHtml += `  <div class="services-type">
+            <input disabled type="text" class=" "  placeholder="${serviceType.name}" >
+            <input disabled type="number" class=" "  placeholder="${parseInt(serviceType.price).toLocaleString('vi', {style : 'currency', currency : 'VND'})}">
+                    </div>`
+        })
+
+
+        servicesHtml+= `
+            </div>
+
+        </div>`;
+
+    });
+    containerServices.innerHTML = servicesHtml;
+}
+function exitServicesForm(){
+    modal.style.display = 'none';
+
+}
+        
+    </script>
+</body>
+    
+</html>

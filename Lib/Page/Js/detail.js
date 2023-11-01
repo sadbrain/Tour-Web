@@ -5,7 +5,7 @@ function showInforTour(){
     var paramsString = url.split("?")[1];
     var id = paramsString.split("=")[1];
 fetch(toursAPI+ "/" + id)
-.then(response => response.json() )
+.then(response => response.json())
 .then(data => {
     document.querySelector(".header__name").innerHTML = data.name;
     document.querySelector(".banner-left img").src =data.img[0];

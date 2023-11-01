@@ -24,7 +24,7 @@ async function getUser(id) {
       throw new Error(err.message);
     }
   }
-  function handleShowInfoUser(){
+  function handleShowInfoTour(){
       let url = window.location.href;
       var paramsString = url.split("?")[1];
       var id = paramsString.split("=")[1];
@@ -49,4 +49,4 @@ async function getUser(id) {
         })
   
   }
-  handleShowInfoUser()
+  handleShowInfoTour()
