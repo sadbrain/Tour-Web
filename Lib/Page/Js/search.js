@@ -1,6 +1,5 @@
 const btnSearchByAction = document.querySelector('.mainnav__search input');
 const iconSearchByAction = document.querySelector('.mainnav__search i');
-let searchQuery = "";
 let tourList = [];
 
 iconSearchByAction.onclick = async () => {
@@ -8,7 +7,7 @@ iconSearchByAction.onclick = async () => {
         return;
     }
     tourList = await getTour(btnSearchByAction.value);
-    console.log(tourList);
+    // console.log(tourList);
     if(tourList.length === 0){
         alert("không tìm thấy phần tử");
     }

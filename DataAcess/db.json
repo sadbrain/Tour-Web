@@ -42,15 +42,14 @@
       "isBlock": false
     },
     {
-      "id": 4,
-      "name": "Bob Brown",
+      "name": "Nhung",
       "email": "bob.brown@example.com",
       "password": "Password@4",
       "phone": "777-888-9999",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
-      "contact_information": [],
-      "isBlock": false
+      "isBlock": false,
+      "id": 4
     },
     {
       "id": 5,
@@ -1347,6 +1346,43 @@
       ],
       "rating": 4.5,
       "isBlock": false
+    },
+    {
+      "name": "Tham quan vườn quốc gia",
+      "description": "Vườn quốc gia bảo vệ những động vật quý hiếm",
+      "price": "200000",
+      "priceAdult": "100000",
+      "priceChild": "200000",
+      "departure_day": "2023-11-03",
+      "duration": "3",
+      "destination": "Hà NỘi",
+      "departure_location": "Đà Nẵng",
+      "categories": [
+        3
+      ],
+      "services": [
+        {
+          "serviceList": [
+            {
+              "name": "xe máy",
+              "price": "100000"
+            },
+            {
+              "name": "xe ô tô",
+              "price": "200000"
+            }
+          ],
+          "title": "Book xe"
+        }
+      ],
+      "img": [
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg",
+        "/Assets/images/locations/italy/rome/licensed-image.jpg"
+      ],
+      "isBlock": false,
+      "id": 17
     }
   ],
   "categories": [
@@ -1367,7 +1403,7 @@
     {
       "id": 1,
       "booking_date": "2023-10-4",
-      "num_of_participants":{
+      "num_of_participants": {
         "adults": {
           "quantity": 1,
           "totalPrice": 700000
@@ -1615,6 +1651,42 @@
       ],
       "isBlock": false,
       "id": 7
+    },
+    {
+      "booking_date": "2/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 700000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
+      },
+      "total": 2165000,
+      "status": 1,
+      "user_id": 4,
+      "tour_id": 5,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "Đón tại khách sạn",
+          "servicePrice": "400000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "300000"
+        }
+      ],
+      "isBlock": true,
+      "id": 8
     }
   ],
   "status_bookings": [
