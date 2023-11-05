@@ -31,8 +31,8 @@ async function handleShowInfoBooking(){
         total.placeholder  = booking[0].total.toLocaleString('vi', {style : 'currency', currency : 'VND'});
         booking_date.value = booking[0].booking_date;
         status_booking.placeholder = status[0].name;
-        adult_quantity.placeholder = booking[0].num_of_participants.adults;
-        children_quantity.placeholder = booking[0].num_of_participants.children;
+        adult_quantity.placeholder = booking[0].num_of_participants.adults.quantity;
+        children_quantity.placeholder = booking[0].num_of_participants.childrens.quantity;
     }
         
             

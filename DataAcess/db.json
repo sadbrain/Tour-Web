@@ -12,23 +12,14 @@
       "id": 1
     },
     {
-      "id": 2,
       "name": "Jane Smith",
       "email": "jane.smith@example.com",
       "password": "Password@2",
       "phone": "987-654-3210",
       "img": "/Assets/images/users/default_profile_picture.jpg",
       "id_role": 2,
-      "contact_information": [
-        {
-          "lastName": "tinh",
-          "firstName": "tinh",
-          "phone": "0353537180",
-          "email": "john.doe@example.com",
-          "food_allergies": ""
-        }
-      ],
-      "isBlock": false
+      "isBlock": false,
+      "id": 2
     },
     {
       "name": "duyen",

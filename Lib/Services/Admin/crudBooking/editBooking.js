@@ -22,14 +22,15 @@ async function handleShowInfoBooking(){
     services = booking[0].services;
 
     if(booking){
+      // console.log(booking[0])
         idBooking.placeholder = booking[0].id;
         userName.placeholder = user[0].name;
         tourName.placeholder = tour[0].name;
         total.placeholder  = booking[0].total.toLocaleString('vi', {style : 'currency', currency : 'VND'});
         booking_date.value = booking[0].booking_date;
         status_booking.placeholder = status[0].name;
-        adult_quantity.placeholder = booking[0].num_of_participants.adults;
-        children_quantity.placeholder = booking[0].num_of_participants.children;
+        adult_quantity.placeholder = booking[0].num_of_participants.adults.quantity;
+        children_quantity.placeholder = booking[0].num_of_participants.childrens.quantity;
     }
         
             
@@ -42,7 +43,7 @@ function handleEdit(){
     var paramsString = url.split("?")[1];
     var id = paramsString.split("=")[1];
     // if(confirm("bạn có thật sự muốn xóa!")){
-    console.log(1);
+    // console.log(1);
     //   try{
     //     fetch(bookingsAPI + "/" +id, {
     //       method: "PATCH", 
