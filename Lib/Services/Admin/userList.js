@@ -23,13 +23,15 @@ async function getUsers() {
       // Fetch data from the API
       const data = await getUsers();
       usersHtml = "";
+      data.sort((a, b) => b.id - a.id);
+
       data.forEach(e => {
           if(!e.isBlock){
             usersHtml += `<tr>
                             <td>${e.id}</td>
                             <td><img src="${e.img}" class="product-img" alt="product img"></td>
                             <td>${e.name}</td>
-                            <td>${e.email}</td>
+           5                 <td>${e.email}</td>
                             <td>${e.id_role == 1 ? "Admin" : "User"}</td>
                             <td>${e.phone}</td>
                             <td><button class="btn btn-secondary"><a class="text-decoration-none text-light" href="userView/editUserForm.html?id=${e.id}">Edit</a></button>

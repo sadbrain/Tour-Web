@@ -3,6 +3,7 @@ async function showBookings() {
     try {
       // Fetch data from the API
       const bookings = await getBookings();
+      bookings.sort((a, b) => b.id - a.id);
         
       let bookingsHtml = "";
       for(let booking of bookings) {

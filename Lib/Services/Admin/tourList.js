@@ -20,13 +20,14 @@ async function getUsers() {
  async function showUsers() {
     try {
       // Fetch data from the API
-      const data = await getUsers();
+      const data = await getUsers();  
       usersHtml = "";
       let i = 1;
+      data.sort((a, b) => b.id - a.id);
       data.forEach(element => {
         if(!element.isBlock){
             usersHtml += `<tr>
-                            <td>${i++}</td>
+                            <td>${element.id}</td>
                             <td>${element.name}</td>
                             <td>${element.price.toLocaleString('vi', {style : 'currency', currency : 'VND'})}</td>
                             <td>${element.duration} h</td>
@@ -45,4 +46,4 @@ async function getUsers() {
   function render(users){
         document.querySelector(".table-responsive tbody").innerHTML = users;
   }
-  showUsers();
+  showUsers();  

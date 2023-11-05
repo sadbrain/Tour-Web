@@ -8,6 +8,7 @@ fetch(toursAPI+ "/" + id)
 .then(response => response.json())
 .then(data => {
     document.querySelector(".header__name").innerHTML = data.name;
+    document.querySelector("title").innerHTML = data.name;
     document.querySelector(".banner-left img").src =data.img[0];
     document.querySelector(".banner-right img:nth-child(1)").src =data.img[1];
     document.querySelector(".banner-right img:nth-child(2)").src = data.img[2];
@@ -39,7 +40,6 @@ function showServives(services, priceAdult, priceChild){
           
           <div class="col-12 text-end mt-3">
     
-            <button class ="btn btn-primary text-center col-3" type="button" onclick="addToCart()">thêm vào giỏ hàng</button>
         
             <button class ="btn btn-primary text-center col-3" type="button" onclick="onsumbit()">thanh toán</button>
           </div>`
@@ -73,7 +73,6 @@ formBooking.innerHTML = servicesHtml;
       
       <div class="col-12 text-end mt-3">
 
-        <button class ="btn btn-primary text-center col-3" type="button" onclick="addToCart()">thêm vào giỏ hàng</button>
 
         <button class ="btn btn-primary text-center col-3" type="button" onclick="onsumbit()">thanh toán</button>
       </div>`
