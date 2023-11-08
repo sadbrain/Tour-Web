@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hiển thị dữ liệu từ API bằng JavaScript</title>
+</head>
+<body>
+    <table id="bookingTable">
+        <thead>
+            <tr>
+                <th>Ngày đặt</th>
+                <th>Số lượng người tham gia</th>
+                <th>Tổng giá</th>
+                <th>Dịch vụ</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+   
+        var user_id = JSON.parse(localStorage.getItem('user_token')).id;
+
+        fetch('http://localhost:3000/bookings')
+            .then(response => response.json())
+            .then(data => {
+                var bookingTable = document.getElementById('bookingTable');
+                var tbody = bookingTable.getElementsByTagName('tbody')[0];
+
+                // Lọc và đặt dữ liệu vào bảng
+                data.filter(booking => booking.status === 4 && booking.user_id === user_id)
+                    .forEach(booking => {
+                        var row = document.createElement('tr');
+
+                        var bookingDateCell = document.createElement('td');
+                        bookingDateCell.textContent = booking.booking_date;
+                        row.appendChild(bookingDateCell);
+
+                        var participantsCell = document.createElement('td');
+                        participantsCell.textContent = "Người lớn: " + booking.num_of_participants.adults.quantity + ", Trẻ em: " + booking.num_of_participants.childrens.quantity;
+                        row.appendChild(participantsCell);
+
+                        var totalPriceCell = document.createElement('td');
+                        totalPriceCell.textContent = booking.total + " VNĐ";
+                        row.appendChild(totalPriceCell);
+
+                        var servicesCell = document.createElement('td');
+                        var servicesList = document.createElement('ul');
+                        booking.services.forEach(service => {
+                            var serviceItem = document.createElement('li');
+                            serviceItem.textContent = service.title + ": " + service.serviceValue + " - " + service.servicePrice + " VNĐ";
+                            servicesList.appendChild(serviceItem);
+                        });
+                        servicesCell.appendChild(servicesList);
+                        row.appendChild(servicesCell);
+
+                        tbody.appendChild(row);
+                    });
+            })
+            .catch(error => {
+                console.error('Lỗi:', error);
+            });
+    </script>
+</body>
+</html>
