@@ -54,3 +54,71 @@ a{
     font-size: 22px;
 	box-sizing: border-box;
 }
+
+
+
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  th, td {
+	padding: 8px;
+	text-align: left;
+  }
+  
+  th {
+	background-color: #f2f2f2;
+  }
+  
+
+  table {
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+  }
+  
+  th, td {
+	border: 1px solid #ddd;
+  }
+  
+
+  tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+
+  tr:hover {
+	background-color: #ddd;
+  }
+  
+
+  th, td {
+	font-family: Arial, sans-serif;
+	color: #333;
+	text-align: left;
+  }
+  
+
+  th {
+	font-size: 16px;
+  }
+  
+button {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px 20px; 
+  border: none;
+  cursor: pointer; 
+  border-radius: 4px; 
+  font-size: 16px;
+}
+#totalPrice {
+	font-size: 18px; 
+	font-weight: bold; 
+
+	margin-top: 10px; 
+  }
+button:hover {
+  background-color: #45a049;
+}

@@ -1428,42 +1428,6 @@
       "isBlock": false
     },
     {
-      "id": 2,
-      "booking_date": "2023-10-2",
-      "num_of_participants": {
-        "adults": {
-          "quantity": 1,
-          "totalPrice": 700000
-        },
-        "childrens": {
-          "quantity": 0,
-          "totalPrice": 0
-        }
-      },
-      "total": 132000000,
-      "status": 2,
-      "user_id": 3,
-      "tour_id": 1,
-      "services": [
-        {
-          "title": "Gói dịch vụ",
-          "serviceValue": "Vé 1 Ngày (Safari Park + Marine Park)",
-          "servicePrice": "10000"
-        },
-        {
-          "title": "điểm đón",
-          "serviceValue": "Siam Paragon",
-          "servicePrice": "40000"
-        },
-        {
-          "title": "Loại hình chuyển chở",
-          "serviceValue": "xe riêng",
-          "servicePrice": "50000"
-        }
-      ],
-      "isBlock": false
-    },
-    {
       "id": 3,
       "booking_date": "2023-10-1",
       "num_of_participants": {
@@ -1811,105 +1775,6 @@
       ],
       "num_of_participants": {
         "adults": {
-          "quantity": 2,
-          "totalPrice": 1300000
-        },
-        "childrens": {
-          "quantity": 3,
-          "totalPrice": 1290000
-        }
-      },
-      "total": 3190000,
-      "status": 4,
-      "user_id": 2,
-      "id": 13
-    },
-    {
-      "services": [
-        {
-          "title": "Gói dịch vụ",
-          "serviceValue": "vé 1 ngày (safari park + marine park)",
-          "servicePrice": 200000
-        },
-        {
-          "title": "Điểm đón",
-          "serviceValue": "central world",
-          "servicePrice": 200000
-        },
-        {
-          "title": "Loại hình chuyên chở",
-          "serviceValue": "xe chung",
-          "servicePrice": 200000
-        }
-      ],
-      "num_of_participants": {
-        "adults": {
-          "quantity": 2,
-          "totalPrice": 1300000
-        },
-        "childrens": {
-          "quantity": 3,
-          "totalPrice": 1290000
-        }
-      },
-      "total": 3840000,
-      "status": 4,
-      "user_id": 2,
-      "id": 14
-    },
-    {
-      "services": [
-        {
-          "title": "Gói dịch vụ",
-          "serviceValue": "vé 1 ngày (safari park + marine park)",
-          "servicePrice": 200000
-        },
-        {
-          "title": "Điểm đón",
-          "serviceValue": "central world",
-          "servicePrice": 200000
-        },
-        {
-          "title": "Loại hình chuyên chở",
-          "serviceValue": "xe chung",
-          "servicePrice": 200000
-        }
-      ],
-      "num_of_participants": {
-        "adults": {
-          "quantity": 3,
-          "totalPrice": 1950000
-        },
-        "childrens": {
-          "quantity": 2,
-          "totalPrice": 860000
-        }
-      },
-      "total": 4060000,
-      "status": 4,
-      "user_id": 2,
-      "id": 15
-    },
-    {
-      "services": [
-        {
-          "title": "Gói dịch vụ",
-          "serviceValue": "vé 1 ngày (safari park + marine park)",
-          "servicePrice": 200000
-        },
-        {
-          "title": "Điểm đón",
-          "serviceValue": "central world",
-          "servicePrice": 200000
-        },
-        {
-          "title": "Loại hình chuyên chở",
-          "serviceValue": "xe chung",
-          "servicePrice": 200000
-        }
-      ],
-      "num_of_participants": {
-        "adults": {
           "quantity": 3,
           "totalPrice": 1950000
         },
@@ -1955,6 +1820,186 @@
       "status": 4,
       "user_id": 3,
       "id": 17
+    },
+    {
+      "booking_date": "9/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 2,
+          "totalPrice": 1400000
+        },
+        "childrens": {
+          "quantity": 3,
+          "totalPrice": 1020000
+        }
+      },
+      "total": 3585000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 1,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "central world",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe chung",
+          "servicePrice": "200000"
+        }
+      ],
+      "isBlock": false,
+      "id": 18
+    },
+    {
+      "booking_date": "9/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 2,
+          "totalPrice": 1400000
+        },
+        "childrens": {
+          "quantity": 3,
+          "totalPrice": 1020000
+        }
+      },
+      "total": 3585000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 1,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "central world",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe chung",
+          "servicePrice": "200000"
+        }
+      ],
+      "isBlock": false,
+      "id": 19
+    },
+    {
+      "booking_date": "9/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 2,
+          "totalPrice": 1400000
+        },
+        "childrens": {
+          "quantity": 3,
+          "totalPrice": 1020000
+        }
+      },
+      "total": 3585000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 1,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "central world",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe chung",
+          "servicePrice": "200000"
+        }
+      ],
+      "isBlock": false,
+      "id": 21
+    },
+    {
+      "booking_date": "9/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 2,
+          "totalPrice": 1400000
+        },
+        "childrens": {
+          "quantity": 3,
+          "totalPrice": 1020000
+        }
+      },
+      "total": 3720000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 2,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "central world",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe chung",
+          "servicePrice": "200000"
+        }
+      ],
+      "isBlock": false,
+      "id": 22
+    },
+    {
+      "booking_date": "9/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 2,
+          "totalPrice": 1400000
+        },
+        "childrens": {
+          "quantity": 3,
+          "totalPrice": 1020000
+        }
+      },
+      "total": 3720000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 2,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park)",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "central world",
+          "servicePrice": "200000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe chung",
+          "servicePrice": "200000"
+        }
+      ],
+      "isBlock": false,
+      "id": 23
     }
   ],
   "status_bookings": [

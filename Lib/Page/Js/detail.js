@@ -79,7 +79,7 @@ formBooking.innerHTML = servicesHtml;
     <div class="total col-4"></div>
       
       <div class="col-12 text-end mt-3">
-      <button class ="btn btn-primary text-center col-3" type="button" onclick="addToCart()">thanh toán</button>
+      <button class ="btn btn-primary text-center col-3" type="button" onclick="addToCart()">Add to cart</button>
 
 
         <button class ="btn btn-primary text-center col-3" type="button" onclick="onsumbit()">thanh toán</button>

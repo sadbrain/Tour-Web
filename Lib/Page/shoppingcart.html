@@ -1,47 +1,198 @@
 <!DOCTYPE html>
 <html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../Assets/Icons/favicon.ico">
+    <title>Mana - Home</title>
+
+    <link rel="stylesheet" href="./Css/reset.css">
+    <link rel="stylesheet" href="./Css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 <head>
     <title>Hiển thị dữ liệu từ API bằng JavaScript</title>
 </head>
+
 <body>
-    <table id="bookingTable">
+    <header id="header">
+        <nav id="mainnav">
+            <div class="mainnav__logo">
+                <a href="home.html"><img src="../../Assets/Figma/yellow and black minimalist agency logo.png" alt=""></a>
+                <h2>Mana</h2>
+                <div class="mainnav__search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Tìm theo điểm đến hoạt động">
+                </div>
+            </div>
+            <div class="mainnav__list">
+                <div class="mainnav__country">
+                    <img src="../../Assets/Figma/flag-vietnam.png" alt="">
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+                <div class="mainnav__currency">
+                    <h4>VND</h4>
+                    <i class="bi bi-caret-down-fill"></i>   
+                </div>
+                <p>Xem gần đây</p>
+                <button class="btn-register"><a href="register.html">Đăng ký</a></o>
+                <button class="btn-login"><a href="login.html">Đăng nhập</a></button>
+                <li class="nav-item user-info-container">
+                    <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" data-toggle="dropdown">
+                        <span class="user-profile"><img src="" class="img-circle" alt="user avatar"></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                       <li class="dropdown-item user-details">
+                        <a href="#">
+                           <div class="media">
+                             <div class="avatar"><img class="align-self-start me-3" src="" alt="user avatar"></div>
+                            <div class="media-body">
+                            <h6 class="mt-2 user-title"></h6>
+                            <p class="user-subtitle"></p>
+                            </div>
+                           </div>
+                          </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+<li class="dropdown-item"><a href="User/profileEdit.html" class="text-white"><i class="bi bi-inbox"></i> Inbox</a></li>
+                        <!-- <li class="dropdown-  divider"></li>
+                        <li class="dropdown-item"><i class="icon-wallet mr-2"></i> Account</li> -->
+                        <li class="dropdown-divider"></li>
+                        <li class="dropdown-item"><i class="bi bi-gear"></i> Setting</li>
+                        <li class="dropdown-divider"></li>
+                        <li id="logout" class="dropdown-item"><i class="bi bi-box-arrow-left"></i> Logout</li>
+                      </ul>
+                </li>
+                
+            </div>
+
+        </nav>
+        <nav id="navsecond">
+            <div class="navsecond__chosen">
+                <div class="navsecond__location">
+                    <i class="bi bi-geo-alt"></i>
+                    <p>Bạn muốn đi đâu?
+                        <div class="navsecond__all">
+                            <div class="nav-left-content">
+                                    <p class="active">Điểm đến hàng đầu</p>
+                                    <p>Điểm đến hàng đầu</p>
+                                    <p>Mền Trung Việt Nam</p>
+                                    <p>Miền Nam Việt Nam</p>
+                            </div>
+                            <div class="nav-right-content">
+                                <div id="top-cities">
+                                    
+                                </div>
+                        </div>
+                    </div>
+                    </p>
+
+                    <p class="nhung-hh">Tất cả</p>
+                    <div class="navsecond__menu">
+                        <div class="navsecond__exper">
+                            <div class="navsecond__tour">
+                                <i class="bi bi-balloon-fill"></i><a href="#">Tour & trải nghiệm</a>
+                            </div>
+                            <a href="#">Tour</a>
+                            <a href="#">Du thuyền</a>
+                            <a href="#">Massage & suối nước nóng</a>
+                            <a href="#">Hoạt động dưới nước</a>
+                            <a href="#">Tham gia & khám phá thiên nhiên</a>
+                        </div>
+
+                        <div class="navsecond__exper">
+                            <div class="navsecond__tour">
+                                <i class="bi bi-balloon-fill"></i>
+                                <a href="#">Vé tham quan</a>
+                            </div>
+                            <a href="#">Công viên nước</a>
+                            <a href="#">Công viên giải trí</a>
+                            <a href="#">Bảo tàng</a>
+                            <a href="#">Sở thú & thủy cung</a>
+                            <a href="#">Cáp treo</a>
+<a href="#">Di tích lịch sử</a>
+                        </div>
+
+                        <div class="navsecond__exper">
+                            <div class="navsecond__tour">
+                                <i class="bi bi-balloon-fill"></i>
+                                <a href="#">Lưu trú</a>
+                            </div>
+                            <a href="#">Khách sạn</a>
+                        </div>
+
+                        <div class="navsecond__exper">
+                            <div class="navsecond__tour">
+                                <i class="bi bi-balloon-fill"></i>
+                                <a href="#">Di chuyển</a>
+                            </div>
+                            <a href="#">Tàu hỏa</a>
+                            <a href="#"> Phà</a>
+                            <a href="#">Xe buýt</a>
+                            <a href="#">Thuê xe tư lái</a>
+                            <a href="#">Xe máy & xe đạp</a>
+                        </div>
+                   
+                    </div>
+                    
+                <p>Tour & trải nghiệm</p>
+                <p>Vé tham quan</p>
+                <p>Khách sạn</p>
+                <p>Di chuyển</p>
+                <p>Thuê xe tự lái</p>
+                <p>...</p>
+            </div>
+            <div class="navsecond__gift">
+                <i class="bi bi-gift"></i>
+                <p>Phiếu quà tặng Mana</p>
+            </div>
+        </nav>
+<div class="container" style="margin-top: 30px;">
+    <table id="bookingTable" border="1">
         <thead>
             <tr>
-                <th>Ngày đặt</th>
                 <th>Số lượng người tham gia</th>
-                <th>Tổng giá</th>
+           
                 <th>Dịch vụ</th>
+                <th>Tổng giá</th>
             </tr>
-        </thead>
+        </thead>    
         <tbody></tbody>
     </table>
 
+    <p id="totalPrice"></p>
+
+    <button onclick="thanhToan()">Thanh toán</button>
+
     <script>
-   
+     
         var user_id = JSON.parse(localStorage.getItem('user_token')).id;
 
+ 
         fetch('http://localhost:3000/bookings')
             .then(response => response.json())
             .then(data => {
                 var bookingTable = document.getElementById('bookingTable');
                 var tbody = bookingTable.getElementsByTagName('tbody')[0];
 
-                // Lọc và đặt dữ liệu vào bảng
-                data.filter(booking => booking.status === 4 && booking.user_id === user_id)
+           
+                var totalPrice = 0;
+
+   
+                data.filter(booking => booking.status === 4 && booking.user_id ===user_id)
                     .forEach(booking => {
                         var row = document.createElement('tr');
 
-                        var bookingDateCell = document.createElement('td');
-                        bookingDateCell.textContent = booking.booking_date;
-                        row.appendChild(bookingDateCell);
-
                         var participantsCell = document.createElement('td');
-                        participantsCell.textContent = "Người lớn: " + booking.num_of_participants.adults.quantity + ", Trẻ em: " + booking.num_of_participants.childrens.quantity;
+                        var content = "Người lớn: " + booking.num_of_participants.adults.quantity +" - " +booking.num_of_participants.adults.totalPrice + " Vnđ" + "<br>Trẻ em: " + 
+                        booking.num_of_participants.childrens.quantity + " - " +booking.num_of_participants.childrens.totalPrice + " Vnđ" ;
+                        participantsCell.textContent = "Người lớn: " + booking.num_of_participants.adults.quantity + ", Trẻ em: " + booking.num_of_participants.childrens.quantity 
+                        participantsCell.innerHTML = "<div>" + content + "</div>";
+             
+
                         row.appendChild(participantsCell);
 
-                        var totalPriceCell = document.createElement('td');
-                        totalPriceCell.textContent = booking.total + " VNĐ";
-                        row.appendChild(totalPriceCell);
+
 
                         var servicesCell = document.createElement('td');
                         var servicesList = document.createElement('ul');
@@ -52,13 +203,138 @@
                         });
                         servicesCell.appendChild(servicesList);
                         row.appendChild(servicesCell);
-
+                        var totalPriceCell = document.createElement('td');
+                        totalPriceCell.textContent = booking.total + " VNĐ";
+                        row.appendChild(totalPriceCell);
                         tbody.appendChild(row);
+
+            
+                        totalPrice += booking.total;
                     });
+
+                var totalPriceElement = document.getElementById('totalPrice');
+                totalPriceElement.textContent = "Tổng giá trị: " + totalPrice + " VNĐ";
             })
             .catch(error => {
                 console.error('Lỗi:', error);
             });
+
+
+            function thanhToan() {
+    console.log("Đã nhấn nút Thanh toán");
+
+  
+    var user_id = JSON.parse(localStorage.getItem('user_token')).id;
+
+ 
+    fetch('http://localhost:3000/bookings')
+        .then(response => response.json())
+        .then(data => {
+     
+            var bookingsToDelete = data.filter(booking => booking.status === 4 && booking.user_id === user_id);
+
+            Promise.all(bookingsToDelete.map(booking => {
+            
+                return fetch('http://localhost:3000/bookings/' + booking.id, {
+                    method: 'DELETE'
+                });
+            }))
+            .then(responses => {
+                console.log("Xóa dữ liệu thành công");
+
+             if (confirm("Thanh toán thành công. Nhấn OK để chuyển tới trang chủ.")) {
+                   
+                    window.location.href = './home.html'; 
+                }
+            })
+            .catch(error => {
+                console.error('Lỗi:', error);
+                window.location.href = './home.html';
+            });
+        })
+        .catch(error => {
+            console.error('Lỗi:', error);
+            window.location.href = './home.html'; 
+        });
+}
+
+
     </script>
-</body>
-</html>
+    </div>
+    <div style="margin-top: 30px;">
+        <footer id="footer">
+            <div class="information_web">
+                <div class="information_web_content">
+                    <h4>Về MAMA</h4>
+    <ul class="information_web_list">
+                        <li class="information_web_item"><a href="./about-us.html" class="informatio_web_link">Về chúng tôi</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Mama blog</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Cơ hội nghề nghiệp</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Phiếu quà tặng Mana</a></li>
+                    </ul>
+                </div>
+    
+                <div class="information_web_content">
+                    <h4>Đối tác</h4>
+                    <ul class="information_web_list">
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Đăng ký nhà cung cấp</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Đối tác đăng nhập</a></li>
+    <li class="information_web_item"><a href="#" class="informatio_web_link">Đối tác liên kết</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Phiếu quà tặng Mana</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Chương trình cho đại lý</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Hợp tác marketing & phân phối</a></li>
+                    </ul>
+                </div>
+    
+                
+                <div class="information_web_content">
+                    <h4>Điều khoản sử dụng</h4>
+                    <ul class="information_web_list">
+                        <li class="information_web_item"><a href="term-condition.html" class="informatio_web_link">Điều khoản sử dụng</a></li>
+                        <li class="information_web_item"><a href="policy.html" class="informatio_web_link">Chính sách bảo mật của Mana</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Chính sách cookie</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Chương trình thường phát hiện lỗi</a></li>
+                        <li class="information_web_item"><a href="#" class="informatio_web_link">Chính sách và quy định</a></li>
+                    </ul>
+                </div>
+                <div class="information_web_content">
+                    <h4>Kênh thanh toán</h4>
+                    <ul class="information_web_list">
+                        <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 10.png" alt=""></a></li>
+                        <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 9.png" alt=""></a></li>
+                        <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 15.png" alt=""></a></li>
+    <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 14.png" alt=""></a></li>
+                        <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 11.png" alt=""></a></li>
+                        <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 13.png" alt=""></a></li>
+                        <li class="information_web_item_pay"><a href="#" class="informatio_web_link"><img src="../../Assets/Figma/th 12.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="information_license">
+                <p>Bản quyền của ManaTour@2023. Bảo lưu mọi quyền.</p>
+                <p>Ghi rõ nguồn “www.Mana.com.vn” khi sử dụng lại thông tin từ website này</p>
+    <p>Số giấy phép kinh doanh lữ hành quốc tế: 78-213/1022/TCDL-GP LHPT</p>
+            </div>
+        <div>
+            <div>
+                <div>
+    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+        </header>
+        <a href="#" class="back-to-top"><i class="bi bi-chevron-double-up"></i></a>
+        <script src="../../Shared/enums/API.enum.js"></script>
+        <script src="../Services/User/loadProfileUser.js"></script>
+        <script src="./Js/home.js"></script>
+    
+        <script src="../Services/User/logout.js"></script>
+        <script src="../Services/User/toggleMenu.js"></script>
+        <script src="../Services/User/scroll.js"></script>
+        <script src="./Js/search.js"></script>
+     </html>
