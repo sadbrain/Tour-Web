@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,4 +54,129 @@ a{
     font-family: 'Roboto';
     font-size: 22px;
 	box-sizing: border-box;
+=======
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+*{
+    font-family: 'Roboto';
+    font-size: 22px;
+	box-sizing: border-box;
+}
+
+
+
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  th, td {
+	padding: 8px;
+	text-align: left;
+  }
+  
+  th {
+	background-color: #f2f2f2;
+  }
+  
+
+  table {
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+  }
+  
+  th, td {
+	border: 1px solid #ddd;
+  }
+  
+
+  tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }
+  
+
+  tr:hover {
+	background-color: #ddd;
+  }
+  
+
+  th, td {
+	font-family: Arial, sans-serif;
+	color: #333;
+	text-align: left;
+  }
+  
+
+  th {
+	font-size: 16px;
+  }
+  
+button {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 10px 20px; 
+  border: none;
+  cursor: pointer; 
+  border-radius: 4px; 
+  font-size: 16px;
+}
+#totalPrice {
+	font-size: 18px; 
+	font-weight: bold; 
+
+	margin-top: 10px; 
+  }
+button:hover {
+  background-color: #45a049;
+>>>>>>> 7e2f29cfbe42843228fc5c84de2c71c10b363f8b
 }
