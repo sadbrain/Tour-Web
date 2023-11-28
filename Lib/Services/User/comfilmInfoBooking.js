@@ -8,7 +8,7 @@ async function showInfoComfirm(){
     var paramsString = url.split("?")[1];
     var idTour = parseInt(paramsString.split("&")[0].split("=")[1]);
     var idUser = parseInt(paramsString.split("&")[1].split("=")[1]);
-
+console.log(idTour + " " + idUser)
     const bookings = await getBooking();
     // console.log(bookings);
     const booking = bookings.find(booking => {

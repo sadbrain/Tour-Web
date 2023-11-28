@@ -1405,7 +1405,7 @@
         }
       },
       "total": 132000000,
-      "status": 2,
+      "status": 1,
       "user_id": 2,
       "tour_id": 1,
       "services": [
@@ -1441,7 +1441,7 @@
         }
       },
       "total": 132000000,
-      "status": 2,
+      "status": 1,
       "user_id": 3,
       "tour_id": 1,
       "services": [
@@ -1572,78 +1572,6 @@
       "id": 4
     },
     {
-      "booking_date": "1/11/2023",
-      "num_of_participants": {
-        "adults": {
-          "quantity": 1,
-          "totalPrice": 700000
-        },
-        "childrens": {
-          "quantity": 0,
-          "totalPrice": 0
-        }
-      },
-      "total": 2165000,
-      "status": 1,
-      "user_id": 2,
-      "tour_id": 5,
-      "services": [
-        {
-          "title": "Gói dịch vụ",
-          "serviceValue": "vé 1 ngày (safari park + marine park)",
-          "servicePrice": "200000"
-        },
-        {
-          "title": "Điểm đón",
-          "serviceValue": "Đón tại khách sạn",
-          "servicePrice": "400000"
-        },
-        {
-          "title": "Loại hình chuyên chở",
-          "serviceValue": "xe riêng",
-          "servicePrice": "300000"
-        }
-      ],
-      "isBlock": false,
-      "id": 6
-    },
-    {
-      "booking_date": "1/11/2023",
-      "num_of_participants": {
-        "adults": {
-          "quantity": 1,
-          "totalPrice": 700000
-        },
-        "childrens": {
-          "quantity": 0,
-          "totalPrice": 0
-        }
-      },
-      "total": 2165000,
-      "status": 1,
-      "user_id": 2,
-      "tour_id": 5,
-      "services": [
-        {
-          "title": "Gói dịch vụ",
-          "serviceValue": "vé 1 ngày (safari park + marine park)",
-          "servicePrice": "200000"
-        },
-        {
-          "title": "Điểm đón",
-          "serviceValue": "Đón tại khách sạn",
-          "servicePrice": "400000"
-        },
-        {
-          "title": "Loại hình chuyên chở",
-          "serviceValue": "xe riêng",
-          "servicePrice": "300000"
-        }
-      ],
-      "isBlock": false,
-      "id": 7
-    },
-    {
       "booking_date": "2/11/2023",
       "num_of_participants": {
         "adults": {
@@ -1678,6 +1606,42 @@
       ],
       "isBlock": true,
       "id": 8
+    },
+    {
+      "booking_date": "10/11/2023",
+      "num_of_participants": {
+        "adults": {
+          "quantity": 1,
+          "totalPrice": 800000
+        },
+        "childrens": {
+          "quantity": 0,
+          "totalPrice": 0
+        }
+      },
+      "total": 2600000,
+      "status": 1,
+      "user_id": 2,
+      "tour_id": 7,
+      "services": [
+        {
+          "title": "Gói dịch vụ",
+          "serviceValue": "vé 1 ngày (safari park + marine park) + buffer quốc tể",
+          "servicePrice": "300000"
+        },
+        {
+          "title": "Điểm đón",
+          "serviceValue": "Đón tại khách sạn",
+          "servicePrice": "400000"
+        },
+        {
+          "title": "Loại hình chuyên chở",
+          "serviceValue": "xe riêng",
+          "servicePrice": "300000"
+        }
+      ],
+      "isBlock": false,
+      "id": 9
     }
   ],
   "status_bookings": [

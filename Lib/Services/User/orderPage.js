@@ -15,8 +15,8 @@ async function showBookings(){
     let cardBookingHtml = "";
     if(bookings.length != 0){
         for(let i = 0; i < bookings.length; i++){
-            const tour = await getTour(bookings[i].id);
-            if(!bookings[i].isBlock){
+            const tour = await getTour(bookings[i].tour_id);
+            if(!bookings[i].isBlock && bookings[i].status == 1){
                 cardBookingHtml += `            <div class="bookings-content_container">
                 <div class="booking-item-module">
                     <div class="booking-item">
@@ -61,7 +61,7 @@ async function showBookings(){
                                 </p> <!----> 
                                 <div class="booking-content_option">
                                     <span class="booking-content_option--margin">
-                                        <button type="button" class="klk-button klk-button-primary klk-button-small">
+                                        <button onclick="pay(${tour.id}, ${user.id})" type="button" class="klk-button klk-button-primary klk-button-small">
                                              <span>
                                                 Thanh toán
                                              </span> 
@@ -141,4 +141,7 @@ async function getUser(id) {
     } catch (err) {
       throw new Error(err.message);
     }
+}
+function pay(tourId, userId){
+  window.location.href = `./comfilmInfoBooking.html?idTour=${tourId}&idUser=${userId}`;
 }
